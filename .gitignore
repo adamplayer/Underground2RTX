@@ -1,0 +1,45 @@
+# Directories
+## Game Related
+/CARS
+/CREDITS
+/FRONTEND
+/GLOBAL
+/LANGUAGES
+/memcard
+/MOVIES
+/NIS
+/scripts
+/SDATA
+/SOUND
+/SUBTITLES
+/TRACKS
+/ZMenu
+/ZMenuAssets
+## Remix Related
+/.trex/USD
+/rtx-remix/captures
+/rtx-remix/mods/gameReadyAssets/textures
+
+# Filetypes
+*.exe
+*.dll
+*.py
+*.bak
+*.test
+*.dmp
+*.log
+*.pdb
+*.json
+*.zip
+*.ssa
+*.txt
+
+# Specific Files
+*.dxvk-cache
+SPEED2.EXE.gzf
+SPEED2.EXE.i64
+ZMenuU2.asi
+server.cfg
+ZMenuU2.ini
+imgui.ini
+*.asi
