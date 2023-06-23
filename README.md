@@ -12,3 +12,6 @@ An RTX-Remix mod for Need For Speed Underground 2
 ## Todo
 - Vehicles, garages, and race locations still need to be done.
 - Textures need a lot of work.
+
+## Credits
+- countbuggula for their texture work!
