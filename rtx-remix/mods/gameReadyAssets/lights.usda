@@ -340,7 +340,7 @@ over "RootNode"
             {
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
-                float intensity = 100
+                float intensity = 113.6
                 bool normalize = 0
                 float radius = 0.2
                 float shaping:cone:angle = 90
@@ -352,33 +352,6 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (180, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0.4000000059604645)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
-        over "mesh_871EAA4081B4212E"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def RectLight "CarLotShowroom" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 5000
-                bool enableColorTemperature = 1
-                float exposure = 0
-                float height = 12.5
-                float intensity = 1500
-                bool normalize = 1
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                float width = 4.6
-                double3 xformOp:rotateXYZ = (180, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 7.000000104308128, 4.100000061094761)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
@@ -1417,8 +1390,8 @@ over "RootNode"
                 float colorTemperature = 4500
                 float diffuse = 1
                 bool enableColorTemperature = 1
-                float exposure = 0
-                float intensity = 10
+                float exposure = 0.2
+                float intensity = 100
                 bool normalize = 1
                 float radius = 2.1000001
                 float shaping:cone:angle = 180
@@ -2952,6 +2925,255 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, 23.800000354647636, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, -12.300000183284283, 9.600000143051147)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_69797C91FA69DF46"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "CarLotFrontDesk" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 2.8
+                float intensity = 51.9
+                float radius = 0.3
+                float shaping:cone:angle = 85.5
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (8.900000132620335, 34.86308038990796, 3.7109871093490847)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "CarLotFrontDesk_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 2.8
+                float intensity = 51.9
+                float radius = 0.3
+                float shaping:cone:angle = 85.5
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (8.932478198479098, 27.26754862294448, 3.7109871093490847)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "CarLotFrontDesk_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 2.8
+                float intensity = 51.9
+                float radius = 0.3
+                float shaping:cone:angle = 85.5
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (8.932478198479098, 18.21424155153647, 3.7109871093490847)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "CarLotFrontDesk_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 2.8
+                float intensity = 51.9
+                float radius = 0.3
+                float shaping:cone:angle = 85.5
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (8.932478198479098, 9.217320662860242, 3.7109871093490847)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_871EAA4081B4212E"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "CarLotFill" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                bool enableColorTemperature = 1
+                float intensity = 138.40001
+                float radius = 1
+                float shaping:cone:angle = 43.5
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (38.60000057518482, 84.90000126510859, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.4181881064861597, 2.1120079675189007, 2.5428981796023664)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "CarLotFill_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 14.7
+                float radius = 2.3
+                float shaping:cone:angle = 48.3
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float specular = 1
+                double3 xformOp:rotateXYZ = (234.00000348687172, 96.40000143647194, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.5210251336179805, 9.200000137090683, 3.400000050663948)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "CarLotKey" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                bool enableColorTemperature = 1
+                float exposure = 1.1
+                float intensity = 266.7
+                float radius = 0.4
+                float shaping:cone:angle = 45.8
+                float shaping:cone:softness = 0
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 140.30000209063292, 49.0000007301569)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.600000023841858, 3.300000049173832, 3.1000000461935997)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "CarLotFill_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                bool enableColorTemperature = 1
+                float exposure = 1.3000001
+                float intensity = 15.900001
+                float radius = 1.6
+                float shaping:cone:angle = 102.3
+                float shaping:cone:softness = 1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.159644868665263, 5.885652619255531, 5.307178004286274)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_BF251E8A9C6797F3"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Peugeot206LeftHeadlight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 2.6000001
+                float intensity = 50000
+                float radius = 0.01
+                float shaping:cone:angle = 53.8
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, -69.90000104159117, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.89, 0.6000000089406967, 0.45)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Peugeot206RightHeadlight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 2.6000001
+                float intensity = 50000
+                float radius = 0.01
+                float shaping:cone:angle = 53.8
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, -69.90000104159117, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.89, -0.59, 0.45)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Peugeot206LeftTaillight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0, 0)
+                float exposure = 0
+                float intensity = 167.40001
+                float radius = 0.05
+                float shaping:cone:angle = 90
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 80, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.9000000283122063, -0.63, 0.65)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Peugeot206LeftTaillight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0, 0)
+                float exposure = 0
+                float intensity = 167.40001
+                float radius = 0.05
+                float shaping:cone:angle = 90
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 80, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.9000000283122063, 0.63, 0.65)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }

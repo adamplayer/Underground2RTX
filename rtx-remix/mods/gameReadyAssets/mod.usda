@@ -69,31 +69,16 @@ over "RootNode"
         }
     }
 
-    over "meshes"
+    over "instances"
     {
-        over "mesh_B7BFEE6C2E9157D2"
+        over "inst_F91D3C7411AE3558_0"
         {
-            over "TunnelLight"
+            over "mesh" (
+                active = false
+            )
             {
-                float intensity = 113.6
-            }
-        }
-
-        over "mesh_C4BDD237A7107912"
-        {
-            over "TunnelLight"
-            {
-                float exposure = 0.2
-                float intensity = 100
             }
         }
     }
-}
-
-over "OmniverseKit_Persp"
-{
-    float focalLength = 7.69
-    float focusDistance = 0
-    float fStop = 0
 }
 
