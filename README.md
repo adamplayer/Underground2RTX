@@ -14,4 +14,4 @@ An RTX-Remix mod for Need For Speed Underground 2
 - Textures need a lot of work.
 
 ## Credits
-- countbuggula for their texture work!
+- countbuggula on discord for their texture work!

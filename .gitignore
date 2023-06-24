@@ -43,3 +43,4 @@ server.cfg
 ZMenuU2.ini
 imgui.ini
 *.asi
+*.null

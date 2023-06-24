@@ -10,8 +10,8 @@
     kilogramsPerUnit = 1
     metersPerUnit = 1
     subLayers = [
-        @./materials.usda@,
-        @./lights.usda@
+        @./lights.usda@,
+        @./materials.usda@
     ]
     timeCodesPerSecond = 24
     upAxis = "Z"
@@ -46,44 +46,45 @@ over "RootNode"
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZYX", "xformOp:scale"]
     }
 
-    over "instances"
+    over "Looks"
     {
-        over "inst_81456E1234B060F8_0"
+        over "mat_2129CCB15B545406"
         {
-            over "BuildingOffHang"
+            over "Shader"
             {
-                float exposure = 2.4
+                float inputs:emissive_intensity = 131.008 (
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
             }
         }
 
-        over "inst_CF0F4B847A80131F_0"
+        over "mat_60A40F94C784AAB4"
         {
-        }
-
-        over "inst_8B287D2287A593A5_0"
-        {
-            over "mesh" (
-                active = false
-            )
+            over "Shader"
             {
+                float inputs:emissive_intensity = 5
+                bool inputs:enable_emission
+            }
+        }
+    }
+
+    over "meshes"
+    {
+        over "mesh_B7BFEE6C2E9157D2"
+        {
+            over "TunnelLight"
+            {
+                float intensity = 113.6
             }
         }
 
-        over "inst_6039917B7217E177_24"
+        over "mesh_C4BDD237A7107912"
         {
-            over "SpotLight"
+            over "TunnelLight"
             {
-                float intensity = 392.4
-            }
-        }
-
-        over "inst_610D765CFF107EEF_25"
-        {
-            over "SuspensionBridgeAccent"
-            {
-                float exposure = 6.5
-                double3 xformOp:rotateXYZ = (180, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
+                float exposure = 0.2
+                float intensity = 100
             }
         }
     }
