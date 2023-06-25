@@ -48,18 +48,6 @@ over "RootNode"
 
     over "instances"
     {
-        over "inst_F91D3C7411AE3558_0"
-        {
-            over "mesh" (
-                active = false
-            )
-            {
-            }
-        }
-
-        over "inst_E29CA2B8D41F708A_0"
-        {
-        }
     }
 
     over "Looks"
@@ -86,7 +74,7 @@ over "RootNode"
                     doc = "Adds a thin film coating to the material"
                     hidden = false
                 )
-                float inputs:metallic_constant = 0.71 (
+                float inputs:metallic_constant = 0.19999999 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -99,7 +87,7 @@ over "RootNode"
                     doc = "Metallic Material"
                     hidden = false
                 )
-                float inputs:reflection_roughness_constant = 0.14 (
+                float inputs:reflection_roughness_constant = 0.099999994 (
                     customData = {
                         float default = 0.5
                         dictionary range = {
@@ -232,6 +220,328 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 2.7000000402331352, 3.0000000447034836)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_84C71EC219BD3ABB"
+        {
+            def SphereLight "MegalowCarSoft" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                bool enableColorTemperature = 1
+                float intensity = 71
+                float radius = 1.6
+                float shaping:cone:angle = 34.5
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 5.500000081956387, 3.8000000566244125)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "MegalowPartWall" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 75.8
+                float radius = 0.6
+                float shaping:cone:angle = 68.200005
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (7.900000117719173, -38.500000573694706, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-5.000000074505806, 54.90000081807375, 4.200000062584877)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "MegalowPartWall_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 75.8
+                float radius = 0.6
+                float shaping:cone:angle = 68.200005
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (-16.400000244379044, -16.100000239908695, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4.700000070035458, 58.3000008687377, 4.200000062584877)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "MegalowPartWall_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 75.8
+                float radius = 0.6
+                float shaping:cone:angle = 68.200005
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, -25.900000385940075, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.30000000447034836, 59.30000088363886, 4.200000062584877)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "MegalowCeiling" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float height = 4.5
+                float intensity = 3.1000001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 31
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.6000000536441803, 31.70000047236681, 4.500000067055225)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "MegalowCeiling_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float height = 4.5
+                float intensity = 4
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 54
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-4.400000065565109, 26.200000390410423, 5.200000077486038)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "MegalowCarSoft_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                bool enableColorTemperature = 1
+                float intensity = 48
+                float radius = 1.2
+                float shaping:cone:angle = 34.5
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, -95.20000141859055, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0.9000000134110451, 1.600000023841858)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_5D9B6AB2AC611EFD"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "MegalowCoutnerLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float intensity = 256.7
+                float radius = 0.3
+                float shaping:cone:angle = 67.5
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, -31.20000046491623, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.476526002397922, 31.04603938654604, 2.8000000417232513)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "MegalowCoutnerLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float intensity = 256.7
+                float radius = 0.3
+                float shaping:cone:angle = 67.5
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, -31.20000046491623, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.476526002397922, 36.10000053793192, 2.8000000417232513)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "MegalowCoutnerLight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float intensity = 256.7
+                float radius = 0.3
+                float shaping:cone:angle = 67.5
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, -31.20000046491623, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.476526002397922, 41.30000061541796, 2.8000000417232513)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "MegalowCoutnerLight_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float intensity = 256.7
+                float radius = 0.3
+                float shaping:cone:angle = 67.5
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, -31.20000046491623, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.476526002397922, 45.80000068247318, 2.8000000417232513)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "MegalowCoutnerLight_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 256.7
+                float radius = 0.3
+                float shaping:cone:angle = 67.5
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, -31.20000046491623, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.476526002397922, 51.5000007674098, 2.8000000417232513)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "MegalowCoutnerLight_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 256.7
+                float radius = 0.3
+                float shaping:cone:angle = 67.5
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.476526002397922, 55.90000083297491, 2.8000000417232513)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+    }
+}
+
+def Xform "PaintTool"
+{
+    def Xform "Pampas_Grass_200d4"
+    {
+        def PointInstancer "pointInstancer"
+        {
+            quath[] orientations = []
+            point3f[] positions = []
+            int[] protoIndices = []
+            prepend rel prototypes = </PaintTool/Pampas_Grass_200d4/pointInstancer/asset>
+            float3[] scales = []
+
+            def Xform "asset" (
+                kind = "component"
+                prepend references = @https://omniverse-content-production.s3.us-west-2.amazonaws.com/Assets/Vegetation/Shrub/Pampas_Grass.usd@
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "Fountain_Grass_Short_9331d"
+    {
+        def PointInstancer "pointInstancer"
+        {
+            quath[] orientations = []
+            point3f[] positions = []
+            int[] protoIndices = []
+            prepend rel prototypes = </PaintTool/Fountain_Grass_Short_9331d/pointInstancer/asset>
+            float3[] scales = []
+
+            def Xform "asset" (
+                kind = "component"
+                prepend references = @https://omniverse-content-production.s3.us-west-2.amazonaws.com/Assets/Vegetation/Shrub/Fountain_Grass_Short.usd@
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "Acacia_42901"
+    {
+        def PointInstancer "pointInstancer"
+        {
+            quath[] orientations = []
+            point3f[] positions = []
+            int[] protoIndices = []
+            prepend rel prototypes = </PaintTool/Acacia_42901/pointInstancer/asset>
+            float3[] scales = []
+
+            def Xform "asset" (
+                kind = "component"
+                prepend references = @https://omniverse-content-production.s3.us-west-2.amazonaws.com/Assets/Vegetation/Shrub/Acacia.usd@
+            )
+            {
             }
         }
     }
