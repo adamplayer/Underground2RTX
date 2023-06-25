@@ -46,29 +46,6 @@ over "RootNode"
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZYX", "xformOp:scale"]
     }
 
-    over "Looks"
-    {
-        over "mat_2129CCB15B545406"
-        {
-            over "Shader"
-            {
-                float inputs:emissive_intensity = 131.008 (
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
-            }
-        }
-
-        over "mat_60A40F94C784AAB4"
-        {
-            over "Shader"
-            {
-                float inputs:emissive_intensity = 5
-                bool inputs:enable_emission
-            }
-        }
-    }
-
     over "instances"
     {
         over "inst_F91D3C7411AE3558_0"
@@ -79,111 +56,182 @@ over "RootNode"
             {
             }
         }
+
+        over "inst_E29CA2B8D41F708A_0"
+        {
+        }
+    }
+
+    over "Looks"
+    {
+        over "mat_4899305085140D2E"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./Textures/4899305085140D2E.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                bool inputs:enable_thin_film = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Enable thin film"
+                    doc = "Adds a thin film coating to the material"
+                    hidden = false
+                )
+                float inputs:metallic_constant = 0.71 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Amount"
+                    doc = "Metallic Material"
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.14 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Amount"
+                    doc = "Higher roughness values lead to more blurry reflections"
+                    hidden = false
+                )
+                float inputs:thin_film_thickness_constant = 233.99985 (
+                    customData = {
+                        float default = 200
+                        dictionary range = {
+                            float max = 1500
+                            float min = 0.001
+                        }
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Thin film constant thickness in nm"
+                    doc = "Thickness of the thin film if not specified in albedo texture"
+                    hidden = false
+                )
+                bool inputs:thin_film_thickness_from_albedo_alpha = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Thin film thickness from albedo alpha"
+                    doc = "Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case."
+                    hidden = false
+                )
+            }
+        }
     }
 
     over "meshes"
     {
-        over "mesh_E3F894C99DC9140B"
+        over "mesh_E29CA2B8D41F708A"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def SphereLight "MainMenuSoftSphere" (
+            def RectLight "SpecialtiesShopCove" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                float colorTemperature = 4000
                 bool enableColorTemperature = 1
-                float intensity = 86.6
-                float radius = 3
-                float shaping:cone:angle = 40.600002
-                float shaping:cone:softness = 0.3
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (23.000000342726707, 0, 0)
+                float height = 50.100002
+                float intensity = 21.4
+                float shaping:cone:angle = 180
+                float width = 0.7
+                double3 xformOp:rotateXYZ = (180, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 4.400000065565109, 6.400000095367432)
+                double3 xformOp:translate = (-6.500000096857548, 14.800000220537186, 4.700000070035458)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def SphereLight "MainMenuKey" (
+            def RectLight "SpecialtiesShopCove_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float exposure = 0
-                float intensity = 48.600002
-                float radius = 1.4
-                float shaping:cone:angle = 40.3
-                float shaping:cone:softness = 0
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (78.8000011742115, 0, 0)
+                float colorTemperature = 4000
+                bool enableColorTemperature = 1
+                float height = 6.7000003
+                float intensity = 25
+                float shaping:cone:angle = 180
+                float width = 2.1000001
+                double3 xformOp:rotateXYZ = (180, 0, -78.00000116229057)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 1.2000000178813934, 1.9000000283122063)
+                double3 xformOp:translate = (-0.30000000447034836, 38.800000578165054, 4.62)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def SphereLight "SphereLight" (
+            def RectLight "SpecialtiesShopCove_02" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 2700
+                float colorTemperature = 4000
                 bool enableColorTemperature = 1
-                float intensity = 922.10004
-                float radius = 0.5
-                float shaping:cone:angle = 70.9
-                float shaping:cone:softness = 0.3
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (0, 0, 90)
+                float height = 50.100002
+                float intensity = 21.4
+                float shaping:cone:angle = 180
+                float width = 0.19
+                double3 xformOp:rotateXYZ = (180, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-3.500000052154064, 62.000000923871994, 9.100000135600567)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "SphereLight_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 2700
-                bool enableColorTemperature = 1
-                float intensity = 922.10004
-                float radius = 0.5
-                float shaping:cone:angle = 70.9
-                float shaping:cone:softness = 0.3
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (0, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.7000000104308128, 85.50000127404928, 8.900000132620335)
+                double3 xformOp:translate = (7.8, 14.800000220537186, 4.62)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
 
-        over "mesh_B3BE5C134A533293"
+        over "mesh_FE85ED854EC3F260"
         {
-            over "MainMenuLamp"
+            custom int preserveOriginalDrawCall = 1
+
+            def RectLight "SpecialtiesShopFill" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
             {
-                float colorTemperature = 2700
-                float exposure = 0
-                float intensity = 345.80002
-                float shaping:cone:angle = 66.9
-                float shaping:cone:softness = 0.4
-                bool treatAsPoint = 0
-                double3 xformOp:rotateXYZ = (0, -20.800000309944153, 0)
+                bool enableColorTemperature = 1
+                float height = 3.8
+                float intensity = 11.1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 3.6000001
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 5.500000081956387, 3.500000052154064)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            over "MainMenuLamp_01"
+            def SphereLight "SpecialtiesShopKey" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
             {
-                float colorTemperature = 2700
-                float exposure = 0
-                float intensity = 345.80002
-                float shaping:cone:angle = 66.9
-                float shaping:cone:softness = 0.4
-                bool treatAsPoint = 0
-                double3 xformOp:rotateXYZ = (0, -20.800000309944153, 0)
+                bool enableColorTemperature = 1
+                float intensity = 27.5
+                float radius = 1.6
+                float shaping:cone:angle = 19.800001
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (24.50000036507845, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 2.7000000402331352, 3.0000000447034836)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
     }

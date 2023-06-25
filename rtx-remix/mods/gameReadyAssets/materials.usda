@@ -7,8 +7,7 @@
         @./Textures/CountBuggula/tail_lights.usda@,
         @./Textures/CountBuggula/headlights.usda@,
         @./Textures/CountBuggula/traffic.usda@,
-        @./Textures/CountBuggula/signs.usda@,
-        @./materials_old.usda@
+        @./Textures/CountBuggula/signs.usda@
     ]
     upAxis = "Z"
 )
