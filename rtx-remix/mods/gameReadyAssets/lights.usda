@@ -2281,62 +2281,6 @@ over "RootNode"
             }
         }
 
-        over "mesh_7F10F3A0C84F0A1E"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            over "mesh"
-            {
-            }
-
-            def DiskLight "MainMenuDisk_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 5000
-                bool enableColorTemperature = 1
-                float exposure = 2.8
-                float intensity = 5000
-                bool normalize = 1
-                float radius = 3
-                float shaping:cone:angle = 90
-                float shaping:cone:softness = 0
-                float shaping:focus = 1.2
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (19.10000028461218, 13.300000198185444, -12.400000184774399)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 2.600000038743019)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
-        over "mesh_B2F1ECB1CF509A23"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def DiskLight "MainMenuDisk" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 5000
-                bool enableColorTemperature = 1
-                float exposure = 2.8
-                float intensity = 5000
-                bool normalize = 1
-                float radius = 3
-                float shaping:cone:angle = 90
-                float shaping:cone:softness = 0
-                float shaping:focus = 1.2
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (19.10000028461218, 13.300000198185444, -12.400000184774399)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 2.600000038743019)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
         over "mesh_A1ED219B2E1CA851"
         {
             custom int preserveOriginalDrawCall = 1
