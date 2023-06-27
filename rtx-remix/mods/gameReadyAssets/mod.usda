@@ -24,7 +24,7 @@ over "RootNode"
         over "SkyDome_Non_Replaceable"
         {
             float colorTemperature = 3500
-            bool enableColorTemperature = 1
+            bool enableColorTemperature = 0
             float exposure = 0
             float intensity = 1
             float3 xformOp:rotateXYZ = (0, 0, 0)
@@ -194,7 +194,7 @@ over "RootNode"
             {
                 float colorTemperature = 3600
                 bool enableColorTemperature = 1
-                float exposure = 2.5
+                float exposure = 2.7
                 float intensity = 500
                 bool normalize = 0
                 float radius = 0.2
@@ -216,7 +216,7 @@ over "RootNode"
             {
                 float colorTemperature = 3600
                 bool enableColorTemperature = 1
-                float exposure = 2.5
+                float exposure = 2.7
                 float intensity = 500
                 bool normalize = 0
                 float radius = 0.2
@@ -238,7 +238,7 @@ over "RootNode"
             {
                 float colorTemperature = 3600
                 bool enableColorTemperature = 1
-                float exposure = 2.5
+                float exposure = 2.7
                 float intensity = 500
                 bool normalize = 0
                 float radius = 0.2
@@ -260,7 +260,7 @@ over "RootNode"
             {
                 float colorTemperature = 3600
                 bool enableColorTemperature = 1
-                float exposure = 2.5
+                float exposure = 2.7
                 float intensity = 500
                 bool normalize = 0
                 float radius = 0.2
@@ -282,7 +282,7 @@ over "RootNode"
             {
                 float colorTemperature = 3600
                 bool enableColorTemperature = 1
-                float exposure = 2.5
+                float exposure = 2.7
                 float intensity = 500
                 bool normalize = 0
                 float radius = 0.2
@@ -304,7 +304,7 @@ over "RootNode"
             {
                 float colorTemperature = 3600
                 bool enableColorTemperature = 1
-                float exposure = 2.5
+                float exposure = 2.7
                 float intensity = 500
                 bool normalize = 0
                 float radius = 0.2
@@ -326,7 +326,7 @@ over "RootNode"
             {
                 float colorTemperature = 3600
                 bool enableColorTemperature = 1
-                float exposure = 2.5
+                float exposure = 2.7
                 float intensity = 500
                 bool normalize = 0
                 float radius = 0.2
@@ -348,7 +348,7 @@ over "RootNode"
             {
                 float colorTemperature = 3600
                 bool enableColorTemperature = 1
-                float exposure = 2.5
+                float exposure = 2.7
                 float intensity = 500
                 bool normalize = 0
                 float radius = 0.2
@@ -1388,6 +1388,8 @@ over "RootNode"
 
         over "mesh_9BDE0EE75152ADD9"
         {
+            custom int preserveOriginalDrawCall = 1
+
             def SphereLight "TrainFront" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
@@ -1456,6 +1458,20 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-0.6000000089406967, 0, 2.1000000312924385)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_93E6E1B09CDABD68"
+        {
+            over "SmallOverHang"
+            {
+                float exposure = 13.5
+                float intensity = 172.8
+                bool normalize = 0
+                float radius = 0.01
+                float shaping:cone:angle = 69.3
+                float shaping:cone:softness = 0.4
+                double3 xformOp:translate = (0, -2.1000000312924385, -0.800000011920929)
             }
         }
     }
