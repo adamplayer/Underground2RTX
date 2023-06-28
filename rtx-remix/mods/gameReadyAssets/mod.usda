@@ -2059,8 +2059,8 @@ over "RootNode"
             {
                 float colorTemperature = 4000
                 bool enableColorTemperature = 1
-                float exposure = 4.6
-                float intensity = 527.10004
+                float exposure = 0
+                float intensity = 286.1
                 float radius = 0.5
                 float shaping:cone:angle = 36.9
                 float shaping:cone:softness = 0.1
@@ -2079,8 +2079,8 @@ over "RootNode"
             {
                 float colorTemperature = 4000
                 bool enableColorTemperature = 1
-                float exposure = 4.6
-                float intensity = 527.10004
+                float exposure = 0
+                float intensity = 286.1
                 float radius = 0.5
                 float shaping:cone:angle = 36.9
                 float shaping:cone:softness = 0.1
@@ -2099,8 +2099,8 @@ over "RootNode"
             {
                 float colorTemperature = 4000
                 bool enableColorTemperature = 1
-                float exposure = 4.6
-                float intensity = 527.10004
+                float exposure = 0
+                float intensity = 286.1
                 float radius = 0.5
                 float shaping:cone:angle = 36.9
                 float shaping:cone:softness = 0.1
@@ -2119,8 +2119,8 @@ over "RootNode"
             {
                 float colorTemperature = 4000
                 bool enableColorTemperature = 1
-                float exposure = 4.6
-                float intensity = 527.10004
+                float exposure = 0
+                float intensity = 286.1
                 float radius = 0.5
                 float shaping:cone:angle = 36.9
                 float shaping:cone:softness = 0.1
@@ -2132,26 +2132,47 @@ over "RootNode"
                 double3 xformOp:translate = (-0.6000000089406967, -3.200000047683716, 35.80000053346157)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
-        }
-    }
 
-    over "instances"
-    {
-        over "inst_8B287D2287A593A5_1"
-        {
-            over "mesh" (
-                active = false
+            def SphereLight "CraneBaseFAALight" (
+                prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                color3f color = (1, 0, 0)
+                float colorTemperature = 4000
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 59.2
+                float radius = 1.8000001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 67.90000101178885)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
-        }
 
-        over "inst_8B287D2287A593A5_0"
-        {
-            over "mesh" (
-                active = false
+            def SphereLight "CraneBaseFAALight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                color3f color = (1, 0, 0)
+                float colorTemperature = 4000
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 59.2
+                float radius = 1.8000001
+                float shaping:cone:angle = 180
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (53.500000797212124, 0, 58.50000087171793)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
     }
