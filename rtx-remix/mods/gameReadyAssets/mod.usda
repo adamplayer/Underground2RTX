@@ -1815,6 +1815,89 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
+
+        over "mesh_DD19157829CF1615"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "CondoAccentLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.36293435, 0.5941473, 1)
+                float exposure = 7.4
+                float intensity = 371
+                float radius = 0.5
+                float shaping:cone:angle = 21.1
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-22.000000327825546, -13.600000202655792, 13.300000198185444)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "CondoAccentLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.36293435, 0.5941473, 1)
+                float exposure = 7.4
+                float intensity = 371
+                float radius = 0.5
+                float shaping:cone:angle = 21.1
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-22.000000327825546, 13.90000020712614, 13.300000198185444)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "CondoAccentLight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.36293435, 0.5941473, 1)
+                float exposure = 7.4
+                float intensity = 371
+                float radius = 0.5
+                float shaping:cone:angle = 21.1
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (10.500000156462193, -0.30000000447034836, 12.400000184774399)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+    }
+
+    over "instances"
+    {
+        over "inst_8B287D2287A593A5_1"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "inst_8B287D2287A593A5_0"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
     }
 }
 
