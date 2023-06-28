@@ -2048,21 +2048,6 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
-
-        over "mesh_EA1A049735D83EFD"
-        {
-            over "LongCobraHead"
-            {
-                float colorTemperature = 4500
-                float exposure = 12.1
-                float intensity = 874.9
-                float radius = 0.01
-                float shaping:cone:angle = 76.200005
-                float shaping:cone:softness = 0.1
-                bool treatAsPoint = 0
-                double3 xformOp:rotateXYZ = (0, 21.800000324845314, 90)
-            }
-        }
     }
 
     over "instances"

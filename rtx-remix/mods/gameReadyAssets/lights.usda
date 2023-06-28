@@ -2659,17 +2659,18 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 3500
+                float colorTemperature = 4500
                 bool enableColorTemperature = 1
-                float exposure = 3.3
-                float intensity = 3000
-                float radius = 0.3
-                float shaping:cone:angle = 78.6
-                float shaping:cone:softness = 0.2
+                float exposure = 12.1
+                float intensity = 874.9
+                float radius = 0.01
+                float shaping:cone:angle = 76.200005
+                float shaping:cone:softness = 0.1
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (0, 23.800000354647636, 90)
+                bool treatAsPoint = 0
+                double3 xformOp:rotateXYZ = (0, 21.800000324845314, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, -12.300000183284283, 9.600000143051147)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
