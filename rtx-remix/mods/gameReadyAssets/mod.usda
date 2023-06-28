@@ -1877,6 +1877,192 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
+
+        over "mesh_778D6C7A578B998D"
+        {
+            def SphereLight "CurvedStoreFrontAccent" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.17092769, 0.36893952, 0.9034749)
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 1
+                float intensity = 453.9
+                float radius = 0.2
+                float shaping:cone:angle = 39.100002
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (152.90000227838755, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4.300000064074993, -13.000000193715096, 0.30000000447034836)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "CurvedStoreFrontAccent_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.17092769, 0.36893952, 0.9034749)
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 1
+                float intensity = 453.9
+                float radius = 0.2
+                float shaping:cone:angle = 39.100002
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (152.90000227838755, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.8000000417232513, -13.000000193715096, 0.30000000447034836)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "CurvedStoreFrontAccent_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.17092769, 0.36893952, 0.9034749)
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 1
+                float intensity = 453.9
+                float radius = 0.2
+                float shaping:cone:angle = 39.100002
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (152.90000227838755, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9.80000014603138, -13.700000204145908, 0.30000000447034836)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "CurvedStoreFrontAccent_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.17092769, 0.36893952, 0.9034749)
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 1
+                float intensity = 453.9
+                float radius = 0.2
+                float shaping:cone:angle = 39.100002
+                float shaping:cone:softness = 0.2
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (152.90000227838755, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (11.200000166893005, -13.800000205636024, 0.30000000447034836)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "CurvedStoreFrontAccent_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.17092769, 0.36893952, 0.9034749)
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float intensity = 453.9
+                float radius = 0.2
+                float shaping:cone:angle = 45.100002
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, -18.700000278651714, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4.300000064074993, -13.000000193715096, 13.200000196695328)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "CurvedStoreFrontAccent_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.17092769, 0.36893952, 0.9034749)
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float intensity = 453.9
+                float radius = 0.2
+                float shaping:cone:angle = 45.100002
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, -18.700000278651714, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.8000000417232513, -13.000000193715096, 13.200000196695328)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "CurvedStoreFrontAccent_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.17092769, 0.36893952, 0.9034749)
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float intensity = 453.9
+                float radius = 0.2
+                float shaping:cone:angle = 45.100002
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, -18.700000278651714, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9.80000014603138, -13.700000204145908, 13.200000196695328)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "CurvedStoreFrontAccent_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.17092769, 0.36893952, 0.9034749)
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 0.1
+                float intensity = 453.9
+                float radius = 0.2
+                float shaping:cone:angle = 45.100002
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, -18.700000278651714, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (11.200000166893005, -13.800000205636024, 13.200000196695328)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_EA1A049735D83EFD"
+        {
+            over "LongCobraHead"
+            {
+                float colorTemperature = 4500
+                float exposure = 12.1
+                float intensity = 874.9
+                float radius = 0.01
+                float shaping:cone:angle = 76.200005
+                float shaping:cone:softness = 0.1
+                bool treatAsPoint = 0
+                double3 xformOp:rotateXYZ = (0, 21.800000324845314, 90)
+            }
+        }
     }
 
     over "instances"
