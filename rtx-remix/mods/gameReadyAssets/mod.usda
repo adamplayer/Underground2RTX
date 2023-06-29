@@ -108,6 +108,59 @@ over "RootNode"
                 )
             }
         }
+
+        over "mat_2129CCB15B545406"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./Textures/2129CCB15B545406-Base.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./Textures/2129CCB15B545406-Emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./Textures/2129CCB15B545406-Normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./Textures/2129CCB15B545406-Roughness.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
     }
 
     over "meshes"
@@ -122,7 +175,7 @@ over "RootNode"
             {
                 float colorTemperature = 3600
                 bool enableColorTemperature = 1
-                float exposure = 2.7
+                float exposure = 1.9
                 float intensity = 500
                 bool normalize = 0
                 float radius = 0.2
@@ -144,7 +197,7 @@ over "RootNode"
             {
                 float colorTemperature = 3600
                 bool enableColorTemperature = 1
-                float exposure = 2.7
+                float exposure = 1.9
                 float intensity = 500
                 bool normalize = 0
                 float radius = 0.2
@@ -166,7 +219,7 @@ over "RootNode"
             {
                 float colorTemperature = 3600
                 bool enableColorTemperature = 1
-                float exposure = 2.7
+                float exposure = 1.9
                 float intensity = 500
                 bool normalize = 0
                 float radius = 0.2
@@ -188,7 +241,7 @@ over "RootNode"
             {
                 float colorTemperature = 3600
                 bool enableColorTemperature = 1
-                float exposure = 2.7
+                float exposure = 1.9
                 float intensity = 500
                 bool normalize = 0
                 float radius = 0.2
@@ -210,7 +263,7 @@ over "RootNode"
             {
                 float colorTemperature = 3600
                 bool enableColorTemperature = 1
-                float exposure = 2.7
+                float exposure = 1.9
                 float intensity = 500
                 bool normalize = 0
                 float radius = 0.2
@@ -232,7 +285,7 @@ over "RootNode"
             {
                 float colorTemperature = 3600
                 bool enableColorTemperature = 1
-                float exposure = 2.7
+                float exposure = 1.9
                 float intensity = 500
                 bool normalize = 0
                 float radius = 0.2
@@ -254,7 +307,7 @@ over "RootNode"
             {
                 float colorTemperature = 3600
                 bool enableColorTemperature = 1
-                float exposure = 2.7
+                float exposure = 1.9
                 float intensity = 500
                 bool normalize = 0
                 float radius = 0.2
@@ -276,7 +329,7 @@ over "RootNode"
             {
                 float colorTemperature = 3600
                 bool enableColorTemperature = 1
-                float exposure = 2.7
+                float exposure = 1.9
                 float intensity = 500
                 bool normalize = 0
                 float radius = 0.2
@@ -1403,10 +1456,6 @@ over "RootNode"
             }
         }
 
-        over "mesh_33EC76F3D8A31486"
-        {
-        }
-
         over "mesh_F4B8C053581578BB"
         {
             token visibility = "inherited"
@@ -2490,50 +2539,96 @@ over "RootNode"
             }
         }
 
-        over "mesh_03770E67F94F34DA"
+        over "mesh_4A989B242FCA9A34"
         {
-            custom int preserveOriginalDrawCall = 1
+            over "mesh"
+            {
+            }
 
-            def RectLight "CoveredBolvCurvyFacade" (
+            def SphereLight "RX7LHR" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                color3f color = (0.8927413, 0.4092664, 1)
                 float colorTemperature = 6500
                 bool enableColorTemperature = 1
-                float height = 5.6
-                float intensity = 60.600002
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
+                float exposure = 0
+                float intensity = 50000
+                bool normalize = 0
+                float radius = 0.1
+                float shaping:cone:angle = 42.5
+                float shaping:cone:softness = 0.1
+                float shaping:focus = 0
+                color3f shaping:focusTint = (0, 0, 0)
                 asset shaping:ies:file
-                float width = 1
-                double3 xformOp:rotateXYZ = (0, 0, 90)
+                bool shaping:ies:normalize = 0
+                bool treatAsPoint = 1
+                token visibility = "invisible"
+                double3 xformOp:rotateXYZ = (0, -59.900000892579556, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0.10000000149011612, 3.400000050663948)
+                double3 xformOp:translate = (1.9000000283122063, 0.5000000074505806, 0.6000000089406967)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def RectLight "CoveredBolvCurvyFacade_01" (
+            def SphereLight "RX7LHL" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                color3f color = (1, 1, 1)
                 float colorTemperature = 6500
                 bool enableColorTemperature = 1
-                float height = 5.6
-                float intensity = 36.600002
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
+                float exposure = 0
+                float intensity = 50000
+                bool normalize = 0
+                float radius = 0.1
+                float shaping:cone:angle = 42.5
+                float shaping:cone:softness = 0.1
+                float shaping:focus = 0
+                color3f shaping:focusTint = (0, 0, 0)
+                asset shaping:ies:file
+                bool shaping:ies:normalize = 0
+                bool treatAsPoint = 1
+                token visibility = "invisible"
+                double3 xformOp:rotateXYZ = (0, -59.900000892579556, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.9000000283122063, -0.6000000089406967, 0.5000000074505806)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_1FDB2DE7E27CFADF"
+        {
+            def SphereLight "ChainHungPoleLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 163.40001
+                bool normalize = 1
+                float radius = 1.2
+                float shaping:cone:angle = 157.3
+                float shaping:cone:softness = 0.5
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                float width = 1
                 double3 xformOp:rotateXYZ = (0, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 3.0000000447034836, 3.400000050663948)
+                double3 xformOp:translate = (0, -2.0000000298023224, 7.1000001057982445)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "SphereLight" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_F268CA8A196CC299"
+        {
+            over "WallMountChan"
+            {
+                float intensity = 172.3
             }
         }
     }
