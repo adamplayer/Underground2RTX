@@ -1,12 +1,13 @@
 #usda 1.0
 (
     subLayers = [
-        @./Lights/000_Special.usda@,
         @./Lights/100_Global.usda@,
+        @./Lights/000_Special.usda@,
+        @./Lights/200_CityCenter.usda@,
+        @./Lights/210_FortUnion.usda@,
+        @./Lights/220_CoalHarbor.usda@,
         @./Lights/300_Garages.usda@,
-        @./Lights/310_Shops.usda@,
-        @./Lights/201_LasVegasBlv.usda@,
-        @./Lights/210_FortUnion.usda@
+        @./Lights/310_Shops.usda@
     ]
     upAxis = "Z"
 )
@@ -736,18 +737,18 @@ over "RootNode"
             {
                 float colorTemperature = 3000
                 bool enableColorTemperature = 1
-                float exposure = 2.3
-                float intensity = 3000
-                bool normalize = 1
-                float radius = 0.5
-                float shaping:cone:angle = 83.9
-                float shaping:cone:softness
+                float exposure = 13.5
+                float intensity = 172.8
+                bool normalize = 0
+                float radius = 0.01
+                float shaping:cone:angle = 69.3
+                float shaping:cone:softness = 0.4
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 double3 xformOp:rotateXYZ = (0, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, -2.1000000312924385, -0.30000000447034836)
+                double3 xformOp:translate = (0, -2.1000000312924385, -0.800000011920929)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
@@ -763,7 +764,7 @@ over "RootNode"
                 float colorTemperature = 4000
                 bool enableColorTemperature = 1
                 float exposure = 0
-                float intensity = 3000
+                float intensity = 200
                 bool normalize = 0
                 float radius = 0.4
                 float shaping:cone:angle = 83.8
@@ -874,7 +875,7 @@ over "RootNode"
             {
                 float colorTemperature = 4000
                 bool enableColorTemperature = 1
-                float intensity = 30000
+                float intensity = 300
                 bool normalize = 1
                 float radius = 0.2
                 float shaping:cone:angle = 79
@@ -979,7 +980,7 @@ over "RootNode"
                 float colorTemperature = 3500
                 bool enableColorTemperature = 1
                 float exposure = 0
-                float intensity = 30000
+                float intensity = 500
                 float radius = 0.5
                 float shaping:cone:angle = 68.8
                 float shaping:cone:softness
@@ -1004,7 +1005,7 @@ over "RootNode"
                 float colorTemperature = 3500
                 bool enableColorTemperature = 1
                 float exposure = 0
-                float intensity = 1000
+                float intensity = 150
                 bool normalize = 1
                 float radius = 0.8
                 float shaping:cone:angle = 90
@@ -1031,7 +1032,7 @@ over "RootNode"
                 float colorTemperature = 3000
                 bool enableColorTemperature = 1
                 float exposure = 0
-                float intensity = 1500
+                float intensity = 400
                 bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 80
@@ -1085,7 +1086,7 @@ over "RootNode"
                 float colorTemperature = 3500
                 bool enableColorTemperature = 1
                 float exposure = 0
-                float intensity = 5000
+                float intensity = 500
                 bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 67.200005
@@ -1112,7 +1113,7 @@ over "RootNode"
                 float colorTemperature = 3500
                 bool enableColorTemperature = 1
                 float exposure = 0
-                float intensity = 3000
+                float intensity = 300
                 float radius = 0.5
                 float shaping:cone:angle = 74.9
                 float shaping:cone:softness = 1.2
@@ -1136,7 +1137,7 @@ over "RootNode"
             {
                 float colorTemperature = 3500
                 bool enableColorTemperature = 1
-                float intensity = 5000
+                float intensity = 300
                 bool normalize = 1
                 custom int preserveOriginalDrawCall = 1
                 float radius = 0.2
@@ -1184,7 +1185,7 @@ over "RootNode"
                 float colorTemperature = 3500
                 bool enableColorTemperature = 1
                 float exposure = 9.400001
-                float intensity = 5000
+                float intensity = 300
                 custom int preserveOriginalDrawCall = 1
                 float radius = 0.08
                 float shaping:cone:angle = 68.1
@@ -1259,7 +1260,7 @@ over "RootNode"
             {
                 float colorTemperature = 3500
                 bool enableColorTemperature = 1
-                float intensity = 3000
+                float intensity = 300
                 bool normalize = 0
                 custom int preserveOriginalDrawCall = 1
                 float radius = 0.4
@@ -1309,7 +1310,7 @@ over "RootNode"
             {
                 float colorTemperature = 3500
                 bool enableColorTemperature = 1
-                float intensity = 3000
+                float intensity = 300
                 float radius = 0.5
                 float shaping:cone:angle = 90
                 float shaping:cone:softness
@@ -1334,7 +1335,7 @@ over "RootNode"
                 float colorTemperature = 3000
                 bool enableColorTemperature = 1
                 float exposure = 1.2
-                float intensity = 2000
+                float intensity = 200
                 bool normalize = 1
                 float radius = 0.1
                 float shaping:cone:angle = 90
@@ -1363,7 +1364,7 @@ over "RootNode"
                 bool enableColorTemperature = 1
                 float exposure = 2.7
                 float height = 17.9
-                float intensity = 15000
+                float intensity = 1500
                 bool normalize = 1
                 float shaping:cone:angle = 90
                 float shaping:cone:softness = 0.5
@@ -1390,7 +1391,7 @@ over "RootNode"
             {
                 float colorTemperature = 3500
                 bool enableColorTemperature = 1
-                float intensity = 2000
+                float intensity = 200
                 bool normalize = 1
                 float radius = 0.1
                 float shaping:cone:angle = 180
@@ -1416,7 +1417,7 @@ over "RootNode"
                 float colorTemperature = 2700
                 bool enableColorTemperature = 1
                 float exposure = 0
-                float intensity = 1400
+                float intensity = 140
                 bool normalize = 1
                 float radius = 0.4
                 float shaping:cone:angle = 180
@@ -1441,7 +1442,7 @@ over "RootNode"
             {
                 float colorTemperature = 3500
                 bool enableColorTemperature = 1
-                float intensity = 3000
+                float intensity = 300.10004
                 bool normalize = 1
                 float radius = 0.2
                 float shaping:cone:angle = 80
@@ -1468,7 +1469,7 @@ over "RootNode"
                 float colorTemperature = 3500
                 bool enableColorTemperature = 1
                 float exposure = 0
-                float intensity = 120000
+                float intensity = 1200
                 bool normalize = 1
                 float radius = 0.01
                 float shaping:cone:angle = 79.8
@@ -1494,7 +1495,7 @@ over "RootNode"
             {
                 float colorTemperature = 3500
                 bool enableColorTemperature = 1
-                float intensity = 3000
+                float intensity = 300
                 bool normalize = 1
                 float radius = 0.1
                 float shaping:cone:angle = 90
@@ -1521,7 +1522,7 @@ over "RootNode"
                 float colorTemperature = 3500
                 bool enableColorTemperature = 1
                 float exposure = 0
-                float intensity = 1500
+                float intensity = 150
                 bool normalize = 1
                 float radius = 1.3000001
                 float shaping:cone:angle = 44
@@ -1572,7 +1573,7 @@ over "RootNode"
             {
                 float colorTemperature = 3500
                 bool enableColorTemperature = 1
-                float intensity = 3000
+                float intensity = 300
                 bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 90
@@ -1595,7 +1596,7 @@ over "RootNode"
             {
                 float colorTemperature = 3500
                 bool enableColorTemperature = 1
-                float intensity = 1500
+                float intensity = 150
                 float radius = 0.225
                 float shaping:cone:angle = 90
                 float shaping:cone:softness
@@ -1620,7 +1621,7 @@ over "RootNode"
             {
                 float colorTemperature = 3500
                 bool enableColorTemperature = 1
-                float intensity = 1500
+                float intensity = 150
                 float radius = 0.4
                 float shaping:cone:angle = 90
                 float shaping:cone:softness
@@ -1644,7 +1645,7 @@ over "RootNode"
                 float colorTemperature = 3500
                 bool enableColorTemperature = 1
                 float exposure = 1.1
-                float intensity = 3000
+                float intensity = 300
                 bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 90
@@ -1668,7 +1669,7 @@ over "RootNode"
                 float colorTemperature = 3500
                 bool enableColorTemperature = 1
                 float exposure = 2.3
-                float intensity = 3000
+                float intensity = 300
                 float radius = 0.4
                 float shaping:cone:angle = 90
                 float shaping:cone:softness
@@ -1693,8 +1694,8 @@ over "RootNode"
                 color3f color = (1, 1, 1)
                 float colorTemperature = 5000
                 bool enableColorTemperature = 1
-                float exposure = 0
-                float intensity = 2500
+                float exposure = 1.9
+                float intensity = 500
                 float radius = 0.2
                 float shaping:cone:angle = 85.3
                 float shaping:cone:softness = 1.2
@@ -1772,8 +1773,8 @@ over "RootNode"
             {
                 float colorTemperature = 3500
                 bool enableColorTemperature = 1
-                float exposure = 3.9
-                float intensity = 3000
+                float exposure = 1.3000001
+                float intensity = 500
                 float radius = 0.5
                 float shaping:cone:angle = 82.6
                 float shaping:cone:softness = 0.2
@@ -1826,7 +1827,7 @@ over "RootNode"
                 float colorTemperature = 3000
                 bool enableColorTemperature = 1
                 float exposure = 1.8000001
-                float intensity = 3000
+                float intensity = 300
                 bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 58.4
@@ -1848,7 +1849,7 @@ over "RootNode"
                 float colorTemperature = 3000
                 bool enableColorTemperature = 1
                 float exposure = 1.8000001
-                float intensity = 3000
+                float intensity = 300
                 float radius = 0.5
                 float shaping:cone:angle = 58.600002
                 float shaping:cone:softness = 0.2
