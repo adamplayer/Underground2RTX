@@ -49,6 +49,7 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 bool inputs:enable_thin_film = 0 (
                     customData = {
@@ -105,59 +106,6 @@ over "RootNode"
                     displayGroup = "Diffuse"
                     displayName = "Thin film thickness from albedo alpha"
                     doc = "Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case."
-                    hidden = false
-                )
-            }
-        }
-
-        over "mat_2129CCB15B545406"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./Textures/2129CCB15B545406-Base.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./Textures/2129CCB15B545406-Emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./Textures/2129CCB15B545406-Normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                )
-                asset inputs:reflectionroughness_texture = @./Textures/2129CCB15B545406-Roughness.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
                     hidden = false
                 )
             }
@@ -2552,55 +2500,45 @@ over "RootNode"
 
         over "mesh_4A989B242FCA9A34"
         {
-            over "mesh"
-            {
-            }
-
-            def SphereLight "RX7LHR" (
+            def SphereLight "RX7_LeftFogLight" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 6500
-                bool enableColorTemperature = 1
-                float exposure = 0
-                float intensity = 50000
-                bool normalize = 0
-                float radius = 0.1
-                float shaping:cone:angle = 42.5
-                float shaping:cone:softness = 0.1
-                float shaping:focus = 0
-                color3f shaping:focusTint = (0, 0, 0)
-                asset shaping:ies:file
-                bool shaping:ies:normalize = 0
-                bool treatAsPoint = 1
-                token visibility = "invisible"
-                double3 xformOp:rotateXYZ = (0, -59.900000892579556, 0)
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                color3f inputs:color = (0.996139, 0.8999866, 0)
+                bool inputs:enableColorTemperature = 1
+                float inputs:exposure = 0
+                float inputs:intensity = 664.7
+                float inputs:radius = 0.05
+                float inputs:shaping:cone:angle = 63
+                float inputs:shaping:cone:softness = 0.3
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (-95, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.9000000283122063, 0.5000000074505806, 0.6000000089406967)
+                double3 xformOp:translate = (1.99, 0.28, 0.15)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def SphereLight "RX7LHL" (
+            def SphereLight "RX7_RightFogLight" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 6500
-                bool enableColorTemperature = 1
-                float exposure = 0
-                float intensity = 50000
-                bool normalize = 0
-                float radius = 0.1
-                float shaping:cone:angle = 42.5
-                float shaping:cone:softness = 0.1
-                float shaping:focus = 0
-                color3f shaping:focusTint = (0, 0, 0)
-                asset shaping:ies:file
-                bool shaping:ies:normalize = 0
-                bool treatAsPoint = 1
-                token visibility = "invisible"
-                double3 xformOp:rotateXYZ = (0, -59.900000892579556, 0)
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                color3f inputs:color = (0.996139, 0.8999866, 0)
+                bool inputs:enableColorTemperature = 1
+                float inputs:exposure = 0
+                float inputs:intensity = 664.7
+                float inputs:radius = 0.05
+                float inputs:shaping:cone:angle = 63
+                float inputs:shaping:cone:softness = 0.3
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (-95, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.9000000283122063, -0.6000000089406967, 0.5000000074505806)
+                double3 xformOp:translate = (1.99, -0.30000000447034836, 0.15)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
