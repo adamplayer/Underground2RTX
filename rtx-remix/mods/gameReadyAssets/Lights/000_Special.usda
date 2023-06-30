@@ -4,82 +4,42 @@ over "RootNode"
 {
     over "meshes"
     {
-        over "mesh_E3F894C99DC9140B"
+        over "mesh_66107B68A68FF01F"
         {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "MainMenuSoftSphere" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
+            over "CobraHead_2"
             {
-                bool enableColorTemperature = 1
-                float intensity = 86.6
-                float radius = 3
-                float shaping:cone:angle = 40.600002
-                float shaping:cone:softness = 0.3
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (23.000000342726707, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 4.400000065565109, 6.400000095367432)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                color3f color = (2, 2, 2)
+                float colorTemperature = 5000
             }
+        }
 
-            def SphereLight "MainMenuKey" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
+        over "mesh_6EE1388ED9AEFD6E"
+        {
+            over "HighwayLightInterchange_01"
             {
-                float exposure = 0
-                float intensity = 48.600002
-                float radius = 1.4
-                float shaping:cone:angle = 40.3
-                float shaping:cone:softness = 0
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (78.8000011742115, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 1.2000000178813934, 1.9000000283122063)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                float colorTemperature = 6500
+                float exposure = 16
+                float radius = 0.01
+                float shaping:cone:angle = 50.100002
+                float shaping:cone:softness = 1.7
+                float shaping:focus = 0
+                color3f shaping:focusTint = (0, 0, 0)
             }
+        }
 
-            def SphereLight "SphereLight" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
+        over "mesh_EA1A049735D83EFD"
+        {
+            over "LongCobraHead"
             {
-                float colorTemperature = 2700
-                bool enableColorTemperature = 1
-                float intensity = 922.10004
-                float radius = 0.5
-                float shaping:cone:angle = 70.9
-                float shaping:cone:softness = 0.3
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (0, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-3.500000052154064, 62.000000923871994, 9.100000135600567)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                float colorTemperature = 5000
             }
+        }
 
-            def SphereLight "SphereLight_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
+        over "mesh_C32C1465D7FFB123"
+        {
+            over "CobraHeadHighway"
             {
-                float colorTemperature = 2700
-                bool enableColorTemperature = 1
-                float intensity = 920
-                float radius = 0.5
-                float shaping:cone:angle = 70.9
-                float shaping:cone:softness = 0.3
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (0, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.7000000104308128, 85.50000127404928, 8.900000132620335)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                float colorTemperature = 5000
             }
         }
     }

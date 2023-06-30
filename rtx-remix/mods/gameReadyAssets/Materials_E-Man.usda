@@ -19,6 +19,7 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:normalmap_texture = @./Textures/EMAN/asphalt/asphalt_generic_n.dds@ (
                     colorSpace = "auto"
@@ -28,6 +29,7 @@ over "RootNode"
                     displayGroup = "Normal"
                     displayName = "Normal Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:reflectionroughness_texture = @./Textures/EMAN/asphalt/asphalt_generic_r.dds@ (
                     colorSpace = "auto"
@@ -37,6 +39,7 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
@@ -53,6 +56,7 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:normalmap_texture = @./Textures/EMAN/asphalt/asphalt_generic_n.dds@ (
                     colorSpace = "auto"
@@ -62,6 +66,7 @@ over "RootNode"
                     displayGroup = "Normal"
                     displayName = "Normal Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:reflectionroughness_texture = @./Textures/EMAN/asphalt/asphalt_generic_r.dds@ (
                     colorSpace = "auto"
@@ -71,6 +76,7 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
@@ -87,6 +93,7 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:normalmap_texture = @./Textures/EMAN/asphalt/asphalt_generic_n.dds@ (
                     colorSpace = "auto"
@@ -96,6 +103,7 @@ over "RootNode"
                     displayGroup = "Normal"
                     displayName = "Normal Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:reflectionroughness_texture = @./Textures/EMAN/asphalt/asphalt_generic_r.dds@ (
                     colorSpace = "auto"
@@ -105,6 +113,7 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
@@ -121,6 +130,7 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:normalmap_texture = @./Textures/EMAN/asphalt/crossroads/crossroads_n.dds@ (
                     colorSpace = "auto"
@@ -130,6 +140,7 @@ over "RootNode"
                     displayGroup = "Normal"
                     displayName = "Normal Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:reflectionroughness_texture = @./Textures/EMAN/asphalt/crossroads/crossroads_r.dds@ (
                     colorSpace = "auto"
@@ -139,6 +150,7 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
@@ -155,6 +167,7 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:normalmap_texture = @./Textures/EMAN/Sidewalk/sidewalk_n.dds@ (
                     colorSpace = "auto"
@@ -164,6 +177,7 @@ over "RootNode"
                     displayGroup = "Normal"
                     displayName = "Normal Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:reflectionroughness_texture = @./Textures/EMAN/Sidewalk/sidewalk_r.dds@ (
                     colorSpace = "auto"
@@ -173,6 +187,7 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }

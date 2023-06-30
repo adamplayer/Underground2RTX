@@ -7,8 +7,9 @@
         }
         int refinementOverrideImplVersion = 0
     }
+    endTimeCode = 0
     kilogramsPerUnit = 1
-    metersPerUnit = 1
+    metersPerUnit = 0.001
     subLayers = [
         @./adamplayer.usda@,
         @./materials.usda@,
@@ -24,10 +25,8 @@ over "RootNode"
     {
         over "SkyDome_Non_Replaceable"
         {
-            float colorTemperature = 3500
-            bool enableColorTemperature = 0
             float exposure = 0
-            float intensity = 1
+            float intensity = 0
             float3 xformOp:rotateXYZ = (0, 0, 0)
             float3 xformOp:scale = (1, 1, 1)
             double3 xformOp:translate = (0, 0, 0)
@@ -41,7 +40,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./Textures/4899305085140D2E.dds@ (
+                asset diffuse_texture = @./Textures/4899305085140D2E.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -51,7 +50,7 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                bool inputs:enable_thin_film = 0 (
+                bool enable_thin_film = 0 (
                     customData = {
                         bool default = 0
                     }
@@ -60,7 +59,7 @@ over "RootNode"
                     doc = "Adds a thin film coating to the material"
                     hidden = false
                 )
-                float inputs:metallic_constant = 0.19999999 (
+                float metallic_constant = 0.19999999 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -73,7 +72,7 @@ over "RootNode"
                     doc = "Metallic Material"
                     hidden = false
                 )
-                float inputs:reflection_roughness_constant = 0.099999994 (
+                float reflection_roughness_constant = 0.099999994 (
                     customData = {
                         float default = 0.5
                         dictionary range = {
@@ -86,7 +85,7 @@ over "RootNode"
                     doc = "Higher roughness values lead to more blurry reflections"
                     hidden = false
                 )
-                float inputs:thin_film_thickness_constant = 233.99985 (
+                float thin_film_thickness_constant = 233.99985 (
                     customData = {
                         float default = 200
                         dictionary range = {
@@ -99,7 +98,7 @@ over "RootNode"
                     doc = "Thickness of the thin film if not specified in albedo texture"
                     hidden = false
                 )
-                bool inputs:thin_film_thickness_from_albedo_alpha = 0 (
+                bool thin_film_thickness_from_albedo_alpha = 0 (
                     customData = {
                         bool default = 0
                     }
@@ -115,9 +114,19 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./Textures/road decorations/road_median_grass_8575BAB8FCD98235_c.dds@
-                asset inputs:normalmap_texture = @./Textures/road decorations/road_median_grass_8575BAB8FCD98235_n.dds@
-                asset inputs:reflectionroughness_texture = @./Textures/road decorations/road_median_grass_8575BAB8FCD98235_r.dds@
+                asset diffuse_texture = @./Textures/road decorations/road_median_grass_8575BAB8FCD98235_c.dds@ (
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset normalmap_texture = @./Textures/road decorations/road_median_grass_8575BAB8FCD98235_n.dds@ (
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset reflectionroughness_texture = @./Textures/road decorations/road_median_grass_8575BAB8FCD98235_r.dds@ (
+                    hidden = false
+                    renderType = "texture_2d"
+                )
             }
         }
     }
@@ -194,13 +203,15 @@ over "RootNode"
 
         over "mesh_118A6BBC04CCAE73"
         {
+            custom int preserveOriginalDrawCall = 1
+
             def SphereLight "LatternStreetLight" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 3000
+                float colorTemperature = 5000
                 bool enableColorTemperature = 1
-                float exposure = 1.5
+                float exposure = 1.9
                 float intensity = 265.4
                 bool normalize = 1
                 float radius = 0.7
@@ -217,29 +228,187 @@ over "RootNode"
             }
         }
 
-        over "mesh_2B5BB552E414B596"
+        over "mesh_1FC1FC56F2380F3D"
         {
-            over "UnderEl"
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "RX7_LeftTailLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
             {
+                color3f color = (1, 0, 0)
+                float exposure = 7.6
+                float intensity = 100
+                custom int preserveOriginalDrawCall
+                float radius = 0.02
+                float shaping:cone:angle = 85.3
+                float shaping:cone:softness = 2.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 90, 0)
                 double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.1000000312924385, 0.5, 0.6000000089406967)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            over "UnderEl_01"
+            def SphereLight "RX7_RightTailLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
             {
+                color3f color = (1, 0, 0)
+                float exposure = 7.6
+                float intensity = 100
+                custom int preserveOriginalDrawCall
+                float radius = 0.02
+                float shaping:cone:angle = 85.3
+                float shaping:cone:softness = 2.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 90, 0)
                 double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.1000000312924385, -0.5000000074505806, 0.6000000089406967)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RX7_HLR" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0.99999, 0.99999)
+                bool enableColorTemperature = 1
+                float exposure = 18.300001
+                float intensity = 100
+                custom int preserveOriginalDrawCall
+                float radius = 0.02
+                float shaping:cone:angle = 57.600002
+                float shaping:cone:softness = 2.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, -66.20000098645687, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.8, -0.65, 0.5000000074505806)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RX7_HLL" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0.99999, 0.99999)
+                bool enableColorTemperature = 1
+                float exposure = 18.300001
+                float intensity = 100
+                custom int preserveOriginalDrawCall
+                float radius = 0.02
+                float shaping:cone:angle = 57.600002
+                float shaping:cone:softness = 2.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, -53.700000800192356, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.8, 0.65, 0.5000000074505806)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
-    }
 
-    over "Camera"
-    {
-        float focalLength = 9
-        custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -2.935800934482067)
-        float verticalAperture = 15.2908
-        float3 xformOp:rotateZYX = (-133.48267, -81.80336, 136.81097)
-        float3 xformOp:scale = (1, 1, 0.99999994)
-        double3 xformOp:translate = (67.74075327947281, -627.2377498593575, 15.759729264387811)
-        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZYX", "xformOp:scale"]
+        over "mesh_754D96C5AB8CE3B5"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "RailYardCanopy" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 3500
+                bool enableColorTemperature = 1
+                float exposure = 13.7
+                float intensity = 500
+                float radius = 0.01
+                float shaping:cone:angle = 84
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0.30000000447034836, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_6039917B7217E177"
+        {
+            over "SpotLight"
+            {
+                float exposure = 2.4
+                float shaping:cone:softness = 0.4
+                double3 xformOp:rotateXYZ = (180, -25.600000381469727, 90)
+            }
+        }
+
+        over "mesh_610D765CFF107EEF"
+        {
+            over "SuspensionBridgeAccent"
+            {
+                color3f color = (1, 1, 1)
+            }
+        }
+
+        over "mesh_7B6BAEF9C3F72030"
+        {
+            over "FancyStreetLight"
+            {
+                float colorTemperature = 4000
+                float exposure = 14.8
+                float shaping:cone:angle = 77.200005
+                float shaping:cone:softness = 3.5
+                double3 xformOp:rotateXYZ = (-54.30000080913305, 0, 0)
+            }
+        }
+
+        over "mesh_695BF09339CA3128"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "GreenHousePendant" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0.99999, 0.99999)
+                float colorTemperature = 4000
+                bool enableColorTemperature = 1
+                float exposure = 1.2
+                float3[] extent = [(-500, -500, -500), (500, 500, 500)]
+                float intensity = 262.6
+                float radius = 0.5
+                float shaping:cone:angle = 74.5
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0.800000011920929)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_F57998E47CA09624"
+        {
+            over "RLMStreetLight"
+            {
+                float colorTemperature = 4000
+                float exposure = 16.7
+                float intensity = 500
+                bool normalize = 0
+                bool treatAsPoint = 0
+                double3 xformOp:rotateXYZ = (0, 59.900000892579556, 90)
+            }
+        }
     }
 }
 
