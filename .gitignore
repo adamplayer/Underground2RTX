@@ -15,10 +15,12 @@
 /TRACKS
 /ZMenu
 /ZMenuAssets
+
 ## Remix Related
 /.trex/USD
 /rtx-remix/captures
 /rtx-remix/mods/gameReadyAssets/textures
+/rtx-remix/mods/gameReadyAssets/ExtMod
 
 # Filetypes
 *.exe
@@ -44,3 +46,4 @@ ZMenuU2.ini
 imgui.ini
 *.asi
 *.null
+*.dds

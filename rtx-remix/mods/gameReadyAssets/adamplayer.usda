@@ -1,5 +1,8 @@
 #usda 1.0
 (
+    subLayers = [
+        @./Lights/210_FortUnion.usda@
+    ]
     upAxis = "Z"
 )
 
@@ -1539,32 +1542,6 @@ over "RootNode"
             }
         }
 
-        over "mesh_1FDB2DE7E27CFADF"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "SphereLight" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 3500
-                bool enableColorTemperature = 1
-                float exposure = 0.2
-                float intensity = 5000
-                bool normalize = 1
-                float radius = 1.2
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, -2.0000000298023224, 7.1000001057982445)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
         over "mesh_8F667BB8FEFE0D4F"
         {
             custom int preserveOriginalDrawCall = 1
@@ -2274,32 +2251,6 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (90, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 4.6000000685453415)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
-        over "mesh_F268CA8A196CC299"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "WallMountChan" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 3000
-                bool enableColorTemperature = 1
-                float exposure = 0.1
-                float intensity = 1579.3
-                bool normalize = 0
-                float radius = 1.2
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, -2.3000000342726707, -0.9000000134110451)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }

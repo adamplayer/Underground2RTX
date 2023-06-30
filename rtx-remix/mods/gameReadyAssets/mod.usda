@@ -10,7 +10,7 @@
     kilogramsPerUnit = 1
     metersPerUnit = 1
     subLayers = [
-        @./lights.usda@,
+        @./adamplayer.usda@,
         @./materials.usda@
     ]
     timeCodesPerSecond = 24
@@ -2593,44 +2593,17 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
+    }
 
-        over "mesh_1FDB2DE7E27CFADF"
-        {
-            def SphereLight "ChainHungPoleLight" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 3500
-                bool enableColorTemperature = 1
-                float exposure = 0
-                float intensity = 163.40001
-                bool normalize = 1
-                float radius = 1.2
-                float shaping:cone:angle = 157.3
-                float shaping:cone:softness = 0.5
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (0, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, -2.0000000298023224, 7.1000001057982445)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            over "SphereLight" (
-                active = false
-            )
-            {
-            }
-        }
-
-        over "mesh_F268CA8A196CC299"
-        {
-            over "WallMountChan"
-            {
-                float intensity = 172.3
-            }
-        }
+    over "Camera"
+    {
+        float focalLength = 9
+        custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -2.935800934482067)
+        float verticalAperture = 15.2908
+        float3 xformOp:rotateZYX = (-133.48267, -81.80336, 136.81097)
+        float3 xformOp:scale = (1, 1, 0.99999994)
+        double3 xformOp:translate = (67.74075327947281, -627.2377498593575, 15.759729264387811)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZYX", "xformOp:scale"]
     }
 }
 
