@@ -902,10 +902,10 @@ over "RootNode"
                 float colorTemperature = 3058
                 bool enableColorTemperature = 1
                 float exposure = 0
-                float intensity = 95.5
+                float intensity = 17.300001
                 bool normalize = 0
-                float radius = 0.5
-                float shaping:cone:angle = 120
+                float radius = 1
+                float shaping:cone:angle = 175
                 float shaping:cone:softness
                 float shaping:focus = 0
                 color3f shaping:focusTint
@@ -913,7 +913,7 @@ over "RootNode"
                 bool treatAsPoint = 1
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (8.00000011920929, -4.400000065565109, -1.700000025331974)
+                double3 xformOp:translate = (8.00000011920929, -4.400000065565109, -2.500000037252903)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
@@ -924,10 +924,10 @@ over "RootNode"
                 float colorTemperature = 3058
                 bool enableColorTemperature = 1
                 float exposure = 0
-                float intensity = 95.5
+                float intensity = 17.300001
                 bool normalize = 0
-                float radius = 0.5
-                float shaping:cone:angle = 120
+                float radius = 1
+                float shaping:cone:angle = 175
                 float shaping:cone:softness
                 float shaping:focus = 0
                 color3f shaping:focusTint
@@ -935,7 +935,7 @@ over "RootNode"
                 bool treatAsPoint = 1
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (8.00000011920929, 4.000000059604645, -1.700000025331974)
+                double3 xformOp:translate = (8.00000011920929, 4.000000059604645, -2.500000037252903)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }

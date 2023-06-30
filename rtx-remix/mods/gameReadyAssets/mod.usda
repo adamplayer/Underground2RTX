@@ -216,6 +216,19 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
+
+        over "mesh_2B5BB552E414B596"
+        {
+            over "UnderEl"
+            {
+                double3 xformOp:scale = (1, 1, 1)
+            }
+
+            over "UnderEl_01"
+            {
+                double3 xformOp:scale = (1, 1, 1)
+            }
+        }
     }
 
     over "Camera"
