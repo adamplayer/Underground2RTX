@@ -11,7 +11,8 @@
     metersPerUnit = 1
     subLayers = [
         @./adamplayer.usda@,
-        @./materials.usda@
+        @./materials.usda@,
+        @./ExtMod/world_sprites.usda@
     ]
     timeCodesPerSecond = 24
     upAxis = "Z"
@@ -159,6 +160,16 @@ over "RootNode"
                     displayName = "Roughness Map"
                     hidden = false
                 )
+            }
+        }
+
+        over "mat_8575BAB8FCD98235"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./Textures/road decorations/road_median_grass_8575BAB8FCD98235_c.dds@
+                asset inputs:normalmap_texture = @./Textures/road decorations/road_median_grass_8575BAB8FCD98235_n.dds@
+                asset inputs:reflectionroughness_texture = @./Textures/road decorations/road_median_grass_8575BAB8FCD98235_r.dds@
             }
         }
     }

@@ -1,15 +1,10 @@
 #usda 1.0
 (
     subLayers = [
+        @./ExtMod/traffic.usda@,
         @./Materials_E-Man.usda@,
-        @./Textures/CountBuggula/lights.usda@,
-        @./Textures/CountBuggula/wood.usda@,
-        @./Textures/CountBuggula/windows.usda@,
-        @./Textures/CountBuggula/game.usda@,
-        @./Textures/CountBuggula/tail_lights.usda@,
-        @./Textures/CountBuggula/headlights.usda@,
-        @./Textures/CountBuggula/traffic.usda@,
-        @./Textures/CountBuggula/signs.usda@
+        @./ExtMod/e-man.usda@,
+        @./Materials_CountBuggula.usda@
     ]
     upAxis = "Z"
 )

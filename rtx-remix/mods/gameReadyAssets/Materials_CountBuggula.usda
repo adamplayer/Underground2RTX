@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    subLayers = [
+        @./Textures/CountBuggula/signs.usda@,
+        @./Textures/CountBuggula/traffic.usda@,
+        @./Textures/CountBuggula/headlights.usda@,
+        @./Textures/CountBuggula/tail_lights.usda@,
+        @./Textures/CountBuggula/game.usda@,
+        @./Textures/CountBuggula/windows.usda@,
+        @./Textures/CountBuggula/wood.usda@,
+        @./Textures/CountBuggula/lights.usda@
+    ]
+    upAxis = "Z"
+)
+
