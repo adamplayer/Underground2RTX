@@ -409,6 +409,174 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, 59.900000892579556, 90)
             }
         }
+
+        over "mesh_1FDB2DE7E27CFADF"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            over "ChainHungPoleLight"
+            {
+                float intensity = 100
+            }
+        }
+
+        over "mesh_0B04B27C2D6F6319"
+        {
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_FB85A53C59862305"
+        {
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_2A62DCCCFD9BE3E4"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            over "BrickHotelArch"
+            {
+                float colorTemperature = 3500
+                float exposure = 2.9
+            }
+
+            over "BrickHotelEntry"
+            {
+                float exposure = 6.6
+            }
+
+            over "BrickHotelArch_01"
+            {
+                float colorTemperature = 3500
+                float exposure = 6.6
+            }
+
+            def SphereLight "BrickHotelEntry_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 6.6
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 663.60004
+                float radius = 0.05
+                float shaping:cone:angle = 82.5
+                float shaping:cone:softness = 1.9
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.700000144541264, -9.500000141561031, 5.300000078976154)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "BrickHotelEntry_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 6.6
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 663.60004
+                float radius = 0.05
+                float shaping:cone:angle = 82.5
+                float shaping:cone:softness = 1.9
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9.500000141561031, -9.500000141561031, 5.300000078976154)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_2C5B5846A5E3AEC9"
+        {
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_E1445E6C85BB61ED"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            over "GreenStorefrontFacade"
+            {
+                float exposure = 7.3
+            }
+
+            over "GreenStorefrontFacade_01"
+            {
+                float exposure = 7.3
+            }
+
+            over "GreenStorefrontFacade_02"
+            {
+                float exposure = 7.3
+            }
+
+            over "GreenStorefrontFacade_03"
+            {
+                float exposure = 7.3
+            }
+
+            over "GreenStorefrontFacade_04"
+            {
+                float exposure = 7.3
+            }
+        }
+
+        over "mesh_05887D3C524391A4"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def RectLight "WhiteBuilding" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 4.8
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 3.2
+                float intensity = 11.7
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-5.700000084936619, -6.600000098347664, 3.8000000566244125)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "WhiteBuilding_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 4.8
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 3.2
+                float intensity = 11.7
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.400000050663948, -6.600000098347664, 3.8000000566244125)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
     }
 }
 

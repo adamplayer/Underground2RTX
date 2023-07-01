@@ -10,17 +10,17 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                float colorTemperature = 3000
+                bool enableColorTemperature = 1
+                float exposure = 2.1000001
                 float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
-                float inputs:colorTemperature = 3000
-                bool inputs:enableColorTemperature = 1
-                float inputs:exposure = 2.1000001
-                float inputs:intensity = 97
-                float inputs:radius = 0.096
-                float inputs:shaping:cone:angle = 37.5
-                float inputs:shaping:cone:softness = 0.3
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
+                float intensity = 97
+                float radius = 0.096
+                float shaping:cone:angle = 37.5
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
                 double3 xformOp:rotateXYZ = (0, -24.900000371038914, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (2.9000000432133675, -6.200000092387199, 4.500000067055225)
@@ -31,17 +31,17 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                float colorTemperature = 3000
+                bool enableColorTemperature = 1
+                float exposure = 2.1000001
                 float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
-                float inputs:colorTemperature = 3000
-                bool inputs:enableColorTemperature = 1
-                float inputs:exposure = 2.1000001
-                float inputs:intensity = 97
-                float inputs:radius = 0.096
-                float inputs:shaping:cone:angle = 37.5
-                float inputs:shaping:cone:softness = 0.3
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
+                float intensity = 97
+                float radius = 0.096
+                float shaping:cone:angle = 37.5
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
                 double3 xformOp:rotateXYZ = (0, -24.900000371038914, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (1.600000023841858, -6.3000000938773155, 4.500000067055225)
@@ -52,17 +52,17 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                float colorTemperature = 3000
+                bool enableColorTemperature = 1
+                float exposure = 2.1000001
                 float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
-                float inputs:colorTemperature = 3000
-                bool inputs:enableColorTemperature = 1
-                float inputs:exposure = 2.1000001
-                float inputs:intensity = 97
-                float inputs:radius = 0.096
-                float inputs:shaping:cone:angle = 37.5
-                float inputs:shaping:cone:softness = 0.3
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
+                float intensity = 97
+                float radius = 0.096
+                float shaping:cone:angle = 37.5
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
                 double3 xformOp:rotateXYZ = (0, -24.900000371038914, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0.4000000059604645, -6.3000000938773155, 4.500000067055225)
@@ -73,17 +73,17 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                float colorTemperature = 3000
+                bool enableColorTemperature = 1
+                float exposure = 2.1000001
                 float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
-                float inputs:colorTemperature = 3000
-                bool inputs:enableColorTemperature = 1
-                float inputs:exposure = 2.1000001
-                float inputs:intensity = 97
-                float inputs:radius = 0.096
-                float inputs:shaping:cone:angle = 37.5
-                float inputs:shaping:cone:softness = 0.3
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
+                float intensity = 97
+                float radius = 0.096
+                float shaping:cone:angle = 37.5
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
                 double3 xformOp:rotateXYZ = (0, -24.900000371038914, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-0.800000011920929, -6.3000000938773155, 4.500000067055225)
@@ -94,17 +94,17 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                float colorTemperature = 3000
+                bool enableColorTemperature = 1
+                float exposure = 2.1000001
                 float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
-                float inputs:colorTemperature = 3000
-                bool inputs:enableColorTemperature = 1
-                float inputs:exposure = 2.1000001
-                float inputs:intensity = 97
-                float inputs:radius = 0.096
-                float inputs:shaping:cone:angle = 37.5
-                float inputs:shaping:cone:softness = 0.3
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
+                float intensity = 97
+                float radius = 0.096
+                float shaping:cone:angle = 37.5
+                float shaping:cone:softness = 0.3
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
                 double3 xformOp:rotateXYZ = (0, -24.900000371038914, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.3000000342726707, -6.3000000938773155, 4.500000067055225)
@@ -118,19 +118,19 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                color3f color = (0.93342227, 1, 0.4054054)
+                float colorTemperature = 4700
+                bool enableColorTemperature = 0
+                float exposure = 0
                 float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
-                color3f inputs:color = (0.93342227, 1, 0.4054054)
-                float inputs:colorTemperature = 4700
-                bool inputs:enableColorTemperature = 0
-                float inputs:exposure = 0
-                float inputs:height = 5.4
-                float inputs:intensity = 36.4
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                float inputs:width = 0.1
+                float height = 5.4
+                float intensity = 36.4
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.1
                 double3 xformOp:rotateXYZ = (0, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (8.200000122189522, -3.200000047683716, 5.900000087916851)
@@ -141,19 +141,19 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                color3f color = (0.93342227, 1, 0.4054054)
+                float colorTemperature = 4700
+                bool enableColorTemperature = 0
+                float exposure = 0
                 float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
-                color3f inputs:color = (0.93342227, 1, 0.4054054)
-                float inputs:colorTemperature = 4700
-                bool inputs:enableColorTemperature = 0
-                float inputs:exposure = 0
-                float inputs:height = 5.4
-                float inputs:intensity = 36.4
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                float inputs:width = 0.1
+                float height = 5.4
+                float intensity = 36.4
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 0.1
                 double3 xformOp:rotateXYZ = (0, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (16.00000023841858, -3.200000047683716, 5.900000087916851)
@@ -167,17 +167,17 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                float colorTemperature = 2700
+                bool enableColorTemperature = 1
+                float exposure = 1
                 float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
-                float inputs:colorTemperature = 2700
-                bool inputs:enableColorTemperature = 1
-                float inputs:exposure = 1
-                float inputs:intensity = 500
-                float inputs:radius = 0.05
-                float inputs:shaping:cone:angle = 38.600002
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
+                float intensity = 500
+                float radius = 0.05
+                float shaping:cone:angle = 38.600002
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
                 double3 xformOp:rotateXYZ = (204.90000305324793, 18.600000277161598, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-4.300000064074993, -8.100000120699406, 6.400000095367432)
@@ -188,17 +188,17 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                float colorTemperature = 2700
+                bool enableColorTemperature = 1
+                float exposure = 1
                 float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
-                float inputs:colorTemperature = 2700
-                bool inputs:enableColorTemperature = 1
-                float inputs:exposure = 1
-                float inputs:intensity = 500
-                float inputs:radius = 0.05
-                float inputs:shaping:cone:angle = 38.600002
-                float inputs:shaping:cone:softness = 0.1
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
+                float intensity = 500
+                float radius = 0.05
+                float shaping:cone:angle = 38.600002
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
                 double3 xformOp:rotateXYZ = (-204.9, 18.600000277161598, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (4.500000067055225, -8.100000120699406, 6.400000095367432)
@@ -209,17 +209,17 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 2.2
                 float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
-                float inputs:colorTemperature = 4500
-                bool inputs:enableColorTemperature = 1
-                float inputs:exposure = 2.2
-                float inputs:intensity = 663.60004
-                float inputs:radius = 0.05
-                float inputs:shaping:cone:angle = 82.5
-                float inputs:shaping:cone:softness = 1.9
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
+                float intensity = 663.60004
+                float radius = 0.05
+                float shaping:cone:angle = 82.5
+                float shaping:cone:softness = 1.9
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, -6.800000101327896, 5.300000078976154)
@@ -233,17 +233,17 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                float colorTemperature = 3000
+                bool enableColorTemperature = 1
+                float exposure = 0
                 float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
-                float inputs:colorTemperature = 3000
-                bool inputs:enableColorTemperature = 1
-                float inputs:exposure = 0
-                float inputs:intensity = 144.8
-                float inputs:radius = 0.1
-                float inputs:shaping:cone:angle = 74.3
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
+                float intensity = 144.8
+                float radius = 0.1
+                float shaping:cone:angle = 74.3
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
                 double3 xformOp:rotateXYZ = (0, -18.500000275671482, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (10.400000154972076, -5.700000084936619, 24.50000036507845)
@@ -254,17 +254,17 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                float colorTemperature = 3000
+                bool enableColorTemperature = 1
+                float exposure = 0
                 float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
-                float inputs:colorTemperature = 3000
-                bool inputs:enableColorTemperature = 1
-                float inputs:exposure = 0
-                float inputs:intensity = 144.8
-                float inputs:radius = 0.1
-                float inputs:shaping:cone:angle = 74.3
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
+                float intensity = 144.8
+                float radius = 0.1
+                float shaping:cone:angle = 74.3
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
                 double3 xformOp:rotateXYZ = (9.600000143051147, -18.500000275671482, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-5.200000077486038, -5.700000084936619, 22.20000033080578)
@@ -275,17 +275,17 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                float colorTemperature = 3000
+                bool enableColorTemperature = 1
+                float exposure = 0
                 float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
-                float inputs:colorTemperature = 3000
-                bool inputs:enableColorTemperature = 1
-                float inputs:exposure = 0
-                float inputs:intensity = 144.8
-                float inputs:radius = 0.1
-                float inputs:shaping:cone:angle = 74.3
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
+                float intensity = 144.8
+                float radius = 0.1
+                float shaping:cone:angle = 74.3
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
                 double3 xformOp:rotateXYZ = (0, -6.500000096857548, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-10.600000157952309, -6.200000092387199, 21.700000323355198)
@@ -299,17 +299,17 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                float colorTemperature = 3000
+                bool enableColorTemperature = 1
+                float exposure = 0
                 float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
-                float inputs:colorTemperature = 3000
-                bool inputs:enableColorTemperature = 1
-                float inputs:exposure = 0
-                float inputs:intensity = 36.4
-                float inputs:radius = 0.5
-                float inputs:shaping:cone:angle = 53.5
-                float inputs:shaping:cone:softness = 0.4
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
+                float intensity = 36.4
+                float radius = 0.5
+                float shaping:cone:angle = 53.5
+                float shaping:cone:softness = 0.4
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
                 double3 xformOp:rotateXYZ = (180, 9.00000013411045, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-10.30000015348196, -3.500000052154064, 10.30000015348196)
