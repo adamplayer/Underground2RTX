@@ -1,5 +1,5 @@
 # Need For Speed Underground 2 RTX
-An RTX-Remix mod for Need For Speed Underground 2. This is attempts to add all the lights that were in the original game and many lights that enhance the original game's world. Includes textures from the community as well!
+An RTX-Remix mod for Need For Speed Underground 2. This is attempts to add all the lights that were in the original game and many lights that enhance the original game's world. Will include textures from the community as well in the future!
 
 > **Note**
 > 
