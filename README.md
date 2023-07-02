@@ -12,10 +12,15 @@ An RTX-Remix mod for Need For Speed Underground 2. This is attempts to add all t
 
 - A majority of lights have been added to the world (but need reworked)
 - Transitioning to different method of light scale to avoid eye adaption.
+- A few locations have been "hand crafted"
   
 ## Todo
-- Vehicles, ~~garages~~, and race locations still need to be done.
-- Package textures for distribution.
+- [ ] Vehicles
+- [x] Garages/Shops
+- [ ] Race locations
+- [ ] Package textures for distribution.
+- [ ] _In Progress_ Reorganize into modular usdas for greater compatibility
+- [ ] "Alt" usda overrides for differnt stylization of lighting.
 
 ## Credits
-- Countbuggula on discord for his texture work!
+- Countbuggula and E-Man on the RTX-Remix discord for their texture work!
