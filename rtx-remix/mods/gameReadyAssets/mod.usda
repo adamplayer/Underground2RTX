@@ -26,7 +26,7 @@ over "RootNode"
         over "SkyDome_Non_Replaceable"
         {
             float exposure = 0
-            float intensity = 0
+            float intensity = 0.4
             float3 xformOp:rotateXYZ = (0, 0, 0)
             float3 xformOp:scale = (1, 1, 1)
             double3 xformOp:translate = (0, 0, 0)

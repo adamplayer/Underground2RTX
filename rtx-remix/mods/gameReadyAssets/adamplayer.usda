@@ -3,10 +3,10 @@
     metersPerUnit = 0.01
     subLayers = [
         @./Lights/000_Special.usda@,
+        @./Lights/220_CoalHarbor.usda@,
         @./Lights/100_Global.usda@,
         @./Lights/200_CityCenter.usda@,
         @./Lights/210_FortUnion.usda@,
-        @./Lights/220_CoalHarbor.usda@,
         @./Lights/300_Garages.usda@,
         @./Lights/310_Shops.usda@
     ]
