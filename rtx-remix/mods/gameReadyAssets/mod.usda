@@ -348,45 +348,6 @@ over "RootNode"
             }
         }
 
-        over "mesh_7B6BAEF9C3F72030"
-        {
-            over "FancyStreetLight"
-            {
-                float colorTemperature = 4000
-                float exposure = 14.8
-                float shaping:cone:angle = 77.200005
-                float shaping:cone:softness = 3.5
-                double3 xformOp:rotateXYZ = (-54.30000080913305, 0, 0)
-            }
-        }
-
-        over "mesh_695BF09339CA3128"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "GreenHousePendant" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                color3f color = (1, 0.99999, 0.99999)
-                float colorTemperature = 4000
-                bool enableColorTemperature = 1
-                float exposure = 1.2
-                float3[] extent = [(-500, -500, -500), (500, 500, 500)]
-                float intensity = 262.6
-                float radius = 0.5
-                float shaping:cone:angle = 74.5
-                float shaping:cone:softness = 0.1
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (180, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 0.800000011920929)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
         over "mesh_1FDB2DE7E27CFADF"
         {
             custom int preserveOriginalDrawCall = 1
