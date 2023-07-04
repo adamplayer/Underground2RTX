@@ -910,33 +910,6 @@ over "RootNode"
             }
         }
 
-        over "mesh_6039917B7217E177"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "SpotLight" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 3500
-                bool enableColorTemperature = 1
-                float exposure = 0
-                float intensity = 392.4
-                bool normalize = 1
-                float radius = 0.2
-                float shaping:cone:angle = 45.2
-                float shaping:cone:softness = 0.2
-                float shaping:focus = 0.5
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool treatAsPoint = 1
-                double3 xformOp:rotateXYZ = (180, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 0.4000000059604645)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
         over "mesh_E549B35E3AB18E9E"
         {
             custom int preserveOriginalDrawCall = 1
@@ -1243,31 +1216,6 @@ over "RootNode"
             }
         }
 
-        over "mesh_A013300D89CC4FA7"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "SmallLamp" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 3500
-                bool enableColorTemperature = 1
-                float intensity = 200
-                bool normalize = 1
-                float radius = 0.1
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (90, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 1.2000000178813934)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
         over "mesh_033E4A41D3928243"
         {
             custom int preserveOriginalDrawCall = 1
@@ -1290,59 +1238,6 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 1.3000000193715096)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
-        over "mesh_AEFDBDC7BEA9A6C1"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "SmallSpotLight" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 3500
-                bool enableColorTemperature = 1
-                float intensity = 300.10004
-                bool normalize = 1
-                float radius = 0.2
-                float shaping:cone:angle = 80
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool treatAsPoint = 0
-                double3 xformOp:rotateXYZ = (180, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 0.4000000059604645)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
-        over "mesh_F57998E47CA09624"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "RLMStreetLight" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 3500
-                bool enableColorTemperature = 1
-                float exposure = 0
-                float intensity = 1200
-                bool normalize = 1
-                float radius = 0.01
-                float shaping:cone:angle = 79.8
-                float shaping:cone:softness = 1.9
-                float shaping:focus = 0
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool treatAsPoint = 1
-                double3 xformOp:rotateXYZ = (0, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, -3.1000000461935997, 7.000000104308128)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }

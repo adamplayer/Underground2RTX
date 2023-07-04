@@ -340,16 +340,6 @@ over "RootNode"
             }
         }
 
-        over "mesh_6039917B7217E177"
-        {
-            over "SpotLight"
-            {
-                float exposure = 2.4
-                float shaping:cone:softness = 0.4
-                double3 xformOp:rotateXYZ = (180, -25.600000381469727, 90)
-            }
-        }
-
         over "mesh_610D765CFF107EEF"
         {
             over "SuspensionBridgeAccent"
@@ -394,19 +384,6 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0.800000011920929)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
-        over "mesh_F57998E47CA09624"
-        {
-            over "RLMStreetLight"
-            {
-                float colorTemperature = 4000
-                float exposure = 16.7
-                float intensity = 500
-                bool normalize = 0
-                bool treatAsPoint = 0
-                double3 xformOp:rotateXYZ = (0, 59.900000892579556, 90)
             }
         }
 
