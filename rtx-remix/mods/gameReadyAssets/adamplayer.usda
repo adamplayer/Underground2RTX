@@ -2,13 +2,10 @@
 (
     metersPerUnit = 0.01
     subLayers = [
-        @./Lights/000_Special.usda@,
-        @./Lights/220_CoalHarbor.usda@,
-        @./Lights/100_Global.usda@,
-        @./Lights/200_CityCenter.usda@,
-        @./Lights/210_FortUnion.usda@,
-        @./Lights/300_Garages.usda@,
-        @./Lights/310_Shops.usda@
+        @./usda/01_lights/01_buildings/01_buildings.usda@,
+        @./usda/01_lights/02_roadways/02_roadways.usda@,
+        @./usda/01_lights/04_unique/0104_unique.usda@,
+        @./usda/01_lights/05_global/0105_Global.usda@
     ]
     upAxis = "Z"
 )
