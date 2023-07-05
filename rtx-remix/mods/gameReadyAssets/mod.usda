@@ -109,26 +109,6 @@ over "RootNode"
                 )
             }
         }
-
-        over "mat_8575BAB8FCD98235"
-        {
-            over "Shader"
-            {
-                asset diffuse_texture = @./Textures/road decorations/road_median_grass_8575BAB8FCD98235_c.dds@ (
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset normalmap_texture = @./Textures/road decorations/road_median_grass_8575BAB8FCD98235_n.dds@ (
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset reflectionroughness_texture = @./Textures/road decorations/road_median_grass_8575BAB8FCD98235_r.dds@ (
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-            }
-        }
     }
 
     over "meshes"
@@ -515,46 +495,1503 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
-    }
-}
 
-def "Viewport_Waypoints"
-{
-    def "Waypoint_00"
-    {
-        custom string camera:path = "/OmniverseKit_Persp"
-        custom string comment = ""
-        custom string created = "2023-07-04 13:25:55"
-        custom string created_by = "Adam"
-        custom float frame = 0
-        custom float3 icon_position = (-366.33527, -311.32944, 81.245125)
-        custom string omni:baked_preview = "zTE\"rl=o\\O&Gau1TGMFKEQ1oW#`KP@jEmC6)dlHT/3n&0a)JGS*N2T9:Oo[io.uFC[TGTr5J0670QnaR]j/<W5S5I<`l+QQ0kMFOrCTY9oeZLrUSo271rF:?B`&`%@^@b]=YJ#.oWtWX(4cjM[+P59IV;<97G;LG'Y@j>I8/2M/XI#VacU573JTN%Ca[.%UcU/nKK5@@ior]d/.p5EQ(-%^=,k3saEY3?B1:Z!G=KW*iU^OV@K5\"P=ZV57kBgTrs+^piO2[i7:2P3`pP>$LbhasXWOMTgIB9M34pC-tYA]Ctm&<FlB)7&dB6bI'l^-sjQGnQ1!*lh_Er_10@mtpMP\\C'J5gp^#Ta3U--fNN<foKBD\"h_\\%pIa@NWUGq^'of0tgjSbOA,ohQ,CX_V/1[:@k=K09In'Q(&s&AHd`lB7KWG.6lAQ^fJ4J0(B5TIOG)kV^VDn-gqhL$ubHXQ/6n&Fa#Yk]m>Jh=Ie%J*=Z%q9WcoKVRWjDhOhQ]GWur:Ibsp[j3l1#$M2Tt;9>X$[s(/+iI!\\lOAU]uCJX8ju8bEaU\"WETFu+Nefo/09OS4S'-DK:?24(=MtT]7di@*$ol<LnRpnJ#+lFrIm*MdoqZY!f=.-SjE3;QOE)It^ZF+hDSh)9ran3\\(0ohm*W3X0a(&f\\=bblupR(#W-MXf-*_l00EFZr#lYX^YXLM3t.K5,t`tmIaVRR.Y-6r?Xp(R$WV!lc]*8?!#rpOA!mm1cM-(*2CM:eKaoNBoaa/enSi6sO]At:2sQHrodecOq$*nY_T]3l;\\br=Da>EHOXfA-q+Oh]k742egjqi.(/GN(WSHYe:0PII:*R'RS%pt?R`H!O63cA9/UV9CKf;7D_-SD^SU6J_i\\M&c&OOmM02ceV8%Fj:\",[46_G8BeW-5N7\\%+!%!#4rZ'NcPA9O-^.r9nM?\"IP`mFM8B4A,=A7E+i'*@C?TsN&a4HiAgW&hS>%l(Ub*%&`jtHM%V%spQ1[/mn.ONE5DOTQ@*g?/D0pP3@K9kK\\Ont&FMgh5jmn3O)?$8g>*)j(SC0E.`<U?1uhYh&nYUB3E9s>C\\cf^A!l<1\\&[bQ0nCq(P^]CF^]q*sB4:?:jaaQ+@<*M!oBl$=_fMgN*nf7`kncQi8'f<b-\"ZU_)/3uNF;lY*R.P!(--R4mXFAG^'r;bI(G6(rL:E?+cRo+bdoSRf1aC_f^o::`qhAB@H*:?$W!O)D*#D?9F<=9aO%j0e*m,B%fIkdm\\V\\g2q=&ppF*FPW2;;`[C/8IJhR#0/J#Rb5Ja8>C:]X6ZV.VVoi/2,ht\"b;(?,IPVDi<r9).A&nV>rqYc+L7SWV%s$:ETD$!9GtmffZ264k^%DEU5.%jZh#lDLTlrA2\\`mD(ri4_7M)rT>r1e^c9Gs#4Qt/o3P:?DZK5;8!=Rd.G9qQKJ.;\"T^O0jr6DQ^<Epi*Vjg?\"(0T-<ZG-_4_99X^:t,?mfGOgZ.[d^^>sO^I+-hDZI5O$g.<!%UM9V=FGmO$#.!_Yoaeh0Re,h?'8Zr#[67^O4aH\"qrFJ:->Co3@fItWTh-X-hN;g,g%LaD.0J`VS<ncD;;bC/cM@Sf3UB;c.(JSQtgKPT,6%p^7X=AW.!&SBR5-\"f.:oYQ=\"YAm!dQ]Yk&kG_2c\"<#I^>p\\*:K5UCP!OQ5mR@Y<V;\"Z>-,i'$]Cu`1sWSEN)5rDers<oZ)'pp;pp'/MWWqQ!*-<s)Q?gqg68RbIX!.*p^m<:,K8cBEqOY:ts'7P+M2,60EbT&s'0([i:_IS.Tgi4S0[LQq3n$VM(\"tb;4c/^.-_<oP;+.5l]/\"*OK4]Q==4)X1J_6j1R-rd2:s6(j-#l_[+mh9A.QSK>2AAiPcW7*b#-c'Lu$7?dSe\\j!joZ<mJSN/)O[H(U1Xd*/<jbc_&J^/VOUT/Qi)fgJ<OfoA9NeY'E+q\\.)r0>OI+1Dn@)uh^`QIl0BDVRjG3fF/cE99Tl$%Cs`'6Y5bBG52%*t*U.;R[BC\"<8qjfJ<N;-3U\"r/l8C)\"nX[oST^$_PB;6r\"V+Kh(r4<DqRY+ACe+km]tcoo/_*4E])+S\"c.F8.l:rYM-K7`L0cN?k-c;VGO`LB\\]:jdW]p$dZQoQEHeg`?OTP`h4DlpaeHEMn8r?N^&O[9L&N\\<@m(I.>IHsAII2C[]r>lpQW@N@b.m-#(8,drK_2!kdu3N-`_Y=#)Uski%Q!m9pg/&T6,KS4h]4KBGtJ)3!>5_$02E=8](&Y%*9ZB8,@OJF\"N=',6id:$GH(<,N\"^O-YZk[!\"!0g=XNhlgrM-il#gl4YHc?j`pBCR#n9R!4--WW*a]Lrq8gW\"4uS*(G/ZU0^Wl[*#*E3NccP3r8J_gJa3JQLTtcQL_fh]NS:]9!#N4G,4rsXakAPu)gD3'#E#78GPI^5N>gR*&>BJ9A7O,!+0i*:U3V\"IF5=<b&e7%)I5+c>c>`!]!:&08SIo\\CP?-g\\BDKRNfc#C=uGST\\XGcd/D)e3-=E\"29mYUm'ZRJ=*`Q9X*_26kO=q6g_-E?.i%'1Mit,5UDG4jl49%+LZ3n,)?#W`XrST8YY@pfH-[0*c-J*!uK78S5.MpsU'j*@qQt9Q<QrEg%D4%&r:\\CbYECM>'[V\\Kq-[PmsVJF^<<0V!kn5+).C+Z*PbKW04St=^MARC&ACmo<'i\"6j@S@EA*QF'c:%0$Sq[uk_m$g*#P<3ep,Ar.qB\\J3hA%=ge%X9UUW/FRM^Na*9:9eJ$-mFQ*e*lGOT`a-&m@@3[O>G`1\\dYF<o20l2-I+V8XBWY(r&ApR0/L+dp45:;08VNklG,_Yqhkh0)<-*3D9#0rH'klq]fjQ>@D0CW]`:IlHnD>)=M3-RVR2\\]@&T1<mI>0P,8e&F`%<dm*RrguBrU(Sho!;#WPq!L1n\\PpC\\pKB7u$cf\\#:TuS7[PK@9-O^dHds)^KQ4Y\\oQ#b;uY0^s3dr\\)S.P]k\\K+-F;+Usbk%FQ@S4gQ@)u?!6k1:!88pB*6.cO.rgUJAUM035ljOHCN9j?k.;Q25\"&BqYk_5feLbF\"oP<$LeBs%V#4['ofAKPI&6>d-^$dul.RMH`t\\@RRB-d1ClU$[QV=rOc)8(J1C<-ik0MNN&lQo/@q(A1A+OgKk76P3)\"8NUFH7'hGi\"sDB^32>SP.;d40e14bQZ]Ehs+#JX]E@*KZB#&Q$D?T6e@R^8nudl3Z2B=FeV,]2TOk#_ALZqg)b#Rf4K=`CL$[`A1JXla[@;iZ\"sJOb9Sg@Cp;DS@=sK>Iu1sAit!+)El=0a$.+*^a8HJYp2Whp2OO&fm\"_kN8j?.k,01kfo]U[#rs-NKH+[H&8+P#(7NW62`s2C)Psu3T6R.]\\lG_Y'TfRB=N%SB9kF]L!IeqYT_=$.N+C?^?IZ\\nSbdGBP1%\"q$T<HP,+g/#i;97lt:/^.!D2RfDQ?[Bt:/<89L>(`9`96B)&t)H>`HUOPZnK!l\\_2Gh&3UfR@NS21-PEO=?8b0]^$+6mX\"@pF:\\cfZp7/>%CRN'2a)N]b*T(`AT2%8l%EdT!4[A0Xl&$<[fc/qr3u/_*8mUW[6LQ.[W?U3\"jXeCn3K-=_OKOg-%jSMOC^#8@<Q[V5R-._]kl6bBZ2^0aq6Pa_d^c,_S\"(=MCaR9E923AKQH,W=6.:9\\jIbEdVJO'kC$;X1$J#V%3N&E;5;e/XWi*<.+/^5aa1-P>&t6Kkkj:%@LEASof'coP$[6Ik1Q25@17cA\\`R+B8!e.nf3AHND<o6aM2MU_5@kfRelK,g5:#(N_=O[]Q53f[eq-:l`rJ+eY)pZ.$9sXu'1\\Z$Fj'S;%7H_<P:`c+e]GR7c]J\"NEjL\\Pme'rm!@p_n,%n$:Ka7c.3Y9iTc0D:A5gIofRqp/gO8Y_jl\\u6,VYA5._Xbld;\"']'L_A0AuA[^!#j=aRM^0lQ`0KIP47`S:$11_M]rZ<.rDf7\"FF]9MRnL3LN*%_Xt2OOG.j:AX]/c,[VNo6<$Kf=r+TNXYLOZa@popi`?9HohfTi!r/#$ArY%-,:FS#2l;D_]1ne=V=$@r1$W]cO2[(.#+(T795IrP@9W+3tf[0<3<!^jf=r:n4]areAI!7*`#2mbc?cq#+/Q:OsLDl:4i<Pf@6-`VaTKCQn@\"9t0qiRrdj,fR(s)YiWH?^s]!E_!m(!:h&<Cj5l_>Tk!b?N5^DCT[IMqVAJ\\n(+i%r`;E`u^)b_N6:V9F\\pL+&7J-mkOD.5q/(,dj]8ZZ!d#Uh7p6T7od_M*go-kd.OKhOfR@>,^7=J&hZPfa)L?Aef%&Qti#8Y\\4-(cH8pI<FCERkEl]=g)d@j^_c,L?0'1PL9&qTVU]n&F]CaGir']PU#I\\.6Ko%^;&HqLTI++L`YtTJgF;$nkoieWDT-f'7Jigd$@hMO?n,X2h<Y^F!0S+MFZi9(c[e-3]_SLPFd`g*5_A1T,\"+p[8_>FKM@P=\"FZiX1iNIr<T+PF!.V^rG&du_X)QY(MlajIm*/5pMni0pEOYHJL=k*4cdF^G<Q/aDS@&Z2t-;Sp[<s3*ep9lmh6EPS\"<+Hc\"-h;=Aq5Bmi_l=LY^$[-Y-%\\LquKU#2)ldZ8,HUYl5AjraiFk-jD#iPl79Ra7)(\"3[uh>2UYTFYgd3WfoA&\\eF4NQI^G'`^&l9;Y)!8H`>%'@qMfeM%J.1fI-rGdXA\"R?!UYZ#IR9a3%KgJn+lA'i=04bu_/a3?>R?BYX.a1FH<>H#([O/#+07]o'UZ4P!u*+!5SifI>98,HLFkmf,l0s^1-$\"X%(`#S(T2(kd/G1Q%d!`hkK;tbH^oI*np;p%HPEM=rjNT]9W:.oT6=$5gGS9ZiqnDs%GWo8Dj##iC-.++BXb>Sp;da&25:*%/N;LBb^Bcj^?]4[HcLJAs1@+qqsJh;%c%(DN,RGqpr!'N_g3-i5s-*\\oae+pT_dCW_hq1:@+>V*>IgYmfqZP<U)qbK=lcfCra,l5BaT!ECbI_]J(Y(&*&>R7VB5o.6N??g6eLJgE=Ck(WEte]6hDJC(iQ8kOftf0$XE.PhfIJs9gV%5KI)$ar[d12&u`Y2Ad'Yo4YX<c%E9Z<s,7CSIW-:,ZPQ\"'MTsLQ\\e2q@DLoLBhCnp.2L+/.a'i`-9'BNe%!);VO=8`.cY*SK,G4LH7H@N3W5Sqq5LlUXrBo2o6%=N-pUSQrjEnM34uE\\drZ:d(*L1Q@)?ot$`l3c;Z!jjY>seS!d#%L</J\"+t3`H?\";!fc#k=>gdbo2;hM\\a1XFfSs:hS$/`oE-eUAI=/N%RC'J@AqLf5jt_`0QgbFF=il1ji>Z%.b[KUIiJ\\^nE8KZ:nKChV`HSd>5(55J+o^W!8ILbhN*^^!;g`I(L%@;CW].GrrD0*=?A',j\"D1H[Gkt>$,8jBkIC&1.%8<3F55o6CTK@Sfcr)5H<<T7$;EY/of@+q(HIkqC3ae0VDB3EE84ul*q*EBVXfLQ^-$?f.JkIfbMi-^/NR]pMo]AI($CNkY)qU1.KR]snf/l1kI;W!,;(gqd(=*H1,fS]\"/G'E>>U`X&)F:p6%/8a(gk#a[N+-1J,/C&E;aWd_88o^TJCj+j9J/i/X\"*uJ(5%AQZAUS:iSPl2!J0YWhUg6R>T(b;r;+u&,P['W5#+S]6Yb3D;GDJW2[1MZ_93>%],\"2aE2WYS]1I=j5'phAY9LS@iV-0l\\77m4N5\\XfQup\"E;Yh'iMPe0L+iJR0Arc.o0;^Ppi#p4!-n&^hhQ'Xm=b`,b_\"g@\\Bj[b1`&qQa5Y'_X;UZ^N^FT\\FNPbtLqfmWKDq,T@*`,>_S14+F!!XO5J[3a^$B+ZI`l$TAo^euNJKPrYitU*F*l+Kk6gEs7'&]#M*%&=bU>E='_s#jT4AMBq*l#T:tf@+6)r8Jo->7.j(ai:c_\\?[l9@YLA\"V24FeM_1FN/niC7>1+r!2\\=hp3.B,ToVQ/pq!KfNug0_A3%*.u+Mf7i[`#EIRmIN]&`?pOZhmn9W?1c4sQFM.P&?A-J4\\9Z+E-mXqLhbFq+H!S$6UItM7T?a>8%Ld!K2.<3M4dWqYf+j,Y8cYI#1?`rEPMS<o?ZO4[+kbiOl*jg\"Ps&+60:4eDt_.B78MQc2R/e)/@(:h29l6XQ5Fj[Ci\\rQ@.!4\"`f[IF9\"Y^J+i3d)(C*8Cl_Nh-H=.i4kN:&/,lhg\"S1&#?_O&s\"DalpH7Z,ODS.G`-0/n+1,h_s9&Wbh'ZpN'6lrmDX8,h%-jZh1*`qYk$d(V/I0-O46$sh(W@KQ=NqJ%IR/g4;Dk%<3_29Nr5AGcK2c&Fj.5S*%G\\@CER]Ml#B5i=6T!_k4Ci`eaKLpN;d0`N^0eqp#Ebgd\"bU>Lq6*a04VBm5:1`I:\"nBXQDE;dA](gI!d'dJqkiQFa1PZ8WZOqM92HOt\"nh]7TSB^BAaU1iLDN3eei`U'k!OE/5&7!!X9nc.D),nF$LpFK=gDDaaerQpiA_f<]GqD'?3[_ONM18qB$NrjdWh?]bmn9ocEAOM0Dp7@T/qZm?q^H(]Z$7rqAQ=$JaTRD+U)Z5N5D>#*JVh.-D=VfM-<O4\\l:7H^6Ad[-/q$JY3+MnJUCmAI6kBo`TN<-q8+?m_8-AK@f(N;]oU\"'q]CGhn+cr'Id`ISCY,Ol]q6BZ7-B(%CoYf!1=!7<]pI/8oL5\\b-N3g2q5QH^Z\"/Ip9u.n(?.-D+5.@BGWcT_</B[+$qA.A!./m[1O2#YZ6IhH$N*AXB*/]LbU;)6T`$iWrf8DA&Qgb#me*i2-o`W)p&'F^YW\"D%sQ_i)$-r8&Q)nce4Eu(JJ>mQ.H8`ZUt][XI%V$cKo(=/VOo;,qKQd\\d5'jteE#X%e=j7'NB\\eu89*eSJj0C0<W:HAu79_r;ipB1DX.;S,1Z\";&V8jh*b\\=u4%J\"QfY?FU=\"s*bJ`nbOgk3nD9B)&qml2<uStfs22,*GMb7;#WCPDmn0e75>[XG8@9CcbAB'\\&+gDT7hjkI0^<Gn2U\"5-lbYS:4MIVkZPRRX\"!Q05CP2>HHip3Z+t^8I?)TE0P5;eq^WTZ4eWlFT`,ZfOZh2WL\\b]3DPZfo2KaK@VJNDo[=c#j\\FtB5h:@$Y_4QXfQF1-r1W@(&G916lgCcC<[KFc`')F(LD]FR>@hMefkN+_f5N?nHQj*LcY.G3b4oK'S0W$=n#$*IuaQB<`'B9pn`hA@;*e\\%Df>.X2f>>KCXG+.@[Kf8U?H?_`=d*b!)F4=0bN8PFZC&_0`I)#Ur4#eP6;LAd*k_5h(r3YWfh\"2Z,V2@OrpnTTi5Okd&$tEl6`uegId+FG;>f\\O/_X^c)\"M+VcgL(-brbNjO!92uL;ONEKD.UI%.:mr+ilQ'q*%[0CrlKHcV;E=T`5_I9ud+WGklJFQV#o)Nlfih`8Ae5m3(/QWR]Y`AuITq28M!+)IN$#->]UuLqCQI!'5T]rCA^<S\"TZu^;$<k%2JO8W$\\PY))R^&)&$5KYF+^kX<0,),I5>3lW98iHMnj==a*<Gi4Ahn*R;XV*3VF@A*'1;R(H`C?N'`Nn>!aE$`mSp#C6V:_/L'8Dpm8=.ue_:qLHqr,FcjG,/5c.4jHc!+/=4E[er+=E?\"RXo&DRF'A-2c(nMXV%?;a`k`](Vrj#+?qBHfl6gm)Qk\"\\^G9rbFiaiCFVCGW]'`V4Gm4YsNX3uiV<o5O%`T7ZYUHPXp&^sd8R6VkSP+8ctq7(9FMHfI';\\+AX?\\7/=c@MsWDdbpQK5MrI'6\\BeZZ@8/Xj;K>&a.!Zn$.c]qk?TLUV6M261GiWK0,=rZW/>WuGol@Ed-H<sWrM2[8=B@OrR\\=b/EtFKD[_q:aLWS!mQ/3,<-g*16k-TDrp)AjS@8,mkWG<>:P!PM</30S?\\b\\cg^:O*o5kfhl[sS]-u'NS3T>o5UDuBZkP,+,3onc]mC4c)_2h=5GpgPrhIg*Xe&a=!Z+.$APg?)<A@a+'f1s/F,pVFGUhEG'<1c[M3eIE^,5,;cluKW\"j'RDu:OEA,J+th@i%o>t_b\\2?Vk/MUa\"Cip31nsF='%S>fB6T=\\JEK(\\>GUNC[o:n3KD/2`e7Kh<eL8%C\"t#rZD\\g*:&/CYj%R4:8b!F-6acc?O#,=)*moJ?h\\YqBP)^@a-LrYk/FLVF'B:D('.tRWJ)i7#IZ9n)X);ZpJ)U7QaI;::YQd_'Ki0W=D>X0E0K.Y$O\"DkqmfR_.HEFAOCT.(`<1f^)li3\\oqpg*0*9.h,\\)ViU1\\CFqdJQ\"p;_hb:)fC<:T7-enq!`@Ki3<eU$g48X*ImW?R+T%drR_r4M]'8?;<r:]o^DI___f#.R-kX$Ip;T\"(hW(N=nS<E/]q'j]g8)H`-=!(>n9rU(A#jX<*t!FB#>&A9l#2Ir<J@(*N<I\\\"\"<jc)bftU[=qq.hj!3EX\"i%F=>FK04dYkkgonI#f,C]0DJEFZZL=o*EPm'ueiZl1Co./4i1>kGg[6T5?L)AS1VPX&q`1Cj,@.FeSi\\$GUM,##J,E5a%(5Q:a$'f\"+8mITqoHgO1-E^-=&`Zuj3e!=H3:FTn)m.1W,&6go;DFteX0IM7T;nBNKL(6ZYUDbY5h-4k=];78XF7P,otCs1$ab_cSK,r;Ybeo^E'm,HHh7[H?gdN#/p#6O2:1>0pc30)t@eo5Lu(lF?qL#/6U#0.m9-Ao#DgkRbk$T:q@ataF0*68LY1Le_<UV*;&D+nR+K=EE%GBru(g1`d+N8_\\H[0a!]fd,L7KZT185F2#Dgd,(&LJ*T$hA#LKrqp]g[\"0s4a3(@1WRL(QCG0;fT%?h!aHCYi/\"ML2>*;)(W@I4EA1*$hLI0p;Ytl&,#_:7U\"D/Sq<:8)1EmL6mf.e3aB8kP]`M*]cd`IeZ#EOr;m;8$]gsGbo-657###0hC)1&gfE!8X`o1m\"TltFjF3&E*O^@hV4cM@sp4h:;i+:NRC\"/]XuS6V>;9No4h\\U9)5FQC?qYk4_3nF\\\\4b6Hkq_eIht5([MLgj-u.[o+8[7`^Z<Z=[>:mLjnEnBF]Y8_Mo]CgZ5$P\\7ZG)^f?SMU0-6g5!K&teaC$Ki!LN)hiWeSSP8LX:jD4?l'sa^^o'8Q>G#ND3mbENRCXGO]7l=V`#$JrQ`O#a-ooqBGLPd&7IB!fY@tTW5PUj*lO*3XT(3pnWa,4YPOm2OAX4h%E@t_o#\"DrEH:m7X?Yfb5^quouVrA!V(s&\"b-&+;k+?Qa!SorY\\FgD93uUDd:/J'6,e4e2Nd`P0ZkrdBZ6O7Q3J0)=Rp@+MdBij\\SC;TS;7g+D!bRY5kY9]149_==k%?ZQ@&2!--A2E06$5R&)O)m&=`;M?=Ul:q72<\"i`_(:F_pB.`:'hP0%m2EAWe0]fu<q1*S8L/Xt,Y];E.$!X#l6cH6X/1g.eako\\50cOP<$Khgt*+/qpe6BOe?M>n.5Y[S_a*iG9)lGM[$]bhla0N(/4\"MmY?_V<&BFO^V.rU#45PYpsoT@J9`?0@8/q*T&fKKNV4oGOtN(nVG[.Q/jmtI/$m$mE=l.6l`4am:cF`M;*\"&iI.6+,\\YaOP$e.@7SGO1n!JASVaX+#hmHqYWc:W8cdoYo=aR^5Y06r`$S?+m[l`%q]7r/?2379:Hf;3u8M/7n:e&i6P[Cb0e.Trqu:1_><280h!5*Uue!Q]m8<H4]au9QugN5$s`Ck`a;R>!e\"65J(,!'IHYnb&)I+\"]`-TNiUrgj&`3$$$h2/K?\\C@dk%-OKn5DI;K)9I[ZW52]qS,ku@]>19,Hg.l6M7<DgLDpefee\\ZEQ-]`\\K'e+G[@CtJSQjIhMetN6t6[*/6[&e)>rM+A!Ym>(X<\\opjGX2A0!FrT>eJ]fK,=RPlho,7r[NO*9$5IkO_/kM:gA!5IU%tar.4l@$JZ$`?3J^8&X^*T+CD.bN4NI#A&D`3n\"XYU$#0;e;cD!c\\H\"+49q2tHZ/i39CV(>^B@VeqFbeXoA>)s\\(q?F)Y]asEh=Q;SE$Kj2]I)1X?6u<Cng&\\e@qI\"p;Z,ErkBL-MKmJ:HlARe#hc!,5OniC4-!6KO\\P2oB2J?oo_ZSM.4JVJ#-CppY$MpPXX;ZYDas_,%q_K+&O%qg;(=1.ntiT.d#Q\\%peU\"T4_%@X\"^fm[]U$lZpM#0\"Ghf@a$e/BLn>C#2Ld1a<\\bf-W2gk=7n>9!2)6Wi&.r`br^4HcB$*J^H<EOD9I#(_XYEB&N9<k[-B;Od[\"4tPSj4_#Gh$E4:9.VWt[3$dk[_Xf>]gVJZdBQl\\;86>(C,m^!TU;'T?WflI*fFXP(0>oB3a:=u-pL$<Nton][?-GbZ>D:'TTXuQis\"SK,:DdLopfV\\f!,GP;\"#WpcODbpOIr/M4Su'@'B1Z/'7XG;lLX,h%`LR-WbcL9h%/:&>(6=$m+FRLT'qI7EPiOC_mM/1$J0acCN.0!hh7J*r!(sGr)_i/0>.QW9:%A_W@HH]Uqt/#jESdC]mW\"jS[<]Va^e*F+'S)/[q5CuGW\\_9[3L>'?]l8%R^I7+qr4ObSiLk6hTR*l9)f=WcKb+1^B_W\\L`sf5H#[c4cS39_o8!0Dc.]C6-jQg\"&#@7;cRE_5ar/p5T>\\@%L:;\"Y#>kkmTpR([B,r\"B7-D&PYpDG0Jc2(PYLkVm1;mNBa/?3*e`8f$gaDdd*P1hc\\EW*n_tD?**T$?2nb719ktBoe/\"cbaf/U_u^QrlMp6!Ae\"St8*m&GOG7elE:qC:loGnNtYjS)H,>YGRnD[\\KJ-K_#+jBRans%ogkN18.dXJZQ]?dfG[H?&>b.3D@3-\\sL(@SCJiru>rc33I6gr\"W*FX<5SMIlSZ]dMAG6?B0m)0q^Y9n3)3S*2R(P*i!5)2Y@_qE9lV-U138@\\@+7!$#6s5b;3>uf>;j4qV+E1S'1P9W`4^GT6^ubs2GT-D.!*3\\FnrbiO5)e\"`OA)GMq9RhTn%ohRN0aQkQ/6F)@BfX$j2VeP(bnoAU%aZ#Me\\?f[0UmmHVX#;n3`#Lp<5D10pI@EEL[nm6+T?`;A^\"KG+#3frK-;pLq,/[E(#;13me]h_c%oltp%fq5>-`sqdh\"ldpq=<elcX(h57gU#E#GqHa1`uOS?%J=)P#kijr(s'<cm\",&9O%mE4?i1\\prjD44*FJgf]E>]kgQu9\"]>\"5RfQQKu\"UDK+;iS8\\L&Im4iic)Jr(*u7&S'$e'B1d.@f$!WK>\\kpV;hUM6kfN!XYEA9r*DIUQCNi\"]T%r,R]:;!HlhrrE;mh]!dR#fQKfB#G^<nA9u\"r%LZdj>KD`-aOFO.JZ89J=@4n<^pGIuoS!!<f.(^X=P2Y\"t7HKqAr'AA]4bhR*L9&)a._Of,n%_$\"p0E`o[t\"\"Q?u#XPcT_fk0D\"9#dsT(InYc#_PdY.P,3Cap9D1B&q'')ChdIUgR[ECa*jWWLD29Y<8Qt+ZRG3YD!I@qJfjNK?9KY%ZL9/4SH$\"3/W*ES,:.G&/@6ZC^HUN6/UAldg<PYKP[&/7(l?/`6\\/7GBqI>Y%hB=TadE/[1eA(g7O22RWI2-XFkuDsYg0_/%Dh$m'E6W%1b[Z))F'@ERU;-Tdpm]AX#NJCEB1:':-@B>gQcBMt%8J51oaKS^nMsN_TW-S%nmP)D[Cg\"F#$U05g_!17<`*p`kk.m2gq:)\\h_jJ\"IV'iuOhOh#Rk)[?Kmb;CElP]JVUs^YF\"&]O^MmHE>m%jm:%oH(5>:-c#20n>SNU3B#OQa*dECLSB3n(,?@uHgILU27m;9%S(X@BR@m!8Q+9)X1TGeYcre!Fh6d>W=bQY,f`p+VAESg'^W*H'eo2'+hllVq3qOCS*CtVGLr&M/a4].+qi+ihQrjmqEr5F<fTbfMQ+\\&kePgVn[/*T)6mb9L#YB)ZV(nEVZA)XB]iC*WVhS#VhV8p3!3'(//(?I?PggBBWhIu<Jk\"!:u@bJ`P_Qh-G%6)#j9t:1\\hr#@HRMT:aNL*u]0fKTa>*a5Sb\"ePLQCcIde+--d_e@Rjgh'j0lSB)t!#^\\s1\"g2R0Jde]$3.nUcd;#pA3HsO1JbHB`^[O%%nh#Ifo&^$diW4;fn%ib]l-coUT81onRuV7*h&DYH5!N`+Ur7S2f@g)7J`s\"iab9>LuM^tGAC.K4.Vo/'sTFVJ#:eIF]Z8ICTZIkR?ulI[(4e;mM380fpC)>greXah,49tE6dQ@f\"F!82pA(FStbmRQp9JOMLO$A2K+o+j8/`MjSV$GoGZ5F>`3'QCn_pD@jf3B&WqO6[)%JUGE!jDJQ/tn:!RTcW4\\e^j^>`HFM5(mHlk\"$?`K^hMom\")9EsgDrI0k_Y@7;LgdfQRl?AN5)03D$Xj1+bcQd6&S1+(NSl_6G^Z*$WXLn=PY'%;7R2=e]k?d/^O)mM[0dq/<M:f^H@fql;St]tRrsW*O_4PM\"ReN1nroKZfVOCFh>ZVhZ,K<Y\"dPf/A4[#Fn1'`k`c4\\e]l^qNOAnh78qOELqFa_`HcPq571MM40;6O,\"*\"mTi7uf+ICiq_g;!\\C%pZ!DT>'2Q_<?mkmd=$W9r6aMKiZc+#225kke6j8oiY$<%h/aicU:D=pV4gJJHfcVng:`Q`78H&O(Ou(`n@C!>K?`#^Q03\\giXL0->5?Y%T:q1*goBZbqNhA0CAa6E4]t8fZmM*;5n3!\\<#cf8<K8_WhKU$$e38n6jZLn]h:D.NiP(n,FkiR,..+4<Zgoq>njUl=D4tc<e=bNmXJsceA3_)$r'cSOd;>Xf9%?u,r.T!ol3\";&D6'+D>4e_LVUkkRib[_KC[jo&m%VOje&id3TA%d](uKZum(3//E7XoXJg9`6$MN9F&<*0#ON6T'E_O(&cj2>rrssIj9jmt[6MpP-ZQ:M1%@IU.\\L(=p@K(\\VgKm+!#Vnd6-*qmCQP4H4=@%9cpX>GA8Dd>3?a6DS4Op((\\Dhg<N/=lT)[]`;n%#YS%+J&VqC[A>DbE28H(r%8KNuDC^lIP%H@<8g[W\\\"cA(g#ZLkAG#Gl68tD_+aVl_=.fq-+(Bo9R87[SpV`%<qA*6O3(.\";W&h&1Wlb+ktHVM/nm%nBj?cHL5DsK/<=OIfc7rB9V2#-g*0=K3IK`ads:6Ba+AX6f[-IraI(Dal?>@a31*\"ld^5;&A`\\Wp:Q+P:Ga_+BDCd*$6,o/U!U1UNTiuk^:8-plod8EZ-:GbTR,FCCS\"#AD>AX4*h/NdE.@7aFE*@EIU:??B'(`iepU5bhpXHr%f4amLBV<t!io[X*@s293:s@U&*;1faE7)allkMsTf#uO&!\"YZS1sCOp?No3Z^G94'l0d'\\#o#]is+OaSikV7`XK2Oq0U7:/\"^,9X5^B[$)ba\\oPJSEh]eP(\"S.pGel5AG&`?8eCTd8#pi24-Rp&OncX1o,e>O5!h&N=Kob0jY=JFjCY[88U:\\!U9gKr#adsk(nC#6:80X,FBN9r_:7^qc;m\\O]l\\R6<_K;4Omm,iR`gnL<7.AO'ujNPhTA?IrJAffQ59#&74fF.C3H?J;EpZ*j'cPsSfG]m;O^\\%)=TbrFE:ujX\"2#b]qIG[URXWPUQ@KjZ]p52./k\"im;dCRZ%C:4fi?G9KFO%/6t_OObt<pG.mbY5FabMhW1m8kffHHadZSumB)3BojEB99O)J'Bn8?b7>$DZfU_Z#D.uQ`Sb`N`!8bAHljt,Vd\"sc*bn!qeH&$o)\\f2VW*SCNDJIiWFqG'Cmk1Xp?/#JCX^8^g>'b$g0jDp3h,<JQ=DjL`1NoNCAb\"RkOG8C_R4Jkd;if1E1EH]MhQEb`Peb\\:gXGe?tV>DK<^/s;rQW\\f/=?/.]IQ*Cb6,,0IGB\\$0NI#/hEN6dC=7FT9%tAN]lm<jcN]mZXP/\"[h3qPY@I:;VH6'3p3as.]Nt1k10>:_FeK<!R2j6mVX,h[IC?X#m)(fV(5DK96N>QCC1ed(HlDs5Shnt-12!uV.i#\\`r&Gg.9_2.a_=@'_FA<o>i8nDr8!jkJ<.1Cq^M[eeC@?:?JineYd@O,MXSpW\"][YP?NQTLjj5]3AqAucD8r_C'Tf$YR1V#`hTo)43qGC5Y&_Y4*q0\\n_`,f+o@fA.D%Q/0mcX-A<C8d*;JojL!UmoG5XhjUEP5XLQi@nm9jpe!L@*/4NN'C5C_u,5T6'VCBq(g,)q+e*Y;=$;<n@j^_lY>jKG4d@jD_9QA$g/'G>::$'q.[FTBflaI.rG(W(VN&C76f\"8SR;SM&UNi(Hdgu.G&(=In*,;Z8WRp#*KO[!kNn5-H&c@[V0N/W^3$`YSP*!.J*XXf/R=9o(gINhTb35H\\iKc2FEEF$1XYrl[Ff.&:Xo]jGr>/R/X;t''C9NtoN3g\\nn\"&6nE*O*n]F2IeTbR]G/QEBJ,1\"5((F7+eM(NNY0/\\8U=h=]2-2g&-F&o#oDYQ714E*8(\\@:ALq!4fSsCeZ*3e1;\\b<Bp(PhPtU\\\\PsHpYMAVD\\@/@a!)9\"SWM8bsMFSlDk!a$+oMDT=r3b\"Hr-uh<SAo\\0E$\\>eC-+CI5U=JS\\C8C1%;$?(1@8;6#F7N$7jh13CsP#jV$K=B5?gIP#*$2U@4ugKkt)MmaLt-H9lD&c(/$oAR[K^0M36T4F,]jEM/A2q3*=M4!b'ju)>013oIjN**9A`kTt`&@=o*8ZWeAb-CoBiV-K#RM4&[TT.H:?'GOR1*0#cFffL\\;^fY!.9iura+7>oe(Ub7gQoEQR;\\s)?291hhu)-mK8[5'kOmjE?iOAl^I$g3`ZA?0rr:giCS>[s#3]:)&SgP,V&Kjl%Lb[t^L+)(LZb&V=[PE8a1b-[4$;,%.nfE`pY0\\f]e7<Y\\mdf1a.Jk#7!u'2?JB1dT$L>Nr.MJ=ooI/gq>G;\"k8ZJuR:)-PUNJ>S4'0^39?a4O*K][TJK1dpdQ>6c,^K;X`/S(tT>k9cD[ZDj[N%Lu\\TsdU6]P_ujVjN!2PI-t[J]3jXndgNb\");%lMZ\"NYGQWN<6Fa^M%dUs=>s\"\"2l:&F+Fh4p_e1X=j2Hhtg>kB[=gaZ7DuXRg?Jh32:`5`fh<T[8`$G5/FDd<(P.:68a/8^s9d?)[0-2k&a!<&%!S,tmbb1I.3Zb,a&WBkuNj%P-R<)69jhR;maqhICMnOR!)/JR(kZFukZSfYd0-r,+?N2F+^,+#DR`5'HP%1-$f@\\8\\(ht*$6fV//:MG'`^L,4pB#l^H-J+8*\\DGr$j%I=:KiC_4g58n&>Kc[!'to)kNW&G!iDarXJK/hq&GtbQg2u^lmZPH\\;BoCNS\\#TU2t)9jFdo'@g$;0%H;Odf,NHH)Dm$^=ful2khO;$geq.W3I'q-blWhlKRu+s>nZc8)_dWO4DV^dlZ<_jOZn#[>K=PO'cC8'_Y_B]4Z#M2\\m'CBJosVipgU:9MSb,a]dH!>4LSl!]lg&rUf&tDPQRt8\\OFEV'006;*YNG_(;=UXuR-.#D-Ooj(Tf=8H-g9/f[EbbfZ#7GANnL3*?bQfp]=5\\h_u!j'_7d'hs!c=.H5##jFf9Xc:`(&32'r\\oh2nX;jI5\"@Sg.1P*mkt,I])*Db;8pKD)BMaHoX^\"?chWFG]Ok4mshTQ9[KM^L9Fm_T@[;&fU+ZHj7DG`2EYW))QUg>MAaWp[D7S_RL`P@'3\"Q)d\\jEG3Obh,8,2VT*fEQ`dW3[m4JB5r=%qX\"(2Km`p@sJ51H!WsiLGoek0;Id?CC!Jq3,#$4,`Q%XB5m8c9)8:Gk'&J_%0lW9D@k)Yq>/I/mjV72hEr4SGg3-B.'md`dJmbr_6_&(2hXp;>dil\"l&m)n_eJkViht<o7L^??!MA_7B`]+I:ue(m.K7.G)-gsY>abkT+lc&e37*<?`htU3$_jm5+u'd_,P3RH49Xur*E'*7GD04(3-_V,AG?VU=uM+8$VQ.V,i>&2)B6urp'/XXlJC=A+O_L1ABf&osu&kHJTsi3AOd9ACJB>Yj9@?q#7b+LSm@c)(aOQ!U]@\\kZG'Bq`RP=_s#\"f+clIipFu>e,a-%<``,*efG\\cn?c?A_hetL2%J(FrRFa]gn!fVJQRTikZ_[8j\"`1E3#;1TS6e5Cs[Ei&m?2c,C!nrtTl[;VM/F>+PmE#Qj5,=(&Mt(j-nt)!;;T6*s2HQG6`K/uu_lbo31Misn@pR3hga^($lXX[GcD6sDdgl2!1ZS]k4'_(aC6HJ&9$AA?Dgie@p9!Xgl-As@h5t>,mN^J[GOZm@?G$DU;feTc3!(Q$TC]`ZOQks?lm:aSihd\\?*g^'.BjTQh<4s@2Xo2md^A7aIgLBT3BTlMkg/,s&pj@DfLH[UjBd*;$@Vt*9J!&G$m.Z=A]<$F$rchn5E`G/I$!P4Pj'm=?Xgato0hSV`)g_KZY=iRm[U:X!DW0:aDh\"4:VrkI(o`NI#0<!Q0FhH.GgDYQjc;1[BEYu_:X^b$(oo.@tiVVNE$+?A<!uC:Z%/h\\W6Z_3C`l\"\"e[;[9ga!Xa]RZOH&9/ah=D%ukFT9:Lmq\\lF2?,'u_ju=UB@V_b:_(a&I]_kJ#2l'/cWOZ*87m-3&B\"^gHX^f^jd_:Nd&!&lAF/HYp`?+7aeZL3u[!l$Xq<N]58%5sFO^8tIYfl;p;p@U@M)EpiEl>eAU&KI_%Kgl?H`b76)\"Eo5hYK>Mi(nbJ3p5k<jITNSOHn?8kJ<urSVh_P%:bkUp0A27MjJFU>PF;W:`^[3Cf`88WR$4q^9k@]KT0u0.I.LX*=/o>6r&-LR:/4(Rss4-4cAgog@T7GpV1U4r;0O=+/J&mnE9)CjdOZt)Y,]\\I\\m]f:ZkOI[IO&9m:3b4(As<g&UX0\\E:IoTI@F2+(],uQ)X>?_ra14]Mr$B*a;;ku^0EaKr;F'1Rs(E@iQhf,N(,MYXBMRJPT0EGpq/XK$Jk=:6@IDfC>Ul?/RJO<GtXe426^`H.cbN<ooK#`#C3XiI5%\\9.UX6Z.u8q@SO2\"VSNiGkYROL^-?/l1dk@Wu;cNcc4>,5!1]puNf-Vn-j3MZ'bnDSi,B$k/=O(j3:*7@GJ<jC5`0(!A.?2**i/b7+ln5P5rC6Rm9QqRhHMSf>2on%ZegIb7%+<E+d,P/1?8U.j)eGL7L;+LpN!E]kj1bH*B'm&ZZZTNLbe7s;WU*,Qld=('(7]@IVY9A1JMh4ND!Q7T%di`_`R)/'!VEKr_tiJ;UFGJ'l!34nUjJH[7AP:?fnK0>O#X?<Smmc4XL%kSci?T'ltqF$7Id:r]JJ1&#5d8Z&:]ulk97)sF+i5,<]fPdU]+VHh4jX[n[bZWYsGIr,3D0JeJ^&^Nl`V=%<N;:Zjs&cl>h]qD#Y'B;$SONaUaB:7WM8VN,bH9%cu\\lrW6Rn$p>qs^(4HFGJcF(s$$/EB@Do#,5ja^m[NV::\\fI>Ne>mln!];rX]u<fCY-Dd[d>cY@64m7h>tN`[Qn\\G'H3/KXFo3/*cS(GPk[RPL<a?KD)/5Qf<oW$FKa@!*R!%(3dJ)-.'^kZkBP8AEc`Mg&Wo#28$Q]PRLm.+Jpm%/0DDZ*&SUH9e`VGtg1LbiQp2tF\"CG,t5rkqZ`e.tr,h$uk-R$HM%$LRunb\"/CW8lfam8..:XnA.PqW2t8/+QnXm4)Y/r\"VDEr65Au'fqEBYMf$-^bD!\"k+Jn@bk3)M3t>t+XCnKXIIGd/b;\"KemW)WXY+=,]iS)bRY8=?o5*:9uqI3tClCVJ0P4tC`du\\E'TJ8;-,F^X0m)*JOq!NR/IE:=>4YXNo(X+me-M4HELHaW/kXGHF3^B^Y8s0Y'HT*l?%R\"U:_:ZIX@J3h?^q?G/_>If0_jn%dL@J3gL7WPB3M3F$+`Db0N%M`S&4_[0MlM7]A.37R1#2lTpZmNTk%O]b`t[h@E\\3U:PB=YUCK-#N_:JE\\>3G.BhH9fV?3C-__hN_n##%__6;LAtO2Kr:,q]jf%\"9PJNHqA`aUJ#-aDE]WlW$d,M_p[t)r8\\J/&W>g%bm._h[o*]@<@\\0N)OHG09)aTo#O[<OAru_)@tG/=!RRc4glQoO`:8;4($ag!QAV7WN(I>rI;tn<_#W@]1H=qT!gdTVr@9;DLpWqh#P>sGObI:l16QYao/+\\F2Zm,(u'<93Ynn!]3L!Dn0C[I3!*<&]a#$0n2Qs3cr8SgKELs3$9R,7!3Ea-Xg%0b2aDY)9$FolCS<,O4`X[9eG<UNG$dYjgi/6OX%ek-;he\\?=JN8P'>u$h^kSomVXkE6j!q#L>1IgH4\"U5%71Drum9cPdKM4!'V+Lp6eLJ!G[Q:l!l@0!qWD]e6k\\(dFmla2!k<HQf<\\0krHG.Do]Bc>];qn!p-.9sf,Z?^>H.c!rD:6K>o1Eia2-ja^e*%=>]DEc#4+J<25p#uC*qpfU6Tm?YFY0+fdJK6K]FLXJBW.o!dU8)=cPm(0:k<c3jC:j6^r9lW+0jBWD]\\at>@@1(IF+K?gLHT4N5+>&#N;,lSqOp##@PN)QbhZk`8;`F_cpPWrFVGNIjU-@3#+>Wo2[jAr[6[1:ONPPqVp,cWoq,$f=gqg\\Ftj<J1Eka$=*N!0>R+=IhAQ$T>nSc`Q=uYS!4QUTJflSV3jq%JnorfI8okc!WN\"<@4SItk6]79Jnfq:7YAur>VnMpFO?70;<9J[IppOUN6jge?a'ABd^^XW`\"^qL%-gcOqAr:0a;6@'6/Q/Flp8/C/\\Br1Y?VCWQVB/``)<GZ!?'Dd*;[eA9Fgk3HK_U#cJ^Yhq*G+faDi]#@h./s-/2-VVR,((R:O&NA)g$+kH-OGIB88oe3nUWeQTGAfl[8>n7sRYno[!CnT`-qMt6c;\\DNCUi1YI;4KnS+:5iac_!HLH@.%_60tu9BZVN_!9)\\_d),&PR;56*ef%u%`m`K<RdBV<>e>\\43!;RQuANu.@4p:3/HkUncDgqd0qXHec@mBfOpu#NX\"Q&a@^O^UDp&fQ[f=q\\P^%<ndq&A4Hh)F08IZ-X60?&CG%aL4pE@PnO9Zj5S:u0%3<t$pS6U:8-/<)mR/kK9q5M;4PZ?RH-cke00T+pJ^n/07?Of^M>g0@9+82ce/9Am(4nH_]WUCJWML'<W$61njbI2hi2Oifp9Rq<*loCUT\"oB#I%`?(EeXb0i4.^IMk%I<3qKLXPn<#aZ7,]\\U_F`oWMc'gZfh,Vg8erdQIo1*!KU1VjQfU'NdG4E%`]0NoC3i=gc-;cB_H\"$i_Z.#baSMA`:1/7)dnT4?)[^X4fOoLT\\qep]r7Q,*Qk\"^PSfOjO,Mn6A>8cs;J`b6Cd$E,t%l$q'-nO`@=(*C3qem<VZ9OE#nN:/b0@loLuZ_2*_DE)\\2Hf;s$quOP2]75T;If\"'QKn&q.I-U0M#p9,fcf+i[q_?n#]q<*:O+3>Y<uns:P?_m+(?^S?<&6OQS/a=VNAu%!)P<>f\"he\"uU?SqaAVaN:dQ,`;@P<Af=$o3cR4t=cgCE!sEEdQ;;4GW(iP\".r4hXd8&+b6%Tmn7>Rc\\IQFGeW]_3W,D^IYdf:QK;4Ar611SLq(KOcIi`POs?])e:gW>*d<mG1KJ+Hakq[LL=TB35\"Y0rUBjb?h_Fr6`Zlh\\&%eB`Ak4H@CoInaI\\lul1o!R96AEWBZ!a3-h)@2]Q`SP#OI;u%r``d:*pcCFt?cIEZIDVA/%'YIdLLM)Fh2PKrMc_@,Bk[0_aL>XF%l+D.d9Mi42gWW]Y!DmNSg1+5=%2<a>>F=EjGG0`0e]d(=9FoPW@d]kEVUIb03kj[VN=BAN;9]]&CA_>R_h'gD6\\?br(XpE/nXJ,V$Io^@58pV-KPka\\.P#3E2<2C6Io+Ob&sS]I*n:7CK'W@oAE3V7DIiGDRg,.:6#G4tJWEi_c9E*%-TkfYq>RWi27i50HaL>J/Kr)lidr\\B^:QE_hoLeY!?Wu*\\+4LBp$<PLM583E`SH,uXAboq9Kr')(KZ$`B#iXPPI;OJa+GkCqcg?3Q!5?gIhOYdTXoK8P`,EI'ZOO_a`!B>=3)I@mO%Bt*I)\"_q%R(4\\Q$aSU<a>ODI73B-CQP,4cAVTg@ZCX.Tj[<9U)udd#qZOqH[$G`eqYPVdTe\\Y5NOeYRCWTK<?+CjXenor2c!+UegCB/Q:-gtP$RU&ci>eH;]/^*+#l\\d)^12p8T<#t@8O&>PEJHI>KSASo!#mWs=a86X@!(!d\\E&58_=9VULW^cg!abcAJ&(gXmD%TTJ+tD$qhng4F7Aj.fA?e1hgQ)@qsik-rBL2t/DRcPicr6$nGH.3GoCfL;etq^8,c>e/o!TrK1Z5[SfjKfNW-,`qh:1p_suc1]q:hG*%s:m=42j&S-ri''MMNR*n\"6d=U2O#a)5Fl61]=K,j.q>k?6r;amZO2hab4h282u$D[TcDEGpH[)UC*%a_VP%R638rra$4E94^c?+Q`Voo@!D?-BEIUl\\%U4$)MqaZIR-ZM8qrj!C_rgp?Z+?rtkJW?Q$UOFurVfs0C#Up!-mBFn@p*5>+1*>Q$U6?&YkYC5G#?N10(tL<db2Tjtn_kaGhtnRq<J<QlGj^/\\sAGEpmbJ\\F!WTmtmEN\"n7e0^@QJp)Pi<//!_1qrSk\\#XeA)N`U%b-^Ag=8^t[=LX(V<j-RUQ9<NerD0t7*?2)0ZrptWWp]'Q/_dEGIs+^\"@rnl\\h^\\oC)pQ,=TItb*+\"g[pF^\\Jc&o^oJ/g+Bd$n$:L!VjZl9Ke2drTU62K[lci-FS7u6UC.E']FIZc7I#XP/OU&Dq9>iBNYtM`HS!3=:lJ(n,9$<[icir1Pcua\\\\Mf\\6^!9jaL+4(.C?Ar\"7ijZa6?h.8B$u9oNNj;='$,]\"CW@e[bp<R*m[8,\"Er5q#Hk_3>UX.;,dCQJp@39?TQd+VO2Na1#A]qppgFgJWH,u:5U\"hX:`<NG1h@qMMbEhEi6=\"]\\f<Z-9rZ9$(AH,4GM0$LZNnM^OSe`i!&NcMASNK31Ag$!*En)ouRmpUWgiY5QJfINQ(H1Q.m9YZ$/mElXY2ihBn^k5gfiu&ugNnfW2o+?@A8q,UeAUaQM*#-Tf5>E:;#a;P)?OJsQ-VtHbC_#np[hs/Zd4Ag]n^\"m<B%]Ds73A_mGIp_I.Pt)Ks1OA\\+#C7r#T2Cf0<[?,CKIA^P=KBbAZA8J,2$Mj1bVtIcLf+i;K'\\G&_@Zp!Zo1-D4ko6>0';Kd(P>_H-*hK-Kkf`g/u!L\"7fQ26p,*dZZ6.GK/tB-A<5T:j6Yf:PYDg?GBdaXMSRII8L@3M@?qRX:%DW2\"VO0G,63M>'eFfS9&NW`L+Rc1RR;aK_Q%`ApF6qETT%Na;Sa@rIA.K:rBOuaZMes*5u8fE[5acprjF5T[Xs8En;QNl@\\k=X(],m2P;Z<:_/cR(\\7<@<Fi5Ih]kn&`O]Fk5Ej'2S+N21ksRQKV0OH[3M!nnnjdMYSaDj]XaB;QArj?=jXPY-27NS8CS2dBDZCYcr\\eR\\>Ip4ABd*.\\N,75Q',^J0LPA7AMq>Da5NM@d\\R6?KnOscf)a&Q8,'`7*5DC9Za8^b[r9fX8rBL3A\\%b2qqqA6'#;?&IDr;#<p_A2=n,E]#r7?FN4$WH@cc8?3)2brM@fH_``b.XlNL=\"T'UlAj6P&V\"3]%0YA?aX?/2ir1>8l/@/sjpL7/kX1*7#@aT_`0#7W3Sq%kG]#:p&\\6:HDfHOVm73r4gfHG*NRQ\\LnKWa<huZr^`q\\3B*b5nra]VkZb@G[dZXQreBR\"+Wh>\"-I$Rom*?t6,s;/>50aQ8:b-UP*iSbWKmNb#W:nKRkPZ6q'Nme[;[;tKPp9Y@c4#l-VD1if+FCJtF<Rt-9C\"G@-`)/%qKF,!(#.g<&PrA+OYLC+oWDi;A5CZ<Al%TND(tg>W.E/7l6'q8'1i^+=38/jOdGY&,f`LK^BW;+J6<-&JD#_(J\\,:a141$Xl`7er*IJ[rn%6X^D81_jgV6*=6k0(2ci4/4K+*4e07SLg/V+VU)Kk<q6CV0s)<\\P-#?Ip]OnIJ%GKEJ@6lkVuKIl,$Q9)XOhU@C3:_T7s6DFWCXAtom0#581Vl2%%`L+FrqJJt&o!!,H!jhan\\tU4rkCsJmGG^GI<k^N5]ICZ9gK_jaGb4Ic,`Q=RNB6=;7r^;hl6\\qmUd^K.D.L[rqjCmkUFgIW2OYI/rmHK]C>T0b2]qM%H\"_t'n?jV.VdPTMS'3(+Ka):%S\\O2/a6=fEMk+A)4g>u0CeD.1a!p5#@t$\"EeE:GPaZ>'n^-:&LD(nLS@1tc+Oh+&+=)c4H8cJLkW.@=;JX[p3)d*hG)l[1+f@:-!fo)M`EN1>FbDB0k_lQ5g^f=0X']Y/P7/QgB[^!1c]DF1c];U4dr@5PT-.K`VrU[e@JfVJ>7A$A23l/O:W`\"PBL!qaUZu]UuqNI,tpVZJ=4H@r2TfG+L3[SH)a65MK?_b4@RU,+bTeAA_d0E=1:;G:h'/4c6%qO-!T;tH$L9;NMi/@t*,o7JR7,'beW,\"aXZ&Y1>&^?J[[;qh*Vh7R%4n0E4;e?2_`$)gd'Y^>e:@IB@1JXCufckLTcgc-m`$0,Vc_PeKOX[&dJal?9Zel8_=%+'dG.-2DT5d[pb8oWi3P5d3``Ah;dat)*R*Jru_*>se/,fl=4YV_AgZXqTgdY,`L.U!Y-\";gY>dKIfCH_&h0A6tQi'qU:dO4Ba[[_cPlI:4FR(o#2MLI'[D^'Nu@E4jUA@DI=D(aLFdQ2\\Jr4S''i![<t2>_aHs5IDD.t@IMfQGjd+k;SGFF8s_Gld:^ob#F%GlZE&E?2,?s\"]s*niC*hE+8Dk(e+]K@oH2C(l$&G+PYdWZN52bdn@\\gA@s!2#.n8fVusUlMr(rslH>ij*j$A<]=S(%>,[kSB.1gfAFbncXN-runp+d5UW;p]bSn6_p%!d[*k`o.:HTH^F'XH5$c\\8s#MJ[8_oLP')l_/9T,6V\\/G!M:5D`Um`,)7d26_YHP@M;mS$`9C-J(SX0ml=eigT9=pkiI]>n*+F?O?CDCA2T_gU7hDG$mGE@jd4F>W[\\/83&lQ,P+>5q'3L5Z?7)pPO<9!Y7I^=a8/<29PJ/[)RJV#^UKTN6.>;P;3Rm&3\"FP(q$Hg3EqNFCm5<tn09AEPP4\"IWrA)A8TDaOP_XkP@G;t'7]oX6OL&0:]BV9iFor1OTi<E+[[p=D4XLd<sf_!0&@,i!R_t*COK`q_-L2li;#FDWJ%ZEnmrI[qc(r+LpGd*4^2[/@c=U@%$BaZJ^2[DQ0'g=OIGKHTSeV#:7i8X/uX7!B`hi]rFAfOUuZEaup/btUVad+:(o9?Js.?.>V/n5[CmUh+mFsqgEfU`KEnt,QcR=`I$Yt$_&-1/SeRJ>h*fSE&'^SH37Bd28BZH:d?2ft!P6gq,LkVpgKq,g#I0D&@Z:S5foC47o&2ktcjjR,1ThB^+H;]*]@-;II1%pp8CT5IX!7^flE26MVd6@)0B.Qo'7Z-YGJRb'9<5#`nA6aibRIqN`fAlsB4[IE$S^'1]JD#8pYrsE*1j_s'-aP5=n#(I*Tmjl0L*U;Lbi+6HfXe5AF'Lu$@OM*]\\=$rQO\"%-`X$aAcpj)DhiT7qpdHiWuS&QW92AlsE%RpkPA(W)]u#@V/fB'@39Uk/6Ng5GK?<tF0B`*aHp0,T7EDV>>\\@KL9Z0ckkbEM]0be-[g='.3?`lj3!J@87sj3'K^S;_?Q*1I8.l'_c@9D(j12o@8b(@D^b+?SKHkjk-$p;Ra:!^D.oS/+]'L%TsM4Q$rAeF,F>G*]qSURC>*=@NruIJMB_O=$'j7&S61HnQ%ik^1'0N9_!'CrU^#b91>K?rr(%_[9<9p)Y:K1']ecueAgmG;e*G'80D[m_FA%1\\?pec=i]kh:`^M73`>5^,N!EMlX&6?Q94$XTDfffNoJfCAc=lK0ug+fn$r>p0B)Ntg>bEo40C*4cX$mJ$Rn<NPfKSd)I7#LHf=HUmt94TqCsu+hT+UI]AF,\\Y(&P!hkJ\"Y@IF+N?l\\QQn\"OB,LF8dQbSDoKEAD72K.ET8:8-R37:37!Aj^d]@bY,3RM^B^R)SKf'4c$Y>XZ3MaI\"q&g5kHu2aO&<<F:qnjW?q)X5iS?`6YTFLXWnq@gj;4LhE&3dF5[kYg4A;a<oSXIP%>i7(oDBYr7pCZ&*eJpK<$=Lj=$pfNOinG\\A0\"*jtH6s/'SM^qj'5*7!EQ&*=om<Nq7i31Kb(p?[LDVk+7+NXin-l?C(bPg@UI^18.Qd$U1g-BZ!h;98J@E*l_A:kJ[@]?k0H!\\aNO5N*!bpbdF?\\U4;ljQdD1^OhLiQQQ4s5JdYTpbUQF_qSR>hdP$iSX^5U=um*]e?Eu$'*af)JE)\\Q%2V3_r&sZTS8llmYkP8D_r`IfJu.X:%-(Rd?lZHiqU#LkUB[%\\#!'^oF!Xf5f;S=`K&biF]*:*,/mNYt0H=9H%;2d2J^m[F(b@aF8D>NS0Dp9$-f_6+aCtC>aup\\9(R`$_J3Ub+QCipg%)8+R5s%0BCd0K-H5,MF57\"[R$.OQck5tqUD?7:BppO>>-M13gASTA+'OqN'qW0GV19j:VLV`qB)5K@rNGhG#2Rm!fKJpAEJc=nJ;9O\"L+EKOBclm(]O3;SVS-)XUX,O;LH#OVC6`>Y$HR6gWmaE@%Y[c?i=F0T`\\E17;i5rb048@U7rrCCDo5ES*e@_]/nrN:&^\\pZIihsPAN>Gq3NQ'AFWU\"!\\BkP<\",KHKOEC@JZ$M=m2F7]NY_oFtPkG%[@p[FAck'`<+T%i*2>L4HsK/Ru%RHMK_[QQ=K$=i&Jo0l@rgGfjE`>mSK1%q[$bePg^/VgZU%Dma9S;&EKZ3mK+dbG(:fQNa2[nSu46N4i;AB2C]Zf\"HZ'93<bUSbQn+.KKBbP?,!S^5,XTDB.ip#^VsGJtID,1gKg,'G=19n&\\lb`>EL5Kjg)^QJ=Z*olfMg1amGNjdCoT>B*`*VqsucFT*/aLPfB_h97L.e3IB\\I<mZQG>UnYRc$Of].<\\NIqg'>cQU4o^kJT(L)ARc^S_A3'c!nC4eD2eec%-#N,MufQPf)E9(=!_l]P\\#p/p.^P=1cp.KWEgYV76JIMC9?&McNf/2T;[\\+_QOR#,Gh#gLAm=S>U]b<#EiYd!s,9MWG+++J,h=V>LMLOL7CN\"ij(VUIsUMi\\KR6cdal'Ugj==;qE\\CO903fVCR7cBa_:P3]u:\\\"&(c4\"N\\<u#k(1bYP-J)gP:J'=9o\\)gDF#r\\UYq9OI9Kq0\"YT<d5:3YiX/E:nijJ?St=%rh.;T0k[ka&MX)Ho5fuOg`EogpP:5a's9UVTUlafh9C')Yk&](X8$[$QAa;>54#_^!Zg$buN7rbs=i7q8jt/hBH-u1I^?CBs&WW9X\\3crm>[J.eab$3Tq)T\",V#0WNVY(EbN+\"L$$bL+$m[41q<.b+2WASn5FQ;ICn7Kp2,'1#G6\\:fAD=&_jfSS#<i-Cm^NdJrPR!P[i\"CO(.*.a%[9H'+^HK_X_Ro/?+nV\"E!]e?`$aNr_b[PpGNO;qKYtmg.;sJZlegF>Y(>hY07o&JHQe=H5U)C[]h:Tp@uY_bqum2J3&h5jIeWnZ=uXP&^Up\"hJQe5ga%[loO@m'nrA48ueq+HSin3+9g4&E!`F$tEHfI#tB$6VpS%59-knRDuKhm*^2mE&/oq)-hN_RWf>e<ML,n8/W$nG(5%gF?s@m!YRg*hA8h!4h%[<VQ.<mIH;^Zb9cO!!LoUcrtRB(ih$7Hgff+ck67CiY-Y8\"aii<+dZ#+a`7C\\2GkVF1tSf51O>3HFc'pCo+Jb0te3c?#]tJHIGT-iC?'6[sn!3E:_8V_6%'n%Glj;h>Z[Mi)\\W>rlju<o&;SpBkfhRd_*nI(\\-;@c1t!lf2Abo?jo+&fm3adSotm^iKMU*nIL'_gIL2'q]CBAG<?/CDg</iG7/4T+)isghpOb3Sm,a)O@5_,iXQng\\oMc]<D2;2)j`itVl9(J-mbRQ(NTTjGNfh3Q[j0=fq,[7NV*-/)F$],(Z;j\"5%@d.3os9;/&qOrkbQ7m0lusGB@Dd2Bj7PP@.!4cpr$h%#)f?k6T1FrIUfh$Q7HgWle?bHDb9EYC:O(,hh#M?nt4lmlgNeZdcQoDb?AR]:4U*F3FX5?:[\\YtqKf8%=6G\\%,JC,ndl^,>l!?*2L(7au>f_.0dd,\\%4u,-\"!nA`^ma59gDC,a*)TP[VEf<S2k\"Zp\\#4&G,*O`]T?9%_q@rU;bcbLj!GTO$_bffL1kIq@k4nD+Pm+E35Fi`^tp-$bfk.3!R=Kr@h>n*36#@p\\1bKXoQG5\"7MGSH0%p]t.(oQ+sP`ZH!ZqD91?hhU/ElJVYcg]sb4Hm_T0\\Hk54bsL0W6=+_0kX9n]l+i`&*Upl!QbfM2O$f]#632@J,(',BfieWkF!67+8*nXURje8hD5/tKD($.*>YC^/mj@T&AT=3Yo2eJpO@qUX+EPWi[@N,gR2@bJr:tZkfia'9c<LN;s2g7>lmV][I8/u'$3$Zg_mXdD=]`F@ro&@bNH[MQo-%s6rPjdVR#&7>cSL>noniNsBn!g+/d8)aBIQ'1`*,&DoItnY6KafF:bq7W[8hKI+g.e;6R&\".*iT@S^0iCK+#j<p0\"qZNhKT9AJ&hMl\"5DD]mY5$9Hk.40s%tcRrhn\\5%t4r,:H904ZfXX,nhm@q/\"&W-]a:]E.+Q]4p-9\\,DfWl^fQHLcE#pcYiJ0StkC;D7_Yta/Hes&j/3\\(TF=ru82S0\"cmP<jMX,sDn@+U]^GjsjLE;%R@R+7U[O[^+TBTJ'SQSh!_/M1hBa.JkL7-PB2_1jKUn=5TD4>p#il1obkZfE6]3_+TFBprNd@<3EdpnPml%/dNei\"P>sXl3Y\\)bKpK\\<\\UVP#\"S.`?[D5pC,O0EH?m44HC4HT<G#b%)l*J<pVpZj1->qd6!@QE=K7YSb;?QRN!a;s$c=-qO]Nfrpk;?9DLDD9;m3j,gX\"l[TD^ba.I1DK/BHqoZp)U`#(_g^,3j@NC>?Wh_MqG/6Hljld5pobT(N1nXZoLb*ui(V,tR'X)<X5rFb]rh6,k8H)mSOA)uKh>Ic@1K76CC`i>=s0LXs\\d&.i;FW,)2nTNQ7qu(I:2>%rJJbQq>6!/6[fhe+%K?@^@qMmD@^CKAn+ro=i$!/)aJ-Ego(iSJC\\=&%shF6g)5n,]DmPk!GR7pM_8%'5eUTkRKLClnLCScst(#ft9FQ_dhnGU,3#2XS:`q/fuTSbY!fHVE\\,aA\"*r1'3m#u-86<?h81HoTY5p,)c%StTM,P3/UN%`,@^=q_>@9oP,R*q\"QZY1s5*hm\",hN<80]+u`&&Ma`#7OphQkJjTqN(nLJNWm/X\"C4*`!K.4n#[NIGikB`J9CaF=4<P]ramj@3SV(L6%e!U#+G<Ze^AheqOlaF_#.0j;@i&NIrokFEQb@&/kb@0pp=2NU]dug&Dcs3rJg$;hM)S0\"QK0874P,(a\\09!Y]K0q?]['QGc49gGZk%X:5#jq$nW-]&mY$9`l9?o[&A*\"<$cL$D@lolhVG!a5W):gDm_OC9(W9%:Vn^>dcA>'ZRmJuNZ=#C)fP0[K91.ZRI-!M[Rk9AqO&T)V%q+Edr%/3h3lafZts,I2#bm!Fkd'bqgd`aut)&.8HB\"q-HQf;,mMWCtCp).;p1BRJ'4_(@\"9e,\\R9ld/?5mD0Ij\"raJ!?ZXK./`InDMD^qa.ZJTHhqEE[c]$0SGn6&g\\-'/asQFql-k\"TC+kN?n)H!ZLX)X-c(I5BiUn<VACbE(?d_/5#C5Ymc1.,5[Hoa5@A;>+9[<_\"#\"G:?499#P.@Nn16-n8ed(aiB$uXh?4:Z2\\\"(ejEom'3'\\Te:\"/6RNB\\/(K<c?#/FE.<.l@oA!^/D,0&k=.%5/DQ6YH-b76KekFN+Bpt4&`]-F6Vs7:$6@;:TfR)l3X6!GB/g%s*=9f\\?IaoNkjIbg^1ID#;#gCW(`Sah!W=6M,Ju):8^p\"?s\"=r7%s@"
-        custom string render = "{}"
-        custom string sunstudy = '{"date": null, "time": null, "location": [null, null, null]}'
-
-        def "OmniverseKit_Persp"
+        over "mesh_C70E3D31CEEEE4A9"
         {
-            custom float4[] clippingPlanes = []
-            custom float2 clippingRange = (1, 10000000)
-            custom float exposure = 0
-            custom float focalLength = 18.147562
-            custom float focusDistance = 0
-            custom float fStop = 0
-            custom float horizontalAperture = 20.955
-            custom float horizontalApertureOffset = 0
-            custom vector3d omni:kit:centerOfInterest = (0, 0, -68.692727882021)
-            custom token projection = "perspective"
-            custom token purpose = "default"
-            custom double shutter:close = 0
-            custom double shutter:open = 0
-            custom token stereoRole = "mono"
-            custom float verticalAperture = 15.2908
-            custom float verticalApertureOffset = 0
-            custom token visibility = "inherited"
-            custom float3 xformOp:rotateXYZ = (54.803215, -2.16005e-12, -1297.2897)
-            custom float3 xformOp:scale = (1, 1, 1)
-            custom double3 xformOp:translate = (-366.3352686445149, -311.32944711731443, 81.24512106634606)
-            custom token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            def SphereLight "PlazaTowerFacade_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.333, 0.6059952, 1)
+                bool enableColorTemperature = 0
+                float exposure = 15.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 400
+                float radius = 0.05
+                float shaping:cone:angle = 17.9
+                float shaping:cone:softness = 0.09
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (14.500000216066837, 9.900000147521496, 13.100000195205212)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "PlazaTowerFacade_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.333, 0.6059952, 1)
+                bool enableColorTemperature = 0
+                float exposure = 15.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 400
+                float radius = 0.05
+                float shaping:cone:angle = 17.9
+                float shaping:cone:softness = 0.09
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (10.900000162422657, 9.400000140070915, 13.100000195205212)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "PlazaTowerFacade_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.333, 0.6059952, 1)
+                bool enableColorTemperature = 0
+                float exposure = 15.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 400
+                float radius = 0.05
+                float shaping:cone:angle = 17.9
+                float shaping:cone:softness = 0.09
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (12.800000190734863, 9.700000144541264, 13.100000195205212)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "PlazaTowerFacade_09" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.333, 0.6059952, 1)
+                bool enableColorTemperature = 0
+                float exposure = 15.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 400
+                float radius = 0.05
+                float shaping:cone:angle = 17.9
+                float shaping:cone:softness = 0.09
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (16.20000024139881, 11.900000177323818, 13.100000195205212)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "PlazaTowerFacade_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.333, 0.6059952, 1)
+                bool enableColorTemperature = 0
+                float exposure = 15.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 400
+                float radius = 0.05
+                float shaping:cone:angle = 17.9
+                float shaping:cone:softness = 0.09
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (16.20000024139881, 16.800000250339508, 13.100000195205212)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "PlazaTowerFacade_11" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.333, 0.6059952, 1)
+                bool enableColorTemperature = 0
+                float exposure = 15.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 400
+                float radius = 0.05
+                float shaping:cone:angle = 17.9
+                float shaping:cone:softness = 0.09
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (16.20000024139881, 14.400000214576721, 13.100000195205212)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "PlazaTowerFacade_12" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.333, 0.6059952, 1)
+                bool enableColorTemperature = 0
+                float exposure = 15.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 400
+                float radius = 0.05
+                float shaping:cone:angle = 17.9
+                float shaping:cone:softness = 0.09
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-12.10000018030405, -17.700000263750553, 13.100000195205212)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "PlazaTowerFacade_13" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.333, 0.6059952, 1)
+                bool enableColorTemperature = 0
+                float exposure = 15.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 400
+                float radius = 0.05
+                float shaping:cone:angle = 17.9
+                float shaping:cone:softness = 0.09
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-12.500000186264515, -15.000000223517418, 13.100000195205212)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "PlazaTowerFacade_15" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.333, 0.6059952, 1)
+                bool enableColorTemperature = 0
+                float exposure = 15.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 400
+                float radius = 0.05
+                float shaping:cone:angle = 17.9
+                float shaping:cone:softness = 0.09
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-12.90000019222498, -12.10000018030405, 13.100000195205212)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "PlazaTowerFacadeGround" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.333, 0.6059952, 1)
+                bool enableColorTemperature = 0
+                float exposure = 5.9
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 400
+                float radius = 0.05
+                float shaping:cone:angle = 42.9
+                float shaping:cone:softness = 0.08
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (146.40000218153, -13.700000204145908, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-13.100000195205212, -22.40000033378601, 0.30000000447034836)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "PlazaTowerFacadeGround_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.333, 0.6059952, 1)
+                bool enableColorTemperature = 0
+                float exposure = 5.9
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 400
+                float radius = 0.05
+                float shaping:cone:angle = 42.9
+                float shaping:cone:softness = 0.08
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (146.40000218153, -13.700000204145908, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-10.800000160932541, -21.500000320374966, 0.30000000447034836)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "PlazaTowerFacadeGround_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.333, 0.6059952, 1)
+                bool enableColorTemperature = 0
+                float exposure = 5.9
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 400
+                float radius = 0.05
+                float shaping:cone:angle = 42.9
+                float shaping:cone:softness = 0.08
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (146.40000218153, -13.700000204145908, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-8.700000129640102, -20.700000308454037, 0.30000000447034836)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "PlazaTowerFacadeGround_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.333, 0.6059952, 1)
+                bool enableColorTemperature = 0
+                float exposure = 7.5
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 400
+                float radius = 0.05
+                float shaping:cone:angle = 34.4
+                float shaping:cone:softness = 0.08
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-15.70000023394823, -20.500000305473804, 0.30000000447034836)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "PlazaTowerFacadeGround_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.333, 0.6059952, 1)
+                bool enableColorTemperature = 0
+                float exposure = 7.5
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 400
+                float radius = 0.05
+                float shaping:cone:angle = 34.4
+                float shaping:cone:softness = 0.08
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-16.20000024139881, -18.400000274181366, 0.30000000447034836)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "PlazaTowerFacadeGround_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.333, 0.6059952, 1)
+                bool enableColorTemperature = 0
+                float exposure = 7.5
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 400
+                float radius = 0.05
+                float shaping:cone:angle = 34.4
+                float shaping:cone:softness = 0.08
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-16.700000248849392, -16.400000244379044, 0.30000000447034836)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_252313D465E02B20"
+        {
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "inherited"
+
+            over "mesh"
+            {
+                token visibility = "inherited"
+            }
+
+            def SphereLight "PlazaWallWash" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 100
+                float radius = 0.5
+                float shaping:cone:angle = 42.3
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (176.25487322356742, -63.62209908793051, 108.8287336628519)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-417.6706779722217, -125.6078380899489, 14.833198749667345)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "PlazaWallWash_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 100
+                float radius = 0.5
+                float shaping:cone:angle = 65.1
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (225.98558762690146, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-424.1298302192984, -126.92016455234683, 14.833198749668004)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "PlazaWallWash_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 100
+                float radius = 0.5
+                float shaping:cone:angle = 65.1
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (225.98558762690146, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-431.56575164489163, -127.9464459424016, 14.833198749668473)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "PlazaWallWash_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 100
+                float radius = 0.5
+                float shaping:cone:angle = 65.1
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (225.98558762690146, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-438.8432824088337, -126.8458127224757, 14.833198749668899)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "PlazaWallWash_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 100
+                float radius = 0.5
+                float shaping:cone:angle = 42.3
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (-176.25487, 63.6221, -108.82873)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-444.79119116346897, -124.80599183094965, 14.833198749667204)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_AC2B7D749B864074"
+        {
+            over "DownTownOverHang" (
+                active = false
+            )
+            {
+                float exposure = 9.900001
+                float intensity = 10
+            }
+
+            def SphereLight "SumoniLewisAwning" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 11.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 45.100002
+                float radius = 0.05
+                float shaping:cone:angle = 90
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.1000000461935997, -8.700000129640102, 4.90000007301569)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SumoniLewisAwning_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 11.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 45.100002
+                float radius = 0.05
+                float shaping:cone:angle = 90
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (11.400000169873238, -7.900000117719173, 4.90000007301569)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SumoniLewisFacade" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 11.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 45.100002
+                float radius = 0.05
+                float shaping:cone:angle = 60.5
+                float shaping:cone:softness = 0.6
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-21.200000315904617, -1.2000000178813934, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SumoniLewisFacade_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 11.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 45.100002
+                float radius = 0.05
+                float shaping:cone:angle = 60.5
+                float shaping:cone:softness = 0.6
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-31.70000047236681, 1.3000000193715096, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SumoniLewisFacade_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 11.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 45.100002
+                float radius = 0.05
+                float shaping:cone:angle = 60.5
+                float shaping:cone:softness = 0.6
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-37.10000055283308, 2.500000037252903, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SumoniLewisFacade_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 11.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 45.100002
+                float radius = 0.05
+                float shaping:cone:angle = 60.5
+                float shaping:cone:softness = 0.6
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-26.50000039488077, 0, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SumoniLewisFacade_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 11.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 45.100002
+                float radius = 0.05
+                float shaping:cone:angle = 60.5
+                float shaping:cone:softness = 0.6
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-37.500000558793545, 10.000000149011612, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SumoniLewisFacade_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 11.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 45.100002
+                float radius = 0.05
+                float shaping:cone:angle = 60.5
+                float shaping:cone:softness = 0.6
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-38.300000570714474, 4.800000071525574, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_B825A30C63739129"
+        {
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+
+            def SphereLight "RegalleStoreFront" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.1764706, 0.78039217, 0.78039217)
+                float exposure = 8.400001
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 19.300001
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 20.300000302493572, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.10000000149011612, 3.500000052154064, 0.7000000104308128)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFront_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.1764706, 0.78039217, 0.78039217)
+                float exposure = 8.400001
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 19.300001
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (8.543710201261936, 2.131071457077787, 0.40508232253748844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFront_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.1764706, 0.78039217, 0.78039217)
+                float exposure = 8.400001
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 19.300001
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (15.919751362265465, -2.123992466376127, 0.4050823225377101)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFront_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.1764706, 0.78039217, 0.78039217)
+                float exposure = 8.400001
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 19.300001
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (21.347368955398338, -8.381799081997553, 0.4050823225379197)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFront_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.1764706, 0.78039217, 0.78039217)
+                float exposure = 8.400001
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 19.300001
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-8.2295157358209, 2.131071457077787, 0.40508232253748844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFront_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.1764706, 0.78039217, 0.78039217)
+                float exposure = 8.400001
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 19.300001
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-15.653997866878901, -2.1857464949986007, 0.40508232253753107)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFront_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.1764706, 0.78039217, 0.78039217)
+                float exposure = 8.400001
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 19.300001
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-21.181179392284267, -8.585550552711698, 0.4050823225375275)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFrontDownlight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1, 1)
+                float exposure = 6.6
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 85.200005
+                float shaping:cone:softness = 0.8
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.8000000417232513, 4.100000061094761, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFrontDownlight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1, 1)
+                float exposure = 6.6
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 85.200005
+                float shaping:cone:softness = 0.8
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-13.90000020712614, -0.10000000149011612, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFrontDownlight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1, 1)
+                float exposure = 6.6
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 85.200005
+                float shaping:cone:softness = 0.8
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-11.000000163912773, 1.600000023841858, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFrontDownlight_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1, 1)
+                float exposure = 6.6
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 85.200005
+                float shaping:cone:softness = 0.8
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-5.900000087916851, 3.6000000536441803, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFrontDownlight_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1, 1)
+                float exposure = 6.6
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 85.200005
+                float shaping:cone:softness = 0.8
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-18.30000027269125, -3.500000052154064, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFrontDownlight_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1, 1)
+                float exposure = 6.6
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 85.200005
+                float shaping:cone:softness = 0.8
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-20.200000301003456, -5.4000000804662704, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFrontDownlight_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1, 1)
+                float exposure = 6.6
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 85.200005
+                float shaping:cone:softness = 0.8
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (21.000000312924385, -5.900000087916851, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFrontDownlight_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1, 1)
+                float exposure = 6.6
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 85.200005
+                float shaping:cone:softness = 0.8
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (18.700000278651714, -3.300000049173832, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFrontDownlight_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1, 1)
+                float exposure = 6.6
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 85.200005
+                float shaping:cone:softness = 0.8
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (14.000000208616257, -0.20000000298023224, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFrontDownlight_09" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1, 1)
+                float exposure = 6.6
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 85.200005
+                float shaping:cone:softness = 0.8
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (11.300000168383121, 1.5000000223517418, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFrontDownlight_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1, 1)
+                float exposure = 6.6
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 85.200005
+                float shaping:cone:softness = 0.8
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (6.70000009983778, 3.400000050663948, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFrontDownlight_11" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1, 1)
+                float exposure = 6.6
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 85.200005
+                float shaping:cone:softness = 0.8
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.1000000461935997, 4.100000061094761, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFrontDownlight_12" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1, 1)
+                float exposure = 6.6
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 85.200005
+                float shaping:cone:softness = 0.8
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (34.900000520050526, 4.90000007301569, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFrontDownlight_13" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1, 1)
+                float exposure = 6.6
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 85.200005
+                float shaping:cone:softness = 0.8
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (32.100000478327274, 1.600000023841858, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFrontDownlight_14" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1, 1)
+                float exposure = 6.6
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 85.200005
+                float shaping:cone:softness = 0.8
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (27.3000004068017, -2.9000000432133675, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RegalleStoreFrontDownlight_15" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 1, 1)
+                float exposure = 6.6
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 381.1
+                float radius = 0.05
+                float shaping:cone:angle = 85.200005
+                float shaping:cone:softness = 0.8
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (24.600000366568565, -5.500000081956387, 10.200000151991844)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_7ABCCF815695E109"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def RectLight "RectLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 2.8
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 4.1
+                float intensity = 40
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 3.8
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-7.000000104308128, -13.300000198185444, 8.700000129640102)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "RectLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 2.8
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 4.1
+                float intensity = 40
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 3.8
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-20.700000308454037, -8.800000131130219, 8.700000129640102)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "RectLight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 2.8
+                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
+                float height = 4.1
+                float intensity = 40
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 3.8
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (8.00000011920929, -8.900000132620335, 8.700000129640102)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_069090C05961E2D8"
+        {
+            over "LatternHead"
+            {
+                float colorTemperature = 5000
+                float intensity = 109.9
+            }
+        }
+
+        over "mesh_B819F02F9C0CF4E3"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "RectBuildingBase" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 8.8
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 25.300001
+                float radius = 0.05
+                float shaping:cone:angle = 39.100002
+                float shaping:cone:softness = 0.15
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 2.600000038743019, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.500000037252903, -14.300000213086605, 0.4000000059604645)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RectBuildingBase_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 8.8
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 25.300001
+                float radius = 0.05
+                float shaping:cone:angle = 39.100002
+                float shaping:cone:softness = 0.15
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 2.600000038743019, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.8000000417232513, -14.300000213086605, 0.4000000059604645)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RectBuildingBase_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 8.8
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 25.300001
+                float radius = 0.05
+                float shaping:cone:angle = 39.100002
+                float shaping:cone:softness = 0.15
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 2.600000038743019, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (8.200000122189522, -14.300000213086605, 0.4000000059604645)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RectBuildingBase_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 8.8
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 25.300001
+                float radius = 0.05
+                float shaping:cone:angle = 39.100002
+                float shaping:cone:softness = 0.15
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 2.600000038743019, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.300000138580799, -13.40000019967556, 0.4000000059604645)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RectBuildingBase_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 8.8
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 25.300001
+                float radius = 0.05
+                float shaping:cone:angle = 39.100002
+                float shaping:cone:softness = 0.15
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 2.600000038743019, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.300000138580799, -7.400000110268593, 0.4000000059604645)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RectBuildingBase_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 8.8
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 25.300001
+                float radius = 0.05
+                float shaping:cone:angle = 39.100002
+                float shaping:cone:softness = 0.15
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 2.600000038743019, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.300000138580799, -2.3000000342726707, 0.4000000059604645)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RectBuildingBase_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 8.8
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 25.300001
+                float radius = 0.05
+                float shaping:cone:angle = 39.100002
+                float shaping:cone:softness = 0.15
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 2.600000038743019, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.300000138580799, 2.600000038743019, 0.4000000059604645)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RectBuildingBase_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 8.8
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 25.300001
+                float radius = 0.05
+                float shaping:cone:angle = 39.100002
+                float shaping:cone:softness = 0.15
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 2.600000038743019, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.300000138580799, 7.600000113248825, 0.4000000059604645)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RectBuildingBase_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 8.8
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 25.300001
+                float radius = 0.05
+                float shaping:cone:angle = 39.100002
+                float shaping:cone:softness = 0.15
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 2.600000038743019, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (9.300000138580799, 13.40000019967556, 0.4000000059604645)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_01E0F29FAE47D397"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "RectTowerAccent" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.7134419, 0.25253052, 0.84942085)
+                float exposure = 14.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 1036
+                float radius = 0.05
+                float shaping:cone:angle = 24.2
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-53.40000079572201, -10.400000154972076, 4.6000000685453415)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RectTowerAccent_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.7134419, 0.25253052, 0.84942085)
+                float exposure = 14.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 1036
+                float radius = 0.05
+                float shaping:cone:angle = 24.2
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-53.40000079572201, 10.800000160932541, 4.6000000685453415)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RectTowerAccent_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.7134419, 0.25253052, 0.84942085)
+                float exposure = 14.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 1036
+                float radius = 0.05
+                float shaping:cone:angle = 24.2
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (55.000000819563866, -10.400000154972076, 4.6000000685453415)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "RectTowerAccent_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (0.7134419, 0.25253052, 0.84942085)
+                float exposure = 14.1
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 1036
+                float radius = 0.05
+                float shaping:cone:angle = 24.2
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (180, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (55.000000819563866, 10.800000160932541, 4.6000000685453415)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_FF1B9B8C461764A1"
+        {
+            over "INGDirectLight"
+            {
+                float intensity = 250
+            }
+
+            over "INGDirectLight_01"
+            {
+                float intensity = 250
+            }
+
+            over "INGDirectLight_02"
+            {
+                float intensity = 250
+            }
+
+            over "INGDirectLight_03"
+            {
+                float intensity = 250
+            }
+        }
+
+        over "mesh_C6547CC479B05E41"
+        {
+            over "RectLight"
+            {
+                float intensity = 150
+            }
+        }
+
+        over "mesh_E7465C252873D4A5"
+        {
+            over "BillboardLight"
+            {
+                float intensity = 200
+            }
+
+            over "BillboardLight_01"
+            {
+                float intensity = 200
+            }
+        }
+
+        over "mesh_AC161B07F4489599"
+        {
+            over "ArmHead"
+            {
+                float intensity = 150
+            }
+        }
+
+        over "mesh_8169FA6B907FE7AA"
+        {
+            over "SphereLight"
+            {
+                float intensity = 400
+            }
         }
     }
 }

@@ -4,8 +4,8 @@
     subLayers = [
         @./usda/01_lights/01_buildings/01_buildings.usda@,
         @./usda/01_lights/02_roadways/02_roadways.usda@,
-        @./usda/01_lights/04_unique/0104_unique.usda@,
-        @./usda/01_lights/05_global/0105_Global.usda@
+        @./usda/01_lights/05_global/0105_Global.usda@,
+        @./usda/01_lights/04_unique/0104_unique.usda@
     ]
     upAxis = "Z"
 )
@@ -883,103 +883,6 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (4.167887798306553, 15.6955480734732, 2.416040043594496)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-    }
-
-    over "Looks"
-    {
-        over "mat_FA96C5ACF45247FF"
-        {
-            over "Shader"
-            {
-                bool inputs:enable_opacity = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Opacity"
-                    displayName = "Enable Opacity"
-                    doc = "Enables the use of cutout opacity"
-                    hidden = false
-                )
-            }
-        }
-
-        over "mat_5347A469B5F45A3E"
-        {
-            over "Shader"
-            {
-                bool inputs:enable_opacity = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Opacity"
-                    displayName = "Enable Opacity"
-                    doc = "Enables the use of cutout opacity"
-                    hidden = false
-                )
-            }
-        }
-
-        over "mat_37E4CECB83127B3D"
-        {
-            over "Shader"
-            {
-                uniform bool enable_opacity = 1
-                bool inputs:enable_opacity = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Opacity"
-                    displayName = "Enable Opacity"
-                    doc = "Enables the use of cutout opacity"
-                    hidden = false
-                )
-            }
-        }
-
-        over "mat_0881A7BA228FC67D"
-        {
-            over "Shader"
-            {
-                bool inputs:enable_opacity = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Opacity"
-                    displayName = "Enable Opacity"
-                    doc = "Enables the use of cutout opacity"
-                    hidden = false
-                )
-            }
-        }
-
-        over "mat_746E7C1E593355E7"
-        {
-            over "Shader"
-            {
-                bool inputs:enable_opacity = 0 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Opacity"
-                    displayName = "Enable Opacity"
-                    doc = "Enables the use of cutout opacity"
-                    hidden = false
-                )
-                float inputs:opacity_constant = 0 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Opacity"
-                    displayName = "Opacity Amount"
-                    doc = "Used when no albedo/opacity texture is specified. 0 for completely transparent, 1 for completly opaque."
-                    hidden = false
-                )
             }
         }
     }
