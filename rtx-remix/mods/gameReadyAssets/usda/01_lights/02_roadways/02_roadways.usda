@@ -91,13 +91,13 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 4500
+                float colorTemperature = 5000
                 bool enableColorTemperature = 1
-                float exposure = 0
-                float intensity = 1800
-                float radius = 0.5
+                float exposure = 6.8
+                float intensity = 500
+                float radius = 0.05
                 float shaping:cone:angle = 67.3
-                float shaping:cone:softness = 0.2
+                float shaping:cone:softness = 0.5
                 float shaping:focus = 0.4
                 color3f shaping:focusTint
                 asset shaping:ies:file
@@ -425,11 +425,11 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 4500
+                float colorTemperature = 5000
                 bool enableColorTemperature = 1
-                float exposure = 2.2
+                float exposure = 3
                 float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
-                float intensity = 500
+                float intensity = 100
                 float radius = 0.5
                 float shaping:cone:angle = 140.6
                 float shaping:cone:softness = 0.09
@@ -440,6 +440,14 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, -3.300000049173832, 7.400000110268593)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_AC161B07F4489599"
+        {
+            over "ArmHead"
+            {
+                float intensity = 150
             }
         }
     }
