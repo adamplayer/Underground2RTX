@@ -114,7 +114,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:emissive_intensity = 0.5 (
+                float emissive_intensity = 0.5 (
                     doc = "Intensity of the emission"
                     hidden = false
                 )
@@ -1470,6 +1470,50 @@ over "RootNode"
         over "mesh_6301D7CED2EA990F"
         {
             custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "ConvCenterRoof" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0.99999, 0.99999)
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 1.3000001
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 1063.9
+                float radius = 0.1
+                float shaping:cone:angle = 57.7
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (205.50000306218863, -9.600000143051147, -26.30000039190054)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-13.700000204145908, -26.00000038743019, 43.80000065267086)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "ConvCenterRoof_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                color3f color = (1, 0.99999, 0.99999)
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 1.3000001
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 1063.9
+                float radius = 0.1
+                float shaping:cone:angle = 57.7
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (205.50000306218863, 11.800000175833702, -26.30000039190054)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-5.100000075995922, -29.300000436604023, 44.40000066161156)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
         }
     }
 }
