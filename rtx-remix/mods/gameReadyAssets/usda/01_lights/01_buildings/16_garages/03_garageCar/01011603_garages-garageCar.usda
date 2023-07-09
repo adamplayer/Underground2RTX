@@ -13,7 +13,7 @@ over "RootNode"
             )
             {
                 bool enableColorTemperature = 1
-                float intensity = 138.40001
+                float intensity = 14
                 float radius = 1
                 float shaping:cone:angle = 43.5
                 float shaping:cone:softness
@@ -32,7 +32,7 @@ over "RootNode"
             {
                 bool enableColorTemperature = 1
                 float exposure = 0
-                float intensity = 14.7
+                float intensity = 7.9
                 float radius = 2.3
                 float shaping:cone:angle = 48.3
                 float shaping:cone:softness
@@ -52,7 +52,7 @@ over "RootNode"
             {
                 bool enableColorTemperature = 1
                 float exposure = 1.1
-                float intensity = 266.7
+                float intensity = 20.2
                 float radius = 0.4
                 float shaping:cone:angle = 45.8
                 float shaping:cone:softness = 0
@@ -71,7 +71,7 @@ over "RootNode"
             {
                 bool enableColorTemperature = 1
                 float exposure = 1.3000001
-                float intensity = 15.900001
+                float intensity = 5.6
                 float radius = 1.6
                 float shaping:cone:angle = 102.3
                 float shaping:cone:softness = 1

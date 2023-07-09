@@ -2,6 +2,7 @@
 (
     metersPerUnit = 0.01
     subLayers = [
+        @./usda/01_lights/03_cars/03_cars.usda@,
         @./usda/01_lights/01_buildings/01_buildings.usda@,
         @./usda/01_lights/02_roadways/02_roadways.usda@,
         @./usda/01_lights/04_unique/0104_unique.usda@,
