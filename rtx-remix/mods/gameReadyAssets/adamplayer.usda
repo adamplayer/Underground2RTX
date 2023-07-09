@@ -720,59 +720,6 @@ over "RootNode"
             }
         }
 
-        over "mesh_8169FA6B907FE7AA"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "SphereLight" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 4500
-                bool enableColorTemperature = 1
-                float exposure = 0
-                float intensity = 4000
-                bool normalize = 1
-                float radius = 0.5
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool treatAsPoint = 0
-                double3 xformOp:rotateXYZ = (90, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 5.200000077486038)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
-        over "mesh_EB13CB633F45D945"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "LatternStreetLight" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 5000
-                bool enableColorTemperature = 1
-                float exposure = 0
-                float intensity = 507.2
-                bool normalize = 1
-                float radius = 0.5
-                float shaping:cone:angle = 90
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, -3.0000000447034836, 7.500000111758709)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
         over "mesh_13BB9780DD8CB91D"
         {
             custom int preserveOriginalDrawCall = 1

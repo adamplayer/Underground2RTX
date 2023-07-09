@@ -9,6 +9,7 @@ over "RootNode"
             custom int preserveOriginalDrawCall = 1
 
             def SphereLight "Nissan240SX_RightHeadlight" (
+                active = false
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -29,6 +30,7 @@ over "RootNode"
             }
 
             def SphereLight "Nissan240SX_LeftHeadlight" (
+                active = false
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -49,6 +51,7 @@ over "RootNode"
             }
 
             def SphereLight "Nissan240SX_RightFogLight" (
+                active = false
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -71,6 +74,7 @@ over "RootNode"
             }
 
             def SphereLight "Nissan240SX_LeftFogLight" (
+                active = false
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -93,6 +97,7 @@ over "RootNode"
             }
 
             def SphereLight "Nissan240SX_RightTailLight" (
+                active = false
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -115,6 +120,7 @@ over "RootNode"
             }
 
             def SphereLight "Nissan240SX_LeftTailLight" (
+                active = false
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {

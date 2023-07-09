@@ -1,2 +1,57 @@
 #usda 1.0
 
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_B3BE5C134A533293"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "MainMenuLamp" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 2700
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 345.80002
+                bool normalize = 0
+                float radius = 0.3
+                float shaping:cone:angle = 66.9
+                float shaping:cone:softness = 0.4
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                double3 xformOp:rotateXYZ = (0, -20.800000309944153, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.6000000536441803, 12.500000186264515, 3.200000047683716)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "MainMenuLamp_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 2700
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 345.80002
+                bool normalize = 0
+                float radius = 0.3
+                float shaping:cone:angle = 66.9
+                float shaping:cone:softness = 0.4
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                double3 xformOp:rotateXYZ = (0, -20.800000309944153, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.5843152848426523, 32.661274990083164, 4.358348048811716)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+    }
+}
+
