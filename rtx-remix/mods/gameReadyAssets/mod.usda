@@ -24,6 +24,7 @@ over "RootNode"
     {
         over "SkyDome_Non_Replaceable"
         {
+            color3f color = (1, 1, 1)
             float exposure = 0.5
             float intensity = 4.7000003
             float3 xformOp:rotateXYZ = (0, 0, 0)
@@ -394,12 +395,13 @@ over "RootNode"
             }
         }
 
-        over "mesh_8169FA6B907FE7AA"
+        over "mesh_B48D327374ECCE06"
         {
-            over "SphereLight"
+            over "LampPost"
             {
-                float exposure = 11.400001
-                float intensity = 400
+                float colorTemperature = 4500
+                float exposure = 0
+                float intensity = 10
             }
         }
     }
