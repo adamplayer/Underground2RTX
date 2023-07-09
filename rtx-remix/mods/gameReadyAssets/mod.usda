@@ -12,8 +12,7 @@
     metersPerUnit = 0.001
     subLayers = [
         @./adamplayer.usda@,
-        @./materials.usda@,
-        @./ExtMod/world_sprites.usda@
+        @./extmod.usd@
     ]
     timeCodesPerSecond = 24
     upAxis = "Z"
@@ -26,7 +25,7 @@ over "RootNode"
         over "SkyDome_Non_Replaceable"
         {
             float exposure = 0
-            float intensity = 0
+            float intensity = 7.4
             float3 xformOp:rotateXYZ = (0, 0, 0)
             float3 xformOp:scale = (1, 1, 1)
             double3 xformOp:translate = (0, 0, 0)
@@ -118,6 +117,41 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
+            }
+        }
+
+        over "mat_002EE3A8C8E52F9A"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./Textures/EAWorld/hotelPlaza/002EE3A8C8E52F9A_albedo.dds@ (
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:emissive_mask_texture = @./Textures/EAWorld/hotelPlaza/002EE3A8C8E52F9A_emissive.dds@ (
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:metallic_texture = @./Textures/EAWorld/hotelPlaza/002EE3A8C8E52F9A_metalness.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+            }
+        }
+
+        over "mat_43FA3D67BEDF9219"
+        {
+            over "Shader"
+            {
+                float inputs:emissive_intensity = 5
             }
         }
     }
@@ -2171,6 +2205,29 @@ over "RootNode"
             over "SumoniLewisAwning_01"
             {
                 float exposure = 6.4
+            }
+        }
+
+        over "mesh_871EAA4081B4212E"
+        {
+            over "CarLotFill_02"
+            {
+                float intensity = 5.6
+            }
+
+            over "CarLotKey"
+            {
+                float intensity = 20.2
+            }
+
+            over "CarLotFill"
+            {
+                float intensity = 14
+            }
+
+            over "CarLotFill_01"
+            {
+                float intensity = 7.9
             }
         }
     }

@@ -4,8 +4,8 @@
     subLayers = [
         @./usda/01_lights/01_buildings/01_buildings.usda@,
         @./usda/01_lights/02_roadways/02_roadways.usda@,
-        @./usda/01_lights/05_global/0105_Global.usda@,
-        @./usda/01_lights/04_unique/0104_unique.usda@
+        @./usda/01_lights/04_unique/0104_unique.usda@,
+        @./usda/01_lights/05_global/0105_Global.usda@
     ]
     upAxis = "Z"
 )

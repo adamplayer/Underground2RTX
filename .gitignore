@@ -19,7 +19,8 @@
 ## Remix Related
 /.trex/USD
 /rtx-remix/captures
-/rtx-remix/mods/gameReadyAssets/textures
+/rtx-remix/mods/gameReadyAssets/Archived_Lights
+/rtx-remix/mods/gameReadyAssets/Archived_Textures
 /rtx-remix/mods/gameReadyAssets/ExtMod
 
 # Filetypes
@@ -47,3 +48,4 @@ imgui.ini
 *.asi
 *.null
 *.dds
+rtx-remix/mods/gameReadyAssets/extmod.usd

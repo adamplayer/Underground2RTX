@@ -1,2 +1,103 @@
 #usda 1.0
 
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_FE85ED854EC3F260"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def RectLight "SpecialtiesShopFill" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                bool enableColorTemperature = 1
+                float height = 3.8
+                float intensity = 11.1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                float width = 3.6000001
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 5.500000081956387, 3.500000052154064)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "SpecialtiesShopKey" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                bool enableColorTemperature = 1
+                float intensity = 27.5
+                float radius = 1.6
+                float shaping:cone:angle = 19.800001
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (24.50000036507845, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 2.7000000402331352, 3.0000000447034836)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_E29CA2B8D41F708A"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def RectLight "SpecialtiesShopCove" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4000
+                bool enableColorTemperature = 1
+                float height = 50.100002
+                float intensity = 21.4
+                float shaping:cone:angle = 180
+                float width = 0.7
+                double3 xformOp:rotateXYZ = (180, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.500000096857548, 14.800000220537186, 4.700000070035458)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "SpecialtiesShopCove_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4000
+                bool enableColorTemperature = 1
+                float height = 6.7000003
+                float intensity = 25
+                float shaping:cone:angle = 180
+                float width = 2.1000001
+                double3 xformOp:rotateXYZ = (180, 0, -78.00000116229057)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.30000000447034836, 38.800000578165054, 4.62)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "SpecialtiesShopCove_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4000
+                bool enableColorTemperature = 1
+                float height = 50.100002
+                float intensity = 21.4
+                float shaping:cone:angle = 180
+                float width = 0.19
+                double3 xformOp:rotateXYZ = (180, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (7.8, 14.800000220537186, 4.62)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+    }
+}
+
