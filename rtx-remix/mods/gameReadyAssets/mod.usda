@@ -34,145 +34,6 @@ over "RootNode"
         }
     }
 
-    over "Looks"
-    {
-        over "mat_4899305085140D2E"
-        {
-            over "Shader"
-            {
-                asset diffuse_texture = @./Textures/4899305085140D2E.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                bool enable_thin_film = 0 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Enable thin film"
-                    doc = "Adds a thin film coating to the material"
-                    hidden = false
-                )
-                float metallic_constant = 0.19999999 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Metallic Amount"
-                    doc = "Metallic Material"
-                    hidden = false
-                )
-                float reflection_roughness_constant = 0.099999994 (
-                    customData = {
-                        float default = 0.5
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Amount"
-                    doc = "Higher roughness values lead to more blurry reflections"
-                    hidden = false
-                )
-                float thin_film_thickness_constant = 233.99985 (
-                    customData = {
-                        float default = 200
-                        dictionary range = {
-                            float max = 1500
-                            float min = 0.001
-                        }
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Thin film constant thickness in nm"
-                    doc = "Thickness of the thin film if not specified in albedo texture"
-                    hidden = false
-                )
-                bool thin_film_thickness_from_albedo_alpha = 0 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Thin film thickness from albedo alpha"
-                    doc = "Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case."
-                    hidden = false
-                )
-            }
-        }
-
-        over "mat_B2C7DF2DCED2A529"
-        {
-            over "Shader"
-            {
-                float emissive_intensity = 0.5 (
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
-            }
-        }
-
-        over "mat_002EE3A8C8E52F9A"
-        {
-            over "Shader"
-            {
-                asset diffuse_texture = @./Textures/EAWorld/hotelPlaza/002EE3A8C8E52F9A_albedo.dds@ (
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset emissive_mask_texture = @./Textures/EAWorld/hotelPlaza/002EE3A8C8E52F9A_emissive.dds@ (
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset metallic_texture = @./Textures/EAWorld/hotelPlaza/002EE3A8C8E52F9A_metalness.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Metallic Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-            }
-        }
-
-        over "mat_43FA3D67BEDF9219"
-        {
-            over "Shader"
-            {
-                float emissive_intensity = 5
-            }
-        }
-
-        over "mat_ACC8FEC19DFC3A8A"
-        {
-            over "Shader"
-            {
-                bool enable_opacity = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Opacity"
-                    displayName = "Enable Opacity"
-                    doc = "Enables the use of cutout opacity"
-                    hidden = false
-                )
-            }
-        }
-    }
-
     over "meshes"
     {
         over "mesh_36D796525BB61ADB"
@@ -395,14 +256,162 @@ over "RootNode"
             }
         }
 
-        over "mesh_B48D327374ECCE06"
+        over "mesh_6EE1388ED9AEFD6E"
         {
-            over "LampPost"
+            over "ThinPoleLight"
             {
-                float colorTemperature = 4500
-                float exposure = 0
-                float intensity = 10
+                float colorTemperature = 5500
+                float exposure = 7.7000003
+                float shaping:cone:angle = 74.6
+                float shaping:cone:softness = 0.2
+                double3 xformOp:rotateXYZ = (0, 33.00000049173832, 90)
             }
+        }
+    }
+
+    over "Looks"
+    {
+        over "mat_4899305085140D2E"
+        {
+            over "Shader"
+            {
+                asset diffuse_texture = @./Textures/4899305085140D2E.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool enable_thin_film = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Enable thin film"
+                    doc = "Adds a thin film coating to the material"
+                    hidden = false
+                )
+                float metallic_constant = 0.19999999 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Amount"
+                    doc = "Metallic Material"
+                    hidden = false
+                )
+                float reflection_roughness_constant = 0.099999994 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Amount"
+                    doc = "Higher roughness values lead to more blurry reflections"
+                    hidden = false
+                )
+                float thin_film_thickness_constant = 233.99985 (
+                    customData = {
+                        float default = 200
+                        dictionary range = {
+                            float max = 1500
+                            float min = 0.001
+                        }
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Thin film constant thickness in nm"
+                    doc = "Thickness of the thin film if not specified in albedo texture"
+                    hidden = false
+                )
+                bool thin_film_thickness_from_albedo_alpha = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Thin film thickness from albedo alpha"
+                    doc = "Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case."
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_B2C7DF2DCED2A529"
+        {
+            over "Shader"
+            {
+                float emissive_intensity = 0.5 (
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_002EE3A8C8E52F9A"
+        {
+            over "Shader"
+            {
+                asset diffuse_texture = @./Textures/EAWorld/hotelPlaza/002EE3A8C8E52F9A_albedo.dds@ (
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset emissive_mask_texture = @./Textures/EAWorld/hotelPlaza/002EE3A8C8E52F9A_emissive.dds@ (
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset metallic_texture = @./Textures/EAWorld/hotelPlaza/002EE3A8C8E52F9A_metalness.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+            }
+        }
+
+        over "mat_43FA3D67BEDF9219"
+        {
+            over "Shader"
+            {
+                float emissive_intensity = 5
+            }
+        }
+
+        over "mat_ACC8FEC19DFC3A8A"
+        {
+            over "Shader"
+            {
+                bool enable_opacity = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Opacity"
+                    displayName = "Enable Opacity"
+                    doc = "Enables the use of cutout opacity"
+                    hidden = false
+                )
+            }
+        }
+    }
+
+    over "instances"
+    {
+        over "inst_9A5BF8AFD719E52C_0"
+        {
         }
     }
 }

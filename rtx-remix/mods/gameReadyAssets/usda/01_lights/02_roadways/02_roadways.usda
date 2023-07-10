@@ -262,6 +262,121 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
+
+        over "mesh_75DC79D9A5652F88"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "RLMArmMount" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 1.3000001
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 350
+                float radius = 0.5
+                float shaping:cone:angle = 63.3
+                float shaping:cone:softness = 0.5
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 6.900000102818012, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -2.7000000402331352, -1.0000000149011612)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_6EE1388ED9AEFD6E"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "ThinPoleLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 8.2
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 200
+                bool light:enableCaustics = 0
+                float radius = 0.05
+                float shaping:cone:angle = 66.700005
+                float shaping:cone:softness = 0.4
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 17.700000263750553, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -6.100000090897083, 12.200000181794167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_5D7C664E955F77E9"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "ShoeBoxSignLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4000
+                bool enableColorTemperature = 1
+                float exposure = 2.2
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 100
+                float radius = 0.5
+                float shaping:cone:angle = 38.3
+                float shaping:cone:softness = 0
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, -34.50000051409006, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -3.0000000447034836, 19.200000286102295)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_EA1A049735D83EFD"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "LongPoleMountLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 9.7
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 261.1
+                float radius = 0.05
+                float shaping:cone:angle = 67.3
+                float shaping:cone:softness = 0.1
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 19.200000286102295, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -12.10000018030405, 9.500000141561031)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_B48D327374ECCE06"
+        {
+            over "LampPost"
+            {
+                float colorTemperature = 4500
+                float exposure = 0
+                float intensity = 10
+            }
+        }
     }
 }
 
