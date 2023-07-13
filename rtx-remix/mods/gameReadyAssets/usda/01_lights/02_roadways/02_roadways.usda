@@ -352,12 +352,12 @@ over "RootNode"
             {
                 float colorTemperature = 5000
                 bool enableColorTemperature = 1
-                float exposure = 9.7
+                float exposure = 7.8
                 float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
                 float intensity = 261.1
                 float radius = 0.05
                 float shaping:cone:angle = 67.3
-                float shaping:cone:softness = 0.1
+                float shaping:cone:softness = 0.4
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
@@ -386,7 +386,7 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 3500
+                float colorTemperature = 4500
                 bool enableColorTemperature = 1
                 float exposure = 0
                 float intensity = 300
@@ -487,12 +487,12 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 3000
+                float colorTemperature = 4500
                 bool enableColorTemperature = 1
-                float exposure = 13.5
-                float intensity = 172.8
+                float exposure = 0
+                float intensity = 248
                 bool normalize = 0
-                float radius = 0.01
+                float radius = 0.2
                 float shaping:cone:angle = 69.3
                 float shaping:cone:softness = 0.4
                 float shaping:focus
@@ -577,6 +577,105 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, 8.900000132620335, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, -5.900000087916851, 0.30000000447034836)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_E549B35E3AB18E9E"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SmallOrnateSphere" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float exposure = 0
+                float intensity = 229.1
+                bool normalize = 0
+                float radius = 0.5
+                float shaping:cone:angle = 67.200005
+                float shaping:cone:softness = 0.4
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                double3 xformOp:rotateXYZ = (0, 14.500000216066837, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -3.400000050663948, 0.20000000298023224)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_069090C05961E2D8"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "LatternHead" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4000
+                bool enableColorTemperature = 1
+                float exposure = 1
+                float intensity = 67.4
+                float radius = 0.8
+                float shaping:cone:angle = 89
+                float shaping:cone:softness = 0.5
+                float shaping:focus = 0
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (-7.1000001057982445, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -3.300000049173832, 7.300000108778477)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_C6547CC479B05E41"
+        {
+            def SphereLight "SmallArmMountBoxHead_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float inputs:intensity = 10
+                float inputs:radius = 0.5
+                float inputs:shaping:cone:angle = 44.5
+                float inputs:shaping:cone:softness = 0.2
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, -31.40000046789646, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.18, -0.9000000134110451, 3.9000000581145287)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_363621C230964CBA"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SunkenHighwayArmMount" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 5000
+                bool enableColorTemperature = 1
+                float exposure = 2.1000001
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 496.80002
+                float radius = 0.3
+                float shaping:cone:angle = 93.9
+                float shaping:cone:softness = 0.4
+                float shaping:focus = 1.4
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 55.2000008225441, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -6.900000102818012, 1.8000000268220901)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }

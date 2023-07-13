@@ -163,55 +163,6 @@ over "RootNode"
             }
         }
 
-        over "mesh_05887D3C524391A4"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def RectLight "WhiteBuilding" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 4500
-                bool enableColorTemperature = 1
-                float exposure = 4.8
-                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
-                float height = 3.2
-                float intensity = 11.7
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                float width = 0.5
-                double3 xformOp:rotateXYZ = (0, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-5.700000084936619, -6.600000098347664, 3.8000000566244125)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def RectLight "WhiteBuilding_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 4500
-                bool enableColorTemperature = 1
-                float exposure = 4.8
-                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
-                float height = 3.2
-                float intensity = 11.7
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                float width = 0.5
-                double3 xformOp:rotateXYZ = (0, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (3.400000050663948, -6.600000098347664, 3.8000000566244125)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
         over "mesh_FF1B9B8C461764A1"
         {
             over "INGDirectLight"
@@ -232,16 +183,6 @@ over "RootNode"
             over "INGDirectLight_03"
             {
                 float intensity = 250
-            }
-        }
-
-        over "mesh_C6547CC479B05E41"
-        {
-            token visibility = "invisible"
-
-            over "RectLight"
-            {
-                float intensity = 150
             }
         }
 
