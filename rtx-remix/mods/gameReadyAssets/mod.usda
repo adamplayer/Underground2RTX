@@ -237,6 +237,8 @@ over "RootNode"
 
         over "mesh_C6547CC479B05E41"
         {
+            token visibility = "invisible"
+
             over "RectLight"
             {
                 float intensity = 150
@@ -253,18 +255,6 @@ over "RootNode"
             over "BillboardLight_01"
             {
                 float intensity = 200
-            }
-        }
-
-        over "mesh_6EE1388ED9AEFD6E"
-        {
-            over "ThinPoleLight"
-            {
-                float colorTemperature = 5500
-                float exposure = 7.7000003
-                float shaping:cone:angle = 74.6
-                float shaping:cone:softness = 0.2
-                double3 xformOp:rotateXYZ = (0, 33.00000049173832, 90)
             }
         }
     }
