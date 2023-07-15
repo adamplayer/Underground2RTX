@@ -49,3 +49,4 @@ imgui.ini
 *.null
 *.dds
 rtx-remix/mods/gameReadyAssets/extmod.usd
+*.idb
