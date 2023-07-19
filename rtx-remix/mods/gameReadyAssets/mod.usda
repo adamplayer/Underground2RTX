@@ -12,6 +12,7 @@
     metersPerUnit = 0.001
     subLayers = [
         @./adamplayer.usda@,
+        @./01_lights/01_lights.usda@
         @./extmod.usd@
     ]
     timeCodesPerSecond = 24

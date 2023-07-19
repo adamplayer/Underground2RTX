@@ -50,3 +50,7 @@ imgui.ini
 *.dds
 rtx-remix/mods/gameReadyAssets/extmod.usd
 *.idb
+
+rtx-remix/OV_U2.usd
+
+rtx-remix/.thumbs/
