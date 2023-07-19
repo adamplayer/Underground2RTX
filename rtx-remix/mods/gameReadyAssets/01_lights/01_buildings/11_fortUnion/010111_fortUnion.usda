@@ -116,6 +116,8 @@ over "RootNode"
 
         over "mesh_2C5B5846A5E3AEC9"
         {
+            custom int preserveOriginalDrawCall = 1
+
             def RectLight "AbandonedBuildingEntry" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
@@ -231,6 +233,8 @@ over "RootNode"
 
         over "mesh_FB85A53C59862305"
         {
+            custom int preserveOriginalDrawCall = 1
+
             def SphereLight "RoofTopFlood" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
@@ -297,6 +301,8 @@ over "RootNode"
 
         over "mesh_0B04B27C2D6F6319"
         {
+            custom int preserveOriginalDrawCall = 1
+
             def SphereLight "BuildingWallSpot" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
@@ -347,6 +353,8 @@ over "RootNode"
 
         over "mesh_5E03BB5C247DA885"
         {
+            custom int preserveOriginalDrawCall = 1
+
             def RectLight "CoveredStorefront" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
