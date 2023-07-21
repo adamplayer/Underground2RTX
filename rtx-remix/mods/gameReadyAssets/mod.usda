@@ -211,137 +211,52 @@ over "RootNode"
             }
         }
 
-        over "mesh_D5E82EE781E8829A"
+        over "mesh_16E689CD3F8630C5"
         {
-            custom string Comment = "This is a test comment. Let's see if it persists."
             custom int preserveOriginalDrawCall = 1
 
-            def RectLight "SquareTowerBase" (
+            def SphereLight "SphereLight" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 5000
+                float colorTemperature = 4500
                 bool enableColorTemperature = 1
-                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
-                float height = 22.300001
-                float intensity = 187.5
-                float shaping:cone:angle = 180
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float intensity = 110.200005
+                float radius = 0.5
+                float shaping:cone:angle = 55.9
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                float width = 0.5
-                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:rotateXYZ = (180, 11.400000169873238, 90)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, -16.50000024586916, 10.500000156462193)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def RectLight "SquareTowerBase_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 5000
-                bool enableColorTemperature = 1
-                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
-                float height = 22.5
-                float intensity = 300
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                float width = 0.5
-                double3 xformOp:rotateXYZ = (0, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 16.700000248849392, 10.5)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def RectLight "SquareTowerBase_04" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 5000
-                bool enableColorTemperature = 1
-                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
-                float height = 0.5
-                float intensity = 300
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                float width = 22.5
-                double3 xformOp:rotateXYZ = (0, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (18.200000271201134, 0, 10.5)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def RectLight "SquareTowerBase_06" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 5000
-                bool enableColorTemperature = 1
-                float3[] extent = [(-0.5, -0.5, -0), (0.5, 0.5, 0)]
-                float height = 0.5
-                float intensity = 300
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                float width = 22.5
-                double3 xformOp:rotateXYZ = (0, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-16.50000024586916, 0, 10.5)
+                double3 xformOp:translate = (16.400000244379044, -9.100000135600567, 1.5000000223517418)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
 
-        over "mesh_E26D76E62F692B17"
+        over "mesh_72C2BF6E9EB24809"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def SphereLight "HourGlassTowerAccent" (
+            def SphereLight "HotelDropoff" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                color3f color = (1, 0, 0)
-                float exposure = 6
+                float colorTemperature = 4000
+                bool enableColorTemperature = 1
                 float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
-                float intensity = 200
+                float intensity = 177.6
                 float radius = 0.5
-                float shaping:cone:angle = 10.7
-                float shaping:cone:softness
+                float shaping:cone:angle = 63.9
+                float shaping:cone:softness = 0.2
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (148.3000022098422, 0, -45)
+                double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-19.80000029504299, -19.900000296533108, 32.600000485777855)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def SphereLight "HourGlassTowerAccent_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                color3f color = (1, 0, 0)
-                float exposure = 6
-                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
-                float intensity = 200
-                float radius = 0.5
-                float shaping:cone:angle = 10.7
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (148.3, 0, 45)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (19.8, -19.900000296533108, 32.600000485777855)
+                double3 xformOp:translate = (4.200000062584877, -9.500000141561031, 4.800000071525574)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
