@@ -683,6 +683,8 @@ over "RootNode"
 
         over "mesh_E0D0218D67EF4CF5"
         {
+            custom int preserveOriginalDrawCall = 1
+
             def SphereLight "SmallSpotSurface" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
