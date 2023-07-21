@@ -18,7 +18,6 @@
         @./ExtMod/windows.usda@,
         @./ExtMod/walls.usda@,
         @./ExtMod/uncle_burrito.usda@,
-        @./ExtMod/vegetation.usda@,
         @./ExtMod/tunnels.usda@,
         @./ExtMod/traffic.usda@,
         @./ExtMod/tiles.usda@,
@@ -26,7 +25,6 @@
         @./ExtMod/stone.usda@,
         @./ExtMod/signs.usda@,
         @./ExtMod/sidewalk.usda@,
-        @./ExtMod/emissive_lights.usda@,
         @./ExtMod/metal.usda@,
         @./ExtMod/headlights.usda@,
         @./ExtMod/highways.usda@,
@@ -222,6 +220,7 @@ over "RootNode"
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
                 float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                float inputs:exposure = 0
                 float intensity = 110.200005
                 float radius = 0.5
                 float shaping:cone:angle = 55.9
@@ -232,31 +231,6 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (180, 11.400000169873238, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (16.400000244379044, -9.100000135600567, 1.5000000223517418)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
-        over "mesh_72C2BF6E9EB24809"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HotelDropoff" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 4000
-                bool enableColorTemperature = 1
-                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
-                float intensity = 177.6
-                float radius = 0.5
-                float shaping:cone:angle = 63.9
-                float shaping:cone:softness = 0.2
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (4.200000062584877, -9.500000141561031, 4.800000071525574)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
