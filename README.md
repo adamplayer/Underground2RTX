@@ -17,11 +17,25 @@ An RTX-Remix mod for Need For Speed Underground 2. This is attempts to add all t
 ### Overview
 - [ ] Vehicles
 - [x] Garages/Shops
-- [ ] Buildings
+- [ ] Buildings - _In Progress_
 - [ ] Race locations
 - [ ] Package textures for distribution.
-- [ ] Reorganize into modular usdas for greater compatibility
+- [x] Reorganize into modular usdas for greater compatibility
 - [ ] "Alt" usda overrides for differnt stylization of lighting.
+
+## Installation
+Two Options
+- With [U2-RTX](https://github.com/Ekozmaster/NFSU2-RTX-Remix)
+  -  Take the `rtx-remix/mods/gameReadyAssets` folder from U2-RTX and place it in a new folder called `ExtMod` in the gameReadyAssets' folder: `rtx-remix/mods/gameReadyAssets/ExtMod`
+- Standalone:
+  - Download this repo and place it in your game install folder.
+
+#### AntiCull Mod _Optional_
+_If you use `Anti-Culling Lights` in RTX-Remix and are satisfied with that, do not apply this. This will decrease performance at the cost of removing any culling infront of the player's camera._
+
+**Make sure to make a backup of speed2.exe!** 
+
+Use LunarIPS or [https://bbbradsmith.github.io/ipstool/] to apply the IPS patch to your `speed2.exe`. 
 
 ---
 
