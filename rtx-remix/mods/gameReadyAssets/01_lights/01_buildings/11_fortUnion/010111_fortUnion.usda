@@ -299,32 +299,6 @@ over "RootNode"
             }
         }
 
-        over "mesh_0B04B27C2D6F6319"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "BuildingWallSpot" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float colorTemperature = 3000
-                bool enableColorTemperature = 1
-                float exposure = 0
-                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
-                float intensity = 36.4
-                float radius = 0.5
-                float shaping:cone:angle = 53.5
-                float shaping:cone:softness = 0.4
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                double3 xformOp:rotateXYZ = (180, 9.00000013411045, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-10.30000015348196, -3.500000052154064, 10.30000015348196)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
         over "mesh_F268CA8A196CC299"
         {
             custom int preserveOriginalDrawCall = 1
